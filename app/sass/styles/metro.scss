@@ -1,0 +1,235 @@
+.mobile-metro-page {
+   position: absolute;
+    display: block;
+    left: 0;
+    top:0;
+    right: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: 999;
+}
+
+.openMetroPage {
+    transform:translateX(0);
+}
+    
+.mobile-metro-selection {
+    background: #2f2562;
+    width: 320px;
+    margin: 0 auto;
+
+    .mobile-metro-header {
+        padding: 10px 26px;
+        border-bottom: 1px solid #443b72;
+    }
+    
+    .mobile-metro-header__title {
+        color: #FFF;
+        font-size: 15px;
+        display: inline-block;
+        vertical-align: middle;
+            
+        &::before {
+            content: '';
+            background: url('../img/metro-icon.png') no-repeat;
+            width: 13px;
+            height: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+    
+    .mobile-close {
+        background: url('../../img/close.png') no-repeat;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+    }
+    
+    .mobile-close_position {
+        position: absolute;
+        right: 0;
+        top: 6px;
+    }
+    
+    /*-------------------------------------------*/
+    
+    
+    .mobile-metro-search__form {
+        padding-top: 23px;
+    }
+    
+    .mobile-metro-search {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .mobile-metro-input {
+        border: 1px solid #595181;
+        border-radius: 50px;
+        color: #595181;
+        width: 100%;
+        padding: 10px 40px 10px 23px;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    .mobile-metro-submit {
+        background: url(../../img/search.png) no-repeat;
+        width: 12px;
+        height: 13px;
+        display: inline-block;
+        outline: none;
+        border: none;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: 5px;
+    }
+    
+    .mobile-metro-search__title {
+        font-size: 15px;
+        color: #FFF;
+        margin-left: 28px;
+        padding-bottom: 12px;
+    }
+    
+    /*------------------metro-menu--------------------*/
+    
+    .mobile-metro-menu {
+        color: #FFF;
+        font-size: 15px;
+    }
+    
+    .mobile-metro-menu__item {
+
+        border-top: 1px solid #443b72;
+        position: relative;
+        
+        .mobile-metro-menu__arrow {
+            background: url('../../img/arrow-metro.png') no-repeat;
+            width: 12px;
+            height: 6px;
+            position: absolute;
+            right: 22px;
+            margin-top: 20px;
+        }
+    }
+    
+    .mobile-metro-menu-2level {
+        margin-left: 2px;
+        margin-top: 25px;
+        display: none;
+    }
+    
+    .mobile-metro-menu-2level__item {
+        padding-top: 15px;
+    }
+    
+    .mobile-metro-menu__name {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top:14px;
+        padding-bottom: 14px;
+        padding-left: 27px;
+        width: 100%;
+        height: 100%;
+    }
+       
+   .mobile-metro_color-red {
+       &::before {
+       @include circle;
+       background: #ef1e25;
+       }
+   }
+   
+   .mobile-metro_color-green {
+       &::before {
+       @include circle;
+       background: #029a55;
+       }
+   }
+   
+   .mobile-metro_color-blue {
+       &::before {
+       @include circle;
+       background: #0252a2;
+       }
+   }
+   
+   .mobile-metro_color-lightBlue {
+       &::before {
+           @include circle;
+           background: #019ee0;
+       }
+   }
+   
+   .mobile-metro_color-brown {
+        &::before {
+           @include circle;
+           background: #725d28;
+       }
+   }
+   
+   .mobile-metro_color-orange {
+       &::before {
+           @include circle;
+           background: #fa9d23;
+       }
+   }
+   
+   .mobile-metro_color-pink {
+        &::before {
+           @include circle;
+           background: #b31d8e;
+        }
+   }
+   
+   .mobile-metro_color-yellow {
+       &::before {
+           @include circle;
+           background: #fbd601;
+        }
+   }
+   
+   .mobile-metro_color-grey {
+       &::before {
+           @include circle;
+           background: #acadaf;
+        }
+   }
+   
+   .mobile-metro_color-lightGreen {
+        &::before {
+           @include circle;
+           background: #b1d332;
+        }
+   }
+   
+   .mobile-metro_color-blue2 {
+        &::before {
+           @include circle;
+           background: #4697b2;
+        }
+   }
+   
+   .mobile-metro_color-lightBlue2 {
+       &::before {
+           @include circle;
+           background: #85d4f3;
+        }
+   }
+   
+   .mobile-metro_smallCircle {
+       &::before {
+       @include circleSmall;
+       }
+   }
+
+
+}
+

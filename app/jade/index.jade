@@ -1,0 +1,67 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content="IE=edge")
+        title Beauty shop
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet'  href='css/normalize.css' )
+        link(rel='stylesheet'  href='css/main.css' )
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet")
+        script(src="js/jquery-3.2.0.min.js" defer)
+        script(src="js/hummer.js" defer)
+        script(src="js/main.js" defer)
+    body
+        .mobile-wrapper
+            .mobile-white-band
+            .mobile-main-menu-section
+                header.mobile-header
+                    .container
+                        .mobile-menu
+                            a(href="#").mobile-menu__link
+                                img(src="img/menu.png" alt="menu").mobile-menu__img
+
+                        .mobile-logo
+                            a(href="#").mobile-logo__link
+                                img(src="img/logo.png" alt="logo").mobile-logo__img
+                        .mobile-login
+                            a(href="#").mobile-login__link
+                                img(src="img/icon-enter.png" alt="enter").mobile-login__img
+            
+                .mobile-face-bg-opacity
+                    .mobile-face
+                        .mobile-face-bg-opacity
+                            .wrapper
+                                section.mobile-title
+                                    h1.mobile-title__h1 Все салоны Москвы <br> в одном каталоге
+                                    h2.mobile-title__h2  более 5 000 предприятий <br> индустрии красоты
+                                section.mobile-button-option
+                                    .mobile-button-metro
+                                        button(type="button").mobile-button-option-style
+                                            span.mobile-button-metro__text Станции метро
+                                    .mobile-button-categories
+                                        button(type="button").mobile-button-option-style
+                                            span.mobile-button-categories__text Категории                            
+                .mobile-main-menu
+                    .mobile-button-salon-registration
+                        .wrapper
+                            button(type="button").mobile-button-salon-registration-style
+                                span Зарегистрировать салон
+                    nav.mobile-main-nav
+                        .wrapper
+                            - var nav = ["Этисэль на Таганке","RaI","VERY / ВЕРИ","В деталях","Sky Light beauty","LIPSCLINIC","Beaute De Russie","LINLINE","Beauty People"]
+                            ol.mobile-main-nav__list
+                                each item in nav
+                                        li(class="mobile-main-nav__item")
+                                            a(href="#" class="mobile-main-nav__link")  
+                                                span.mobile-main-nav__text= item
+            footer.mobile-footer
+                .wrapper
+                    .mobile-mail
+                        a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
+                    .mobile-footer__text    
+                        p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
+                            a(href="#") связаться с менеджером.    
+        include metro
+
+

@@ -1,0 +1,263 @@
+@import "settings/mixin";
+@import "settings/settings";
+@import "compass";
+
+ //@media only screen and (max-width: 320px) {
+    .mobile-wrapper {
+        width: 320px;
+        margin: 0 auto;
+        
+        .container {@include wrapper2;}
+        
+            
+        .mobile-white-band {
+            height: 2px;
+            background: #FFF;
+        }    
+        
+        .mobile-header {
+            background: #42396f;
+            @include clearfix;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            height: 39px; 
+        }
+        
+        .mobile-menu {
+            float: left;
+            padding-top: 11px;
+            
+           .mobile-menu__link {
+               display: block;
+           } 
+           .mobile-menu__img {
+               display: block;
+           }   
+        }
+        
+         .mobile-logo {
+         
+            display: inline-block;
+            padding-top:6px;
+            margin-left: 67px;
+            
+            .mobile-logo__link {
+               display: block;
+           }
+           .mobile-logo__img {
+               display: block;
+               max-width: 123px;
+               max-height: 30px;
+           }
+        }
+    
+        .mobile-login {
+        
+            padding-top: 12px;
+            float: right;
+            
+            .mobile-login__link {
+               display: block;
+           }
+           .mobile-login__img {
+               display: block;
+           }
+        }
+        
+        .mobile-face {
+            background: #42396f;
+            background: url(../img/bg-main.jpg) no-repeat;
+            height: 300px;
+            background-position: 0 center;
+            width: 320px;
+            margin: 0 auto;
+        }
+        
+        .mobile-face-bg-opacity {
+            width: 100%;
+            height: 100%;
+            background: #42396f;
+            background: url(../img/bg-opacity.png);  
+        }
+        
+        .mobile-title {
+            color: #fff;
+            padding-top: 27px;
+            text-align: center;
+        }
+        
+        .mobile-title__h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .mobile-title__h2 {
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+        
+        .mobile-button-metro {
+            margin-bottom: 5px;
+        }
+        
+        .mobile-button-option-style {
+            border: 1px solid rgba(255,255,255,.4);
+            background: transparent;
+            color: #FFF;
+            font-size: 15px;
+            width: 100%;
+            border-radius: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;   
+        }
+        
+        .mobile-button-metro__text {
+            display: inline-block;
+            vertical-align: middle;
+            
+            &::before {
+                content: '';
+                background: url('../img/metro-icon.png') no-repeat;
+                width: 13px;
+                height: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+        
+        .mobile-button-categories__text {
+            display: inline-block;
+            vertical-align: middle;
+            
+            &::before {
+                content: '';
+                background: url('../img/categories-icon.png') no-repeat;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+        
+    /*--------------------------------------------*/  
+        .mobile-main-menu {
+            background: #f2f2f2;
+            padding-bottom: 25px;
+        }
+        
+        .mobile-button-salon-registration {
+            padding-top: 30px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            
+            &::before {
+                content: '';
+                background: url('../img/crown.png') no-repeat;
+                width: 30px;
+                height: 20px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        
+        .mobile-button-salon-registration-style {
+            border: 1px solid rgba(255,255,255,.4);
+            background: rgb( 236, 64, 122 );
+            box-shadow: 1px 1.732px 8px 0px rgb( 75, 14, 43 );
+            color: #FFF;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        
+        .mobile-main-nav__list {
+            position: relative;
+            list-style-type: none;
+            counter-reset: num;
+        }
+        
+        .mobile-main-nav__item {
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            
+            &:last-child {
+                border-bottom: none;
+            }
+            
+            &::before {
+                display: inline-block;
+                content: counter(num) '. ';
+                counter-increment: num;
+                margin-right: 25px;
+            }
+        }
+        
+        .mobile-main-nav__link {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 18px;
+            color:#111;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+            &:after {
+            content: '';
+            background: url('../img/arrow.png') no-repeat;
+            width: 7px;
+            height: 14px;
+            position: absolute;
+            right: 10px;
+            margin-top: 4px;
+            }
+        }
+        
+    /*--------------------------------------------*/ 
+
+    .mobile-footer {
+        background: #FFF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    
+    
+    .mail__link {
+        display: inline-block;
+        vertical-align: baseline;
+        text-decoration: none;
+        font-size: 14px;
+        color: #5e35b1;
+        
+        &::before {
+            content: '';
+            background: url('../img/mail.png') no-repeat;
+            width: 16px;
+            height: 12px;
+            display: inline-block;
+            vertical-align: baseline;
+            margin-right: 10px;
+        }
+    }
+    
+       .mobile-footer__text  p {
+            color: #3c3c3b;
+            font-weight: 300px;
+            font-size: 14px;
+
+            a {
+                text-decoration: none;
+                color: #5e35b1;
+            }
+        }
+    }
+/*--------------------------------------------*/
+ @import "./styles/metro";
+
+
+    
+//}
+
+
