@@ -1,79 +1,80 @@
-.mobile-door-section
-    .mobile-door-header                    
-        ul.mobile-door-list
-            li(data-view="signIn").mobile-door__item.mobile-door__item-signIn Вход
-            li(data-view="signUp").mobile-door__item Регистрация
-        .mobile-close.mobile-close_positionForDoor
-    .mobile-form-section    
-        .mobile-form-section-signIn
-            .wrapper
-                form(action="").mobile-login-form
-                    input(type="email" name="enter-email" placeholder="E-mail").mobile-door-form__email.mobile-door-form_style
-                    input(type="password" name="enter-password" placeholder="Пароль").mobile-door-form_style
-                    .mobile-account-management
-                        .remember-me 
-                            label.remember-me__label
-                                input(name="location" type="checkbox").remember-me__input
-                                span.remember-me__elem
-                                span.remember-me__text Запомнить меня
-                        .forgot-password
-                            a(href="#").forgot-password__link Забыли пароль?
-            section.mobile-button-signIn
+.mobile-door-emergence
+    .mobile-door-section
+        .mobile-door-header                    
+            ul.mobile-door-list
+                li(data-view="signIn").mobile-door__item.mobile-door__item-signIn Вход
+                li(data-view="signUp").mobile-door__item Регистрация
+            .mobile-close.mobile-close_position.mobile-close_door-js
+        .mobile-form-section    
+            .mobile-form-section-signIn
                 .wrapper
-                    .signIn-button
-                        a(href="#").signIn Войти
-            section.mobile-social-button
-                .wrapper
-                    .socials-button-wrap
-                        p Быстрый вход через соц.сети
-                        - var icons = ['fb', 'vk']
-                            ul.socials
-                                each icon in icons
-                                    li.socials__item
-                                        a(href="#" class="socials__link socials__link_" + icon)
-                                            .socials__icon
-                        - var icons2 = ['ok', 'twitter','gmail','yandex','mail','mail','mail']
-                            ul.socials
-                                each icon in icons2
-                                    li.socials__item
-                                        a(href="#" class="socials__link socials__link_" + icon)
-                                            .socials__icon                    
-        .mobile-form-section-signUp
-            .mobile-registration-form-section
-                .wrapper
-                    .mobile-registration-form
-                        p Все поля обязательны для заполнения
-                        form(action="")
-                            input(type="email" name="enter-email" placeholder="E-mail").mobile-door-form_style
-                            input(type="password" name="enter-password" placeholder="Пароль - мин. 6 символов").mobile-door-form_style
-                            input(type="password" name="enter-password" placeholder="Повтор пароля").mobile-door-form_style
-                            input(type="text" name="name" placeholder="Имя").mobile-door-form_style
-                            .mobile-choice-gender
-                                span.gender Пол:
-                                label.choice-gender__label.choice-gender__woman
-                                    input(name="gender" type="radio" value="woman").choice-gender__input
-                                    span.choice-gender__elem
-                                    span.choice-gender__text Женский
-                                label.choice-gender__label
-                                    input(name="gender" type="radio" value="man").choice-gender__input
-                                    span.choice-gender__elem
-                                    span.choice-gender__text Мужской
-                            .signIn-button        
-                                a(href="#").signIn Войти        
-            section.mobile-social-button
-                .wrapper
-                    .socials-button-wrap
-                        p Быстрый вход через соц.сети
-                        - var icons = ['fb', 'vk']
-                            ul.socials
-                                each icon in icons
-                                    li.socials__item
-                                        a(href="#" class="socials__link socials__link_" + icon)
-                                            .socials__icon
-                        - var icons2 = ['ok', 'twitter','gmail','yandex','mail','mail','mail']
-                            ul.socials
-                                each icon in icons2
-                                    li.socials__item
-                                        a(href="#" class="socials__link socials__link_" + icon)
-                                            .socials__icon
+                    form(action="").mobile-login-form
+                        input(type="email" name="enter-email" placeholder="E-mail").mobile-door-form__email.mobile-door-form_style
+                        input(type="password" name="enter-password" placeholder="Пароль").mobile-door-form_style
+                        .mobile-account-management
+                            .remember-me 
+                                label.remember-me__label
+                                    input(name="location" type="checkbox").remember-me__input
+                                    span.remember-me__elem
+                                    span.remember-me__text Запомнить меня
+                            .forgot-password
+                                a(href="#").forgot-password__link Забыли пароль?
+                section.mobile-button-signIn
+                    .wrapper
+                        .signIn-button
+                            a(href="#").signIn Войти
+                section.mobile-social-button
+                    .wrapper
+                        .socials-button-wrap
+                            p Быстрый вход через соц.сети
+                            - var icons = ['fb', 'vk']
+                                ul.socials
+                                    each icon in icons
+                                        li.socials__item
+                                            a(href="#" class="socials__link socials__link_" + icon)
+                                                .socials__icon
+                            - var icons2 = ['ok', 'twitter','gmail','yandex','mail','mail','mail']
+                                ul.socials
+                                    each icon in icons2
+                                        li.socials__item
+                                            a(href="#" class="socials__link socials__link_" + icon)
+                                                .socials__icon                    
+            .mobile-form-section-signUp
+                .mobile-registration-form-section
+                    .wrapper
+                        .mobile-registration-form
+                            p Все поля обязательны для заполнения
+                            form(action="")
+                                input(type="email" name="enter-email" placeholder="E-mail").mobile-door-form_style
+                                input(type="password" name="enter-password" placeholder="Пароль - мин. 6 символов").mobile-door-form_style
+                                input(type="password" name="enter-password" placeholder="Повтор пароля").mobile-door-form_style
+                                input(type="text" name="name" placeholder="Имя").mobile-door-form_style
+                                .mobile-choice-gender
+                                    span.gender Пол:
+                                    label.choice-gender__label.choice-gender__woman
+                                        input(name="gender" type="radio" value="woman").choice-gender__input
+                                        span.choice-gender__elem
+                                        span.choice-gender__text Женский
+                                    label.choice-gender__label
+                                        input(name="gender" type="radio" value="man").choice-gender__input
+                                        span.choice-gender__elem
+                                        span.choice-gender__text Мужской
+                                .signIn-button        
+                                    a(href="#").signIn Войти        
+                section.mobile-social-button
+                    .wrapper
+                        .socials-button-wrap
+                            p Быстрый вход через соц.сети
+                            - var icons = ['fb', 'vk']
+                                ul.socials
+                                    each icon in icons
+                                        li.socials__item
+                                            a(href="#" class="socials__link socials__link_" + icon)
+                                                .socials__icon
+                            - var icons2 = ['ok', 'twitter','gmail','yandex','mail','mail','mail']
+                                ul.socials
+                                    each icon in icons2
+                                        li.socials__item
+                                            a(href="#" class="socials__link socials__link_" + icon)
+                                                .socials__icon
                     

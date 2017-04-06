@@ -5,15 +5,23 @@ let metroPage = $('.mobile-metro-page');
 let buttonMetro = document.querySelector('.mobile-button-metro');
 let buttonMetroInstance = new Hammer(buttonMetro);
 
-let closeMetro = document.querySelector('.mobile-closeMetro_js');
+let closeMetro = document.querySelector('.mobile-close_metro-js');
 let closeMetroInstance = new Hammer(closeMetro);
+
+let closeDoor = document.querySelector('.mobile-close_door-js');
+let closeDoorInstance = new Hammer(closeDoor);
+
+let closeCategories = document.querySelector('.mobile-close_categories-js');
+let closeCategoriesInstance = new Hammer(closeCategories);
 
 let menuMetro = document.querySelector('.mobile-metro-menu');
 let metroMenuInstance = new Hammer(menuMetro);
 
-let sign = document.querySelector('.mobile-door__item');
+let login = document.querySelector('.mobile-login');
+let loginMenuInstance = new Hammer(login);
 
-let signInstance = new Hammer(sign);
+let buttonCategories = document.querySelector('.mobile-button-categories');
+let buttonCategoriesInstance = new Hammer(buttonCategories);
 
 
 
@@ -21,8 +29,16 @@ buttonMetroInstance.on("tap", function(ev) {
     metroPage.addClass('openMetroPage');    
 });
 
+buttonCategoriesInstance.on("tap", function(ev) {
+    $('.mobile-categories-emergence').addClass('openCategoriesPage');    
+});
+
 closeMetroInstance.on("tap", function(ev) {
     metroPage.removeClass('openMetroPage'); 
+});
+
+closeCategoriesInstance.on("tap", function(ev) {
+    $('.mobile-categories-emergence').removeClass('openCategoriesPage'); 
 });
 
 metroMenuInstance.on("tap", function(event) {
@@ -37,6 +53,15 @@ metroMenuInstance.on("tap", function(event) {
     let itemMenu = ul.closest(item);
     itemMenu.children().toggle('normal');
     itemMenu.siblings(arrow).toggleClass('rotate180');
+});
+
+
+loginMenuInstance.on("tap", function(ev) {
+    $('.mobile-door-emergence').addClass('openDoorPage');    
+});
+
+closeDoorInstance.on("tap", function(ev) {
+    $('.mobile-door-emergence').removeClass('openDoorPage'); 
 });
 
 
