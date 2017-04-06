@@ -659,22 +659,22 @@ a {
 }
 
 .mobile-door-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: rgba(255, 255, 255, 0.4);
   border-bottom: 1px solid #353045;
-}
-.mobile-door-header .wrapper {
-  width: 271px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .mobile-door__item {
   display: inline-block;
-  margin-right: 55px;
+  padding: 10px 30px;
 }
 .mobile-door__item:last-child {
   margin-right: 0px;
+}
+
+.mobile-door-item_active {
+  color: #FFF;
+  border-bottom: 2px solid #ec407a;
 }
 
 .mobile-login-form-section {
@@ -705,6 +705,7 @@ a {
   overflow: hidden;
   *zoom: 1;
   margin-bottom: 25px;
+  margin-top: 10px;
   font-weight: 300;
 }
 
@@ -721,10 +722,10 @@ a {
   color: #ec407a;
 }
 
-.mobile-close_position2 {
+.mobile-close_positionForDoor {
   position: absolute;
-  right: 0;
-  top: 2px;
+  right: 20px;
+  top: 12px;
 }
 
 .remember-me__input {
@@ -776,10 +777,21 @@ a {
   padding-bottom: 12px;
   background: #ec407a;
   font-size: 14px;
+  font-weight: 500;
   color: #FFF;
   text-align: center;
   border-radius: 50px;
-  font-family: Times New Roman;
+  position: relative;
+}
+.signIn::before {
+  content: '';
+  position: absolute;
+  background: url(../../img/call.png) no-repeat;
+  width: 14px;
+  height: 16px;
+  left: 20px;
+  top: 50%;
+  margin-top: -8px;
 }
 
 .mobile-social-button {
@@ -855,7 +867,7 @@ a {
 }
 
 /*--------------------------------------*/
-.mobile-login-form-section {
+.mobile-registration-section {
   display: none;
 }
 
@@ -932,6 +944,14 @@ a {
 .choice-gender__input:checked + .choice-gender__elem::after {
   width: 7px;
   height: 7px;
+}
+
+.choice-gender__input:checked + .choice-gender__elem {
+  border: 1px solid #FFF;
+}
+
+.choice-gender__input:checked ~ .choice-gender__text {
+  color: #FFF;
 }
 
 .choice-gender__woman {
