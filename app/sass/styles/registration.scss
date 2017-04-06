@@ -17,12 +17,13 @@
     }
 }
 
-.mobile-door-item_active {
+.mobile-door__item_active {
     color: #FFF;
     border-bottom: 2px solid #ec407a;
+    transition: color 0.3s ease;
 }
 
-.mobile-login-form-section {
+.mobile-form-section-signIn {
     margin-top: 50px;
 }
     
@@ -220,7 +221,7 @@
     //display: none;
 }
 
-.mobile-registration-section {
+.mobile-form-section-signUp {
     display: none;
 }
 
