@@ -1,0 +1,315 @@
+
+.mobile-door-section {
+    background: #1e1931;
+}
+
+.mobile-door-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $white4;
+    border-bottom: 1px solid #353045;
+    
+    .wrapper {
+        width: 271px;
+        margin: 0 auto;
+    }
+}
+
+.mobile-door__item {
+    display: inline-block;
+    margin-right: 55px;
+    
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.mobile-login-form-section {
+    margin-top: 50px;
+}
+    
+.mobile-door-form_style {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border-radius: 50px;
+    border:  1px solid $white4;
+    color: $white4;
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 9px;
+    
+    &:last-child {
+        margin-bottom: 0px;      
+    }
+}
+    
+.mobile-login-form{
+    margin-bottom: 20px;
+}
+
+.mobile-account-management {
+    font-size: 14px;
+    @include clearfix;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.remember-me {
+    color: #FFF;
+    float: left;
+}
+
+.forgot-password {
+    float: right;
+}
+
+.forgot-password__link {
+    color: #ec407a;
+}
+
+.mobile-close_position2 {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.remember-me__input {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.remember-me__label {
+    position: relative;
+    display: block;
+}
+
+.remember-me__elem {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid #908d9a;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+
+.remember-me__elem::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: '';
+}
+
+.remember-me__input:checked + .remember-me__elem::after {
+  width: 100%;
+  height: 100%;
+  background: url(../../img/check.png) no-repeat;
+  top: -3px;
+  left: 3px;
+}
+
+.mobile-button-signIn {
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #353045;
+}
+
+.signIn {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #ec407a;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+    border-radius: 50px;
+    font-family: Times New Roman;
+}
+
+
+.mobile-social-button {
+    padding-bottom: 50px;
+}
+
+.socials-button-wrap {
+    color: #FFF;
+    margin-top: 25px;
+    
+     p {
+        margin-bottom: 20px;
+    }
+}
+
+.socials {
+    @include clearfix;
+    margin-bottom: 13px;
+}
+
+.socials__item {
+    float: left;
+    margin-right: 9px;
+    
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.socials__link {
+    display: block;
+}
+
+.socials__link_fb .socials__icon{
+    background: url('../../img/social/fb.png');
+    width: 135px;
+    height: 32px;
+}
+
+.socials__link_vk .socials__icon{
+    background: url('../../img/social/vk.png');
+    width: 135px;
+    height: 32px;
+}
+
+.socials__link_ok .socials__icon{
+    background: url('../../img/social/ok.png');
+    width: 32px;
+    height: 32px;
+}
+
+.socials__link_twitter .socials__icon{
+    background: url('../../img/social/twitter.png');
+    width: 32px;
+    height: 32px;
+}
+
+.socials__link_gmail .socials__icon{
+    background: url('../../img/social/gmail.png');
+    width: 32px;
+    height: 32px;
+}
+
+.socials__link_yandex .socials__icon{
+    background: url('../../img/social/yandex.png');
+    width: 32px;
+    height: 32px;
+}
+
+.socials__link_mail .socials__icon{
+    background: url('../../img/social/mail.png');
+    width: 32px;
+    height: 32px;
+}
+
+/*--------------------------------------*/
+
+.mobile-login-form-section {
+    display: none;
+}
+
+.mobile-registration-form-section {
+    margin-top: 20px;
+    border-bottom: 1px solid #474553;
+}
+
+.mobile-registration-form {
+    margin-bottom: 20px;
+    
+    p {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        padding-left: 13px;
+    }
+}
+
+.mobile-choice-gender {
+    color: $white4;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 9px;
+    margin-bottom: 23px;
+}
+
+.gender {
+    display: inline-block;
+    color: #FFF;
+    margin-right: 18px;
+}
+
+.choice-gender__input {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+.choice-gender__label {
+    position: relative;
+}
+
+.choice-gender__elem {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #908d9a;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+    border-radius: 50%;
+}
+
+.choice-gender__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.choice-gender__elem::after {
+  @include absolute-center;
+  background: #ec407a;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  content: '';
+}
+
+.choice-gender__input:checked + .choice-gender__elem::after {
+  width: 7px;
+  height: 7px;
+}
+
+.choice-gender__woman {
+    margin-right: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

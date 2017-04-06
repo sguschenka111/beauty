@@ -1,4 +1,4 @@
-@import "settings/mixin";
+@import "./settings/mixin";
 @import "settings/settings";
 @import "compass";
 
@@ -253,9 +253,13 @@
             }
         }
     }
-/*--------------------------------------------*/
+/*----------------------metro----------------------*/
  @import "./styles/metro";
+ /*-----------------------categories---------------------*/
  @import "./styles/categories";
+ /*----------------------registration----------------------*/
+ @import "./styles/registration";
+ /*--------------------------------------------*/
 
 
     
