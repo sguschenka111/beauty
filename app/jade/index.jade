@@ -7,7 +7,7 @@ html(lang="ru")
         meta(name='viewport' content='width=device-width, initial-scale=1')
         link(rel='stylesheet'  href='css/normalize.css' )
         link(rel='stylesheet'  href='css/main.css' )
-        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet")
         script(src="js/jquery-3.2.0.min.js" defer)
         script(src="js/hummer.js" defer)
         script(src="js/main.js" defer)
@@ -43,10 +43,10 @@ html(lang="ru")
                                         button(type="button").mobile-button-option-style
                                             span.mobile-button-categories__text Категории                            
                 .mobile-main-menu
-                    .mobile-button-salon-registration
-                        .wrapper
-                            button(type="button").mobile-button-salon-registration-style
-                                span Зарегистрировать салон
+                    .mobile-salon-registration
+                        h1.mobile-salon-registration__title Лучшие салоны 
+                        button(type="button").mobile-button-salon-registration
+                            span Зарегистрировать салон
                     nav.mobile-main-nav
                         .wrapper
                             - var nav = ["Этисэль на Таганке","RaI","VERY / ВЕРИ","В деталях","Sky Light beauty","LIPSCLINIC","Beaute De Russie","LINLINE","Beauty People"]

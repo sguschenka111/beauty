@@ -4,10 +4,15 @@
 
  //@media only screen and (max-width: 320px) {
     .mobile-wrapper {
-        width: 320px;
+        min-width: 320px;
+        width: 480px;
         margin: 0 auto;
         
-        .container {@include wrapper2;}
+        .container {
+            @include clearfix;
+            width: 92%;
+            margin: 0 auto;
+        }
         
             
         .mobile-white-band {
@@ -17,7 +22,6 @@
         
         .mobile-header {
             background: #42396f;
-            @include clearfix;
             border-bottom: 1px solid rgba(255,255,255,.1);
             height: 39px; 
         }
@@ -25,6 +29,7 @@
         .mobile-menu {
             float: left;
             padding-top: 11px;
+            
             
            .mobile-menu__link {
                display: block;
@@ -35,10 +40,10 @@
         }
         
          .mobile-logo {
-         
-            display: inline-block;
+            float: left;
             padding-top:6px;
-            margin-left: 67px;
+            margin-left: 23.1%;
+            
             
             .mobile-logo__link {
                display: block;
@@ -65,10 +70,10 @@
         
         .mobile-face {
             background: #42396f;
-            background: url(../img/bg-main.jpg) no-repeat;
+            background: url(../img/bg-girl.jpg) no-repeat;
+            background-size: cover;
             height: 300px;
             background-position: 0 center;
-            width: 320px;
             margin: 0 auto;
         }
         
@@ -148,10 +153,10 @@
             padding-bottom: 25px;
         }
         
-        .mobile-button-salon-registration {
+        .mobile-salon-registration {
             padding-top: 30px;
             border-bottom: 1px solid rgba(0,0,0,0.08);
-            
+    
             &::before {
                 content: '';
                 background: url('../img/crown.png') no-repeat;
@@ -162,16 +167,50 @@
             }
         }
         
-        .mobile-button-salon-registration-style {
+        .mobile-salon-registration__title {
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed';
+            font-size: 18px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            position: relative;
+            color: #3c3c3b;
+                       
+            &::before,&::after {
+                content: '';
+                width: 3px;
+                height: 3px;
+                background: #3c3c3b;
+                border-radius: 50%;
+                display: inline-block;
+                vertical-align: middle;    
+            }
+            
+            &::before {
+                margin-right: 13px;
+            }
+             &::after {
+                margin-left: 13px;
+            }
+        }
+        
+        .mobile-button-salon-registration {
             border: 1px solid rgba(255,255,255,.4);
-            background: rgb( 236, 64, 122 );
+            background: #ec407a;
             box-shadow: 1px 1.732px 8px 0px rgb( 75, 14, 43 );
             color: #FFF;
             font-size: 16px;
-            width: 100%;
             border-radius: 50px;
             padding-top: 15px;
             padding-bottom: 15px;
+            position: fixed;
+            top: 389px;
+            width: 275px;
+            left:0;
+            right: 0;
+            margin: 0 auto;
         }
         
         .mobile-main-nav__list {

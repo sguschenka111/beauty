@@ -55,7 +55,7 @@ gulp.task('clean', function() {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('build', ['clean', 'jade', 'compass','img',], function() {
+gulp.task('build', ['clean', 'jade', 'compass'], function() {
 
     var buildCss = gulp.src('app/css/**/*')
     .pipe(gulp.dest('dist/css'))

@@ -65,7 +65,7 @@ ol {
 }
 
 .wrapper {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
 }
 
@@ -78,13 +78,16 @@ a {
 }
 
 .mobile-wrapper {
-  width: 320px;
+  min-width: 320px;
+  width: 480px;
   margin: 0 auto;
   /*--------------------------------------------*/
   /*--------------------------------------------*/
 }
 .mobile-wrapper .container {
-  width: 295px;
+  overflow: hidden;
+  *zoom: 1;
+  width: 92%;
   margin: 0 auto;
 }
 .mobile-wrapper .mobile-white-band {
@@ -93,8 +96,6 @@ a {
 }
 .mobile-wrapper .mobile-header {
   background: #42396f;
-  overflow: hidden;
-  *zoom: 1;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   height: 39px;
 }
@@ -109,9 +110,9 @@ a {
   display: block;
 }
 .mobile-wrapper .mobile-logo {
-  display: inline-block;
+  float: left;
   padding-top: 6px;
-  margin-left: 67px;
+  margin-left: 23.1%;
 }
 .mobile-wrapper .mobile-logo .mobile-logo__link {
   display: block;
@@ -133,10 +134,10 @@ a {
 }
 .mobile-wrapper .mobile-face {
   background: #42396f;
-  background: url(../img/bg-main.jpg) no-repeat;
+  background: url(../img/bg-girl.jpg) no-repeat;
+  background-size: cover;
   height: 300px;
   background-position: 0 center;
-  width: 320px;
   margin: 0 auto;
 }
 .mobile-wrapper .mobile-face-bg-opacity {
@@ -203,11 +204,11 @@ a {
   background: #f2f2f2;
   padding-bottom: 25px;
 }
-.mobile-wrapper .mobile-button-salon-registration {
+.mobile-wrapper .mobile-salon-registration {
   padding-top: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
-.mobile-wrapper .mobile-button-salon-registration::before {
+.mobile-wrapper .mobile-salon-registration::before {
   content: '';
   background: url("../img/crown.png") no-repeat;
   width: 30px;
@@ -215,16 +216,47 @@ a {
   display: block;
   margin: 0 auto;
 }
-.mobile-wrapper .mobile-button-salon-registration-style {
+.mobile-wrapper .mobile-salon-registration__title {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: relative;
+  color: #3c3c3b;
+}
+.mobile-wrapper .mobile-salon-registration__title::before, .mobile-wrapper .mobile-salon-registration__title::after {
+  content: '';
+  width: 3px;
+  height: 3px;
+  background: #3c3c3b;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mobile-wrapper .mobile-salon-registration__title::before {
+  margin-right: 13px;
+}
+.mobile-wrapper .mobile-salon-registration__title::after {
+  margin-left: 13px;
+}
+.mobile-wrapper .mobile-button-salon-registration {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: #ec407a;
   box-shadow: 1px 1.732px 8px 0px #4b0e2b;
   color: #FFF;
   font-size: 16px;
-  width: 100%;
   border-radius: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: fixed;
+  top: 389px;
+  width: 275px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .mobile-wrapper .mobile-main-nav__list {
   position: relative;
@@ -300,7 +332,7 @@ a {
   top: 0;
   right: 0;
   width: 100%;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   transition: transform 0.6s ease;
   z-index: 999;
   height: 100%;
@@ -308,12 +340,11 @@ a {
 }
 
 .openMetroPage {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .mobile-metro-selection {
   background: #2f2562;
-  width: 320px;
   margin: 0 auto;
   height: 100%;
   overflow-y: auto;

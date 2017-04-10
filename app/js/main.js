@@ -42,6 +42,7 @@ closeCategoriesInstance.on("tap", function(ev) {
 });
 
 metroMenuInstance.on("tap", function(event) {
+
     let item = event.target,
         ul = $('.mobile-metro-menu-2level_js'),
         arrow = $('.mobile-metro-menu__arrow');
@@ -49,7 +50,7 @@ metroMenuInstance.on("tap", function(event) {
     if(item.tagName != 'SPAN') {
         return;
     }
-    
+    console.log(item);
     let itemMenu = ul.closest(item);
     itemMenu.children().toggle('normal');
     itemMenu.siblings(arrow).toggleClass('rotate180');
