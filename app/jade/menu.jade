@@ -1,0 +1,16 @@
+.mobile-menu-emergence
+    .mobile-menu-section
+        header.mobile-salon-search
+            .wrapper
+                form.mobile-salon-search-form
+                    input(name="search-salon" type="text" placeholder="Введите название салона").mobile-salon__input
+                    input(name="search-salon-submit" type="submit" value="" ).mobile-salon__submit
+                .mobile-close-white.mobile-close_position3.mobile-close_menu-js
+        .mobile-salon-menu
+            .wrapper
+                ul.mobile-salon-menu-list
+                    - var salon = ["Каталог","Скидки","Новости","Статьи","Бренды","Работа","Объявления","О проекте","Контакты"]
+                    each item in salon
+                        li.mobile-salon-menu__item
+                            a(href="#").mobile-salon-menu__link= item
+             

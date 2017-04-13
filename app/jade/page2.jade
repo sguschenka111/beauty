@@ -1,0 +1,141 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content="IE=edge")
+        title Beauty shop
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet'  href='css/normalize.css' )
+        link(rel='stylesheet'  href='css/main.css' )
+        link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet")
+        script(src="js/jquery-3.2.0.min.js" defer)
+        script(src="js/hummer.js" defer)
+        script(src="js/main.js" defer)
+    body
+        .mobile-wrapper
+            .mobile-index
+                header.mobile-header-index
+                    .container
+                        .mobile-menu-index
+                            a(href="#").mobile-menu-index__link
+                                img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img
+                        .mobile-logo-index
+                            a(href="#").mobile-logo-index__link
+                                img(src="img/page2/logo-color.png" alt="logo").mobile-logo-index__img
+                        .mobile-login-index
+                            a(href="#").mobile-login-index__link
+                                img(src="img/page2/doorSvg.svg" alt="enter").mobile-login-index__img
+                .metro-section
+                    h1.metro-title Cтанции метро
+                .categories-section
+                    h1.categories-title Категории
+                .slider-section
+                    img(src='img/page2/picture-slider.jpg').slider-section__img
+                .mobile-main-menu
+                    .mobile-salon-registration
+                        h1.mobile-section-title Лучшие салоны 
+                        button(type="button").mobile-button-salon-registration
+                            span Зарегистрировать салон
+                    nav.mobile-main-nav
+                        .wrapper
+                            - var nav = ["Этисэль на Таганке","RaI","VERY / ВЕРИ","В деталях","Sky Light beauty","LIPSCLINIC","Beaute De Russie","LINLINE","Beauty People"]
+                            ol.mobile-main-nav__list
+                                each item in nav
+                                        li(class="mobile-main-nav__item")
+                                            a(href="#" class="mobile-main-nav__link")  
+                                                span.mobile-main-nav__text= item     
+                .mobile-guide-section
+                    h1.mobile-section-title Путеводитель
+                    ul.mobile-guide-list
+                        - var title = ['Волосы','Ногти',' Эпиляция','Косметология','Косметология аппаратная','Омоложение','Разное']
+                        - var title2 = ['5','4',' 3','1','3','4','10']
+                        - var title3 = [' статей',' статьи',' статьи',' статья',' статьи',' статьи',' статей']
+                        - var icons = ['img/page2/hair.png','img/page2/finger2.svg','img/page2/epil.svg','img/page2/mask2.svg','img/page2/air2.svg','img/page2/rose.png','img/page2/plus2.svg']
+                        - var alt = ['phone','phone','phone','phone','phone','phone','phone']
+                            each item, index in title                          
+                                li(class="mobile-guide__item")
+                                    a(href="#").mobile-guide__link
+                                        span.mobile-guide__icon
+                                            img(src=icons[index] alt = alt[index]).mobile-guide__img
+                                        span.mobile-guide__title
+                                            span.mobile-guide__name= item
+                                            span.mobile-guide__sum
+                                                span.mobile-guide__sum-name= title2[index]
+                                                span.mobile-guide__sum-name= title3[index]
+                .mobile-shares-section
+                    .mobile-shares
+                        .wrapper
+                            .mobile-shares__title
+                                h2 Акции
+                            a(href="#").mobile-shares__link Все акции      
+                    .wrapper
+                        .mobile-card-shares
+                            .angle
+                                .time-shares
+                                    span.time-shares__day 26 д.
+                            .mobile-card-shares-img
+                                img(src="img/page2/shares.jpg" alt="shares")
+                            .mobile-card-shares-content
+                                .mobile-card-shares-content__title
+                                    h3 Подарок на февральские праздники
+                                .mobile-card-shares-content__name
+                                    h4 Этисэль на Таганке
+                                .mobile-salon-adress
+                                    span.adress-salon
+                                        span.adress м. Таганская
+                                        span 350 м
+                        .mobile-slider-controll
+                            button.mobile-arrow-slider__back.mobile-slider-arrow
+                            button.mobile-arrow-slider__next.mobile-slider-arrow
+                            .mobile-slider-amount
+                                span 1 
+                                span из 
+                                span 10
+                .mobile-reviews-section
+                    .mobile-reviews-title-block
+                        .wrapper
+                            .mobile-reviews__title
+                                h2  Отзывы
+                            a(href="#").mobile-reviews__link Все отзывы      
+                    .wrapper
+                        .mobile-salon-reviews
+                            .mobile-salon-reviews__name
+                                h4 Либерти
+                            .mobile-salon-adress
+                                span.adress-salon
+                                    span.adress м. Таганская
+                                    span 350 м
+                            .mobile-reviews
+                                p Хочу выразить свою благодарность диетологам этого центра за то что помогли мне не только остановить нарастающие килограммы, но и довольно значительно их уменьшить.Только благодаря их... 
+                                a(href="#").mobile-reviews-further Читать полностью
+                            .mobile-reviews-name Ксана Дегтярёва    
+                        .mobile-slider-controll
+                            button.mobile-arrow-slider__back.mobile-slider-arrow
+                            button.mobile-arrow-slider__next.mobile-slider-arrow
+                            .mobile-slider-amount
+                                span 1 
+                                span из 
+                                span 10                
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            

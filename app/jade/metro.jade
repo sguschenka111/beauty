@@ -3,7 +3,7 @@
         header.mobile-metro-header
             .wrapper
                 h1.mobile-metro-header__title Станции метро
-                .mobile-close.mobile-close_position.mobile-close_metro-js
+                .mobile-close.mobile-close_position4.mobile-close_metro-js
         .mobile-metro-search-section
             .wrapper
                 .mobile-metro-search
@@ -14,53 +14,71 @@
         .mobile-metro-menu-section
             ul.mobile-metro-menu
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-red Сокольническая
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-red Сокольническая
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-green Замоскворецкая 
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-green Замоскворецкая 
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-blue Арбатско-Покровская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-blue Арбатско-Покровская
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-lightBlue Филёвская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-lightBlue Филёвская
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-brown Кольцевая
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-brown Кольцевая
                         ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
                             - var menu2 = ["Киевская","Краснопресненская","Белорусская","Новослободская","Проспект Мира","Комсомольская","Курская","Таганская","Павелецкая","Добрынинская","Октябрьская","Парк культуры"]
                             each item in menu2
-                                li.mobile-metro-menu-2level__item
-                                    span.mobile-metro-menu-2level__name.mobile-metro_color-brown.mobile-metro_smallCircle= item
+                                - var isActive2 = (item === "Таганская");
+                                    li(class="mobile-metro-menu-2level__item " + (isActive2 ? "mobile-metro-item_active": ''))
+                                        span(class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle" + (isActive2 ? " mobile-metro-text_active": ''))= item
+                                        if isActive2
+                                            .mobile-close2.mobile-close2_position
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-orange Калужско-Рижская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-orange Калужско-Рижская
                         ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
                             - var menu2 = ["Киевская","Краснопресненская"]
                             each item in menu2
                                 li.mobile-metro-menu-2level__item
                                     span.mobile-metro-menu-2level__name.mobile-metro_color-orange.mobile-metro_smallCircle= item
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-pink Таганско-Краснопресненская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-pink Таганско-Краснопресненская
                         ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
                             - var menu2 = ["Киевская","Краснопресненская"]
                             each item in menu2
                                 li.mobile-metro-menu-2level__item
                                     span.mobile-metro-menu-2level__name.mobile-metro_color-pink.mobile-metro_smallCircle= item
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-yellow Калининско-Солнцевская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-yellow Калининско-Солнцевская
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-grey Серпуховско-Тимирязевская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-grey Серпуховско-Тимирязевская
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-lightGreen Люблинско-Дмитровская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-lightGreen Люблинско-Дмитровская
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-blue2 Каховская
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-blue2 Каховская
                 li.mobile-metro-menu__item
-                    span.mobile-metro-menu__arrow
-                    span.mobile-metro-menu__name.mobile-metro_color-lightBlue2 Бутовская 
+                    .mobile-metro-menu__item-content
+                        span.mobile-metro-menu__arrow
+                        span.mobile-metro-menu__name.mobile-metro_color-lightBlue2 Бутовская 
+                    
+                    
+                     

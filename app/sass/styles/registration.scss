@@ -5,17 +5,18 @@
     top:0;
     right: 0;
     width: 100%;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     transition: transform 0.6s ease;
     z-index: 999;
 }
 
 .openDoorPage {
-    transform:translateX(0);
+    transform:translateY(0);
 }
 
 .mobile-door-section {
-    background: #1e1931;
+  background: rgb( 22, 19, 37 );
+  opacity: 0.86;
 }
 
 .mobile-door-header {
@@ -154,6 +155,11 @@
 
 .mobile-social-button {
     padding-bottom: 50px;
+    
+    .wrap {
+        width: 280px;
+        margin: 0 auto;
+    }
 }
 
 .socials-button-wrap {
@@ -184,43 +190,43 @@
 }
 
 .socials__link_fb .socials__icon{
-    background: url('../../img/social/fb.png');
+    background: url('../../img/social/fb.png') no-repeat;
     width: 135px;
     height: 32px;
 }
 
 .socials__link_vk .socials__icon{
-    background: url('../../img/social/vk.png');
+    background: url('../../img/social/vk.png') no-repeat;
     width: 135px;
     height: 32px;
 }
 
 .socials__link_ok .socials__icon{
-    background: url('../../img/social/ok.png');
+    background: url('../../img/social/ok.png') no-repeat;
     width: 32px;
     height: 32px;
 }
 
 .socials__link_twitter .socials__icon{
-    background: url('../../img/social/twitter.png');
+    background: url('../../img/social/twitter.png') no-repeat;
     width: 32px;
     height: 32px;
 }
 
 .socials__link_gmail .socials__icon{
-    background: url('../../img/social/gmail.png');
+    background: url('../../img/social/gmail.png') no-repeat;
     width: 32px;
     height: 32px;
 }
 
 .socials__link_yandex .socials__icon{
-    background: url('../../img/social/yandex.png');
+    background: url('../../img/social/yandex.png') no-repeat;
     width: 32px;
     height: 32px;
 }
 
 .socials__link_mail .socials__icon{
-    background: url('../../img/social/mail.png');
+    background: url('../../img/social/mail.png') no-repeat;
     width: 32px;
     height: 32px;
 }
@@ -316,6 +322,17 @@
 
 .choice-gender__woman {
     margin-right: 23px;
+}
+
+.Rectangle_22 {
+  background-color: rgb( 22, 19, 37 );
+  opacity: 0.851;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 331px;
+  height: 546px;
+  z-index: 245;
 }
 
 

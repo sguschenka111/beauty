@@ -14,6 +14,9 @@ let closeDoorInstance = new Hammer(closeDoor);
 let closeCategories = document.querySelector('.mobile-close_categories-js');
 let closeCategoriesInstance = new Hammer(closeCategories);
 
+let closeMenu = document.querySelector('.mobile-close_menu-js');
+let closeMenuInstance = new Hammer(closeMenu);
+
 let menuMetro = document.querySelector('.mobile-metro-menu');
 let metroMenuInstance = new Hammer(menuMetro);
 
@@ -22,6 +25,9 @@ let loginMenuInstance = new Hammer(login);
 
 let buttonCategories = document.querySelector('.mobile-button-categories');
 let buttonCategoriesInstance = new Hammer(buttonCategories);
+
+let buttonMenu = document.querySelector('.mobile-menu');
+let buttonMenuInstance = new Hammer(buttonMenu);
 
 
 
@@ -33,36 +39,49 @@ buttonCategoriesInstance.on("tap", function(ev) {
     $('.mobile-categories-emergence').addClass('openCategoriesPage');    
 });
 
+buttonMenuInstance.on("tap", function(ev) {
+    $('.mobile-menu-emergence').addClass('openMenuPage');
+    $('.mobile-main-menu-section').addClass('filter-blur');
+});
+
 closeMetroInstance.on("tap", function(ev) {
-    metroPage.removeClass('openMetroPage'); 
+    metroPage.removeClass('openMetroPage');
 });
 
 closeCategoriesInstance.on("tap", function(ev) {
     $('.mobile-categories-emergence').removeClass('openCategoriesPage'); 
 });
 
+closeMenuInstance.on("tap", function(ev) {
+    $('.mobile-menu-emergence').removeClass('openMenuPage');
+    $('.mobile-main-menu-section').removeClass('filter-blur');
+});
+
 metroMenuInstance.on("tap", function(event) {
 
     let item = event.target,
-        ul = $('.mobile-metro-menu-2level_js'),
-        arrow = $('.mobile-metro-menu__arrow');
-        
-    if(item.tagName != 'SPAN') {
+        ul = $('.mobile-metro-menu-2level_js');
+              
+    if(item.tagName != 'DIV') {
         return;
     }
-    console.log(item);
+    
     let itemMenu = ul.closest(item);
-    itemMenu.children().toggle('normal');
-    itemMenu.siblings(arrow).toggleClass('rotate180');
-});
+    
+    itemMenu.children('ul').toggle('normal');
+    itemMenu.children('.mobile-metro-menu__arrow').toggleClass('rotate180');
+    
+},true);
 
 
 loginMenuInstance.on("tap", function(ev) {
-    $('.mobile-door-emergence').addClass('openDoorPage');    
+    $('.mobile-door-emergence').addClass('openDoorPage');
+    $('.mobile-main-menu-section').addClass('filter-blur');
 });
 
 closeDoorInstance.on("tap", function(ev) {
-    $('.mobile-door-emergence').removeClass('openDoorPage'); 
+    $('.mobile-door-emergence').removeClass('openDoorPage');
+    $('.mobile-main-menu-section').removeClass('filter-blur');
 });
 
 
