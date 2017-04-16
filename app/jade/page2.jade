@@ -18,22 +18,23 @@ html(lang="ru")
                     .container
                         .mobile-menu-index
                             a(href="#").mobile-menu-index__link
-                                img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img
-                        .mobile-logo-index
-                            a(href="#").mobile-logo-index__link
-                                img(src="img/page2/logo-color.png" alt="logo").mobile-logo-index__img
+                                img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img 
+                        a(href="#").mobile-logo-index-link
                         .mobile-login-index
                             a(href="#").mobile-login-index__link
                                 img(src="img/page2/doorSvg.svg" alt="enter").mobile-login-index__img
-                .metro-section
-                    h1.metro-title Cтанции метро
-                .categories-section
-                    h1.categories-title Категории
-                .slider-section
-                    img(src='img/page2/picture-slider.jpg').slider-section__img
+                .mobile-metro-section
+                    .mobile-metro-title
+                        h1 Cтанции метро
+                .mobile-categories-section
+                    .mobile-categories-title 
+                        h1 Категории
+                .mobile-slider-section
+                    img(src='img/page2/picture-slider.jpg').mobile-slider-section__img
                 .mobile-main-menu
                     .mobile-salon-registration
-                        h1.mobile-section-title Лучшие салоны 
+                        .mobile-section-title 
+                            h1 Лучшие салоны 
                         button(type="button").mobile-button-salon-registration
                             span Зарегистрировать салон
                     nav.mobile-main-nav
@@ -45,7 +46,8 @@ html(lang="ru")
                                             a(href="#" class="mobile-main-nav__link")  
                                                 span.mobile-main-nav__text= item     
                 .mobile-guide-section
-                    h1.mobile-section-title Путеводитель
+                    .mobile-section-title
+                        h1 Путеводитель
                     ul.mobile-guide-list
                         - var title = ['Волосы','Ногти',' Эпиляция','Косметология','Косметология аппаратная','Омоложение','Разное']
                         - var title2 = ['5','4',' 3','1','3','4','10']

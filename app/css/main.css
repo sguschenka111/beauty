@@ -152,14 +152,18 @@ a {
   text-align: center;
 }
 .mobile-wrapper .mobile-title__h1 {
-  font-size: 24px;
   margin-bottom: 20px;
+}
+.mobile-wrapper .mobile-title__h1 h1 {
+  font-size: 24px;
   font-weight: 300;
 }
 .mobile-wrapper .mobile-title__h2 {
+  margin-bottom: 25px;
+}
+.mobile-wrapper .mobile-title__h2 h2 {
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 25px;
 }
 .mobile-wrapper .mobile-button-metro {
   margin-bottom: 5px;
@@ -216,7 +220,7 @@ a {
   display: block;
   margin: 0 auto;
 }
-.mobile-wrapper .mobile-section-title {
+.mobile-wrapper .mobile-section-title h1 {
   text-transform: uppercase;
   font-family: 'Roboto Condensed';
   font-size: 18px;
@@ -227,7 +231,7 @@ a {
   position: relative;
   color: #3c3c3b;
 }
-.mobile-wrapper .mobile-section-title::before, .mobile-wrapper .mobile-section-title::after {
+.mobile-wrapper .mobile-section-title h1::before, .mobile-wrapper .mobile-section-title h1::after {
   content: '';
   width: 3px;
   height: 3px;
@@ -236,10 +240,10 @@ a {
   display: inline-block;
   vertical-align: middle;
 }
-.mobile-wrapper .mobile-section-title::before {
+.mobile-wrapper .mobile-section-title h1::before {
   margin-right: 13px;
 }
-.mobile-wrapper .mobile-section-title::after {
+.mobile-wrapper .mobile-section-title h1::after {
   margin-left: 13px;
 }
 .mobile-wrapper .mobile-button-salon-registration {
@@ -257,7 +261,7 @@ a {
   left: 0;
   right: 0;
   margin: 0 auto;
-  display: none;
+  z-index: 2;
 }
 .mobile-wrapper .mobile-main-nav__list {
   position: relative;
@@ -670,13 +674,13 @@ a {
   position: relative;
 }
 
-.mobile-categories-title {
+.mobile-categories-title h1 {
   display: inline-block;
   vertical-align: middle;
   color: #FFF;
   font-size: 15px;
 }
-.mobile-categories-title::before {
+.mobile-categories-title h1::before {
   content: '';
   background: url("../img/categories-icon.png") no-repeat;
   width: 15px;
@@ -1159,6 +1163,7 @@ a {
 .mobile-header-index {
   background: #FFF;
   height: 40px;
+  position: relative;
 }
 
 .mobile-index {
@@ -1177,18 +1182,14 @@ a {
   display: block;
 }
 
-.mobile-logo-index {
-  float: left;
-  padding-top: 6px;
-  margin-left: 23.1%;
-}
-.mobile-logo-index .mobile-logo-index__link {
-  display: block;
-}
-.mobile-logo-index .mobile-logo-index__img {
-  display: block;
-  max-width: 123px;
-  max-height: 30px;
+.mobile-logo-index-link {
+  position: absolute;
+  background: url("../img/page2/logo-color.png") no-repeat;
+  width: 123px;
+  height: 30px;
+  right: 50%;
+  margin-right: -62px;
+  top: 6px;
 }
 
 .mobile-login-index {
@@ -1204,20 +1205,20 @@ a {
   display: block;
 }
 
-.metro-section {
+.mobile-metro-section {
   background: #2f2562;
   padding-top: 15px;
   padding-bottom: 10px;
   text-align: center;
 }
 
-.metro-title {
+.mobile-metro-title h1 {
   display: inline-block;
   vertical-align: middle;
   color: #FFF;
   font-size: 15px;
 }
-.metro-title::before {
+.mobile-metro-title h1::before {
   content: '';
   background: url("../img/metro-icon.png") no-repeat;
   width: 13px;
@@ -1227,34 +1228,18 @@ a {
   margin-right: 10px;
 }
 
-.categories-section {
+.mobile-categories-section {
   background: #5e35b1;
   padding-top: 15px;
   padding-bottom: 10px;
   text-align: center;
 }
 
-.categories-title {
-  display: inline-block;
-  vertical-align: middle;
-  color: #FFF;
-  font-size: 15px;
-}
-.categories-title::before {
-  content: '';
-  background: url("../img/categories-icon.png") no-repeat;
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.slider-section {
+.mobile-slider-section {
   height: 249px;
 }
 
-.slider-section__img {
+.mobile-slider-section__img {
   width: 100%;
   height: 100%;
 }
