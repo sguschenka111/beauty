@@ -1,0 +1,63 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content="IE=edge")
+        title Beauty shop
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet'  href='css/normalize.css' )
+        link(rel='stylesheet'  href='css/main.css' )
+        link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet")
+        script(src="js/jquery-3.2.0.min.js" defer)
+        script(src="js/hummer.js" defer)
+        script(src="js/main.js" defer)
+    body
+        .mobile-wrapper
+            .mobile-salon-wrap
+                header.mobile-header-index
+                    .container
+                        .mobile-menu-index
+                            a(href="#").mobile-menu-index__link
+                                img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img 
+                        a(href="#").mobile-logo-index-link
+                        .mobile-login-index
+                            a(href="#").mobile-login-index__link
+                                img(src="img/page2/doorSvg.svg" alt="enter").mobile-login-index__img
+                .mobile-discount-section
+                    .mobile-picture-section
+                        img(src="img/girl-face.jpg" alt="girl")
+                    .mobile-discount    
+                        h1 Скидка 5% на лифтинг мезонитями    
+                        .mobile-discount-count До конца акции: 
+                            span.mobile-discount-count__sum  14 дней
+                        p Подпишитесь на емейл-рассылку на сайте и получите на электронную почту купон со скидкой 5% лифтинг мезонитями и другие скидки и подарки.
+                nav.mobile-salon-nav
+                    ul.mobile-salon-nav-list
+                        li.mobile-salon-nav__item.mobile-salon-nav__item_active О салоне
+                        li.mobile-salon-nav__item Описание
+                        li.mobile-salon-nav__item Условия
+                        li.mobile-salon-nav__item Особенности
+                .mobile-salon-card
+                    .wrapper
+                        .mobile-salon-picture
+                            img(src="img/salon-card.jpg" alt="salon")
+                        .mobile-salon-info
+                            h2 Этисэль на Таганке
+                            span.mobile-salon-info__adress ул. Верхняя Радищевская  4с1
+                            .mobile-salon-adress
+                                span.adress-salon
+                                    span.adress м. Таганская
+                                    span 350 м
+                            .mobile-rating-section        
+                                ul.mobile-rating-stars-list
+                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                    li.mobile-rating-stars__item
+                                span.mobile-rating-count
+                                    span 136 
+                                    span голосов
+                            a(href="#").mobile-salon-way Как добраться?
+                            button(type="button").mobile-call +7 (499) 628-22-34
+                .mobile-yandex-card            

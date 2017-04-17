@@ -25,7 +25,7 @@ gulp.task('compass', function() {
 });
 /*----------------jade------------------*/
 gulp.task('jade', function() {
-    return gulp.src('app/jade/*.jade')
+    return gulp.src('app/jade/msk_aksia.jade')
      .pipe(plumber())
     .pipe(jade({
         pretty: true
@@ -39,7 +39,7 @@ gulp.task('browser-sync', function () {
     browserSync.init({
         server:'app'
     });
-browserSync.watch('app/*.html').on('change',browserSync.reload);
+browserSync.watch('app/msk_aksia.html').on('change',browserSync.reload);
 });
 /*----------------watch------------------*/
 gulp.task('watch',['compass','jade','browser-sync'],function(){

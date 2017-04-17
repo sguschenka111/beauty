@@ -1,0 +1,192 @@
+.mobile-salon-wrap {
+    color: #3c3c3b;
+    
+    .mobile-discount-section {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .mobile-discount {
+       width: 87.5%;
+       margin: 0 auto;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    }
+    
+    .mobile-picture-section {
+        max-height: 250px;
+
+        img {
+            display: block;
+        }
+    }
+    
+    .mobile-discount h1 {
+        font-size: 18px;
+        margin-bottom: 17px;
+        line-height: 20px;
+    }
+    
+    .mobile-discount-count {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    
+    .mobile-discount-count__sum {
+        font-weight:700;
+    }
+    
+    .mobile-discount p {
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+    }
+    
+    .mobile-salon-nav-list {
+        border-bottom: 1px solid #e5e5e5;
+        @include clearfix;
+    }
+    
+    .mobile-salon-nav__item {
+        float: left;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-left: 23px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .mobile-salon-nav__item_active {
+        color: #ec407a;
+        border-bottom: 2px solid #ec407a;
+    }
+    
+    .mobile-salon-card {
+        background: #FFF;
+        padding-top: 20px;
+        padding-bottom: 24px;
+        
+        .wrapper {
+            @include clearfix;
+        }
+    }
+    
+    .mobile-salon-info {
+        float: right;
+        width: 70%;
+    }
+    
+    .mobile-salon-info h2 {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    
+    .mobile-salon-info__adress {
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 9px;
+    }
+    
+    .mobile-salon-adress {
+        margin-bottom: 7px;
+    }
+    
+    .mobile-rating-section  {
+        margin-bottom: 10px;
+    }
+    
+    .mobile-rating-stars-list {
+        display: inline-block;
+        margin-right: 8px;
+    }
+    
+    .mobile-rating-stars__item {
+        display: inline-block;
+        vertical-align: middle;
+        background: url('../../img/star.png');
+        width: 13px;
+        height: 13px;
+    }
+    
+    .mobile-rating-stars__item_filled {
+        background: url('../../img/star-filled.png');
+        width: 13px;
+        height: 13px;
+    }
+    
+    .mobile-rating-count {
+        color: #b5b3b3;
+        font-size: 12px;
+        font-weight: 300;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .mobile-salon-way {
+        display: block;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #5e35b1;
+        font-size: 14px;
+    }
+    
+    .mobile-call {
+        display: block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background: #ec407a;
+        font-size: 14px;
+        font-weight: 500;
+        color: #FFF;
+        text-align: center;
+        border-radius: 50px;
+        position: relative;
+        width: 95%;
+    
+    &::before {
+        content:'';
+        position: absolute;
+        background: url(../../img/call.png) no-repeat;
+        width: 14px;
+        height: 16px;
+        left: 15px;
+        top: 50%;
+        margin-top: -8px;
+    }
+    }
+    
+    .mobile-salon-picture {
+       float: left;
+        
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+        }
+        
+    }
+    
+    .mobile-yandex-card {
+        background: url('../../img/yandex.jpg');
+        height: 115px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
