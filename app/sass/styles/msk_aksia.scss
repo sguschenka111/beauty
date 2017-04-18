@@ -17,6 +17,7 @@
 
         img {
             display: block;
+            margin: 0 auto;
         }
     }
     
@@ -173,20 +174,202 @@
         height: 115px;
     }
     
+    .mobile-slider-salon {
+        background: #FFF;
+        padding: 30px 20px 20px;
+        border-bottom: 1px solid #e5e5e5;
+    }
     
+    .mobile-slider-salon__picture {
+        margin-bottom: 10px;
+        
+        
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
     
+    .all-shares {
+        color: #5e35b1;
+        font-size: 16px;
+        padding-top: 12px;
+        padding-bottom: 15px;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        @include wrapper;
+        
+        &::after {
+            content: '';
+            background: url('../../img/arrow-blue.png');
+            width:7px;
+            height: 14px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -9px;
+        }        
+    }
     
+    .mobile-salon-description-section {
+       
+    }
     
+    .mobile-description-salon-title {
+        background: #f6f6f6;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        
+        h2 {
+            font-size: 16px;
+            @include wrapper;
+        }
+    }
     
+    .mobile-description-salon-content   {
+        @include wrapper;
+        padding-bottom: 20px;
+        
+         p {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+    }
     
+    .mobile-further-salon {
+        color: #5e35b1;
+        font-size: 14px;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+
+        
+        &::after {
+            content: '';
+            background: url('../../img/arrow-blue.png');
+            width:7px;
+            height: 14px;
+            transform: rotate(90deg);
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+        }        
+    }
     
+    .mobile-conditions-salon-title {
+        background: #f6f6f6;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        
+        h2 {
+            font-size: 16px;
+            @include wrapper;
+        }
+    }
     
+    .mobile-conditions-salon-list {
+        @include wrapper;
+        margin-bottom: 30px;
+    }
     
+    .mobile-conditions-salon__item {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        font-weight: 300;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before{
+            content: '';
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            border-radius: 50%;
+            background: #5e35b1;
+            margin-right: 15px;
+    }
+}
+
+    .mobile-conditions-salon__item-text {
+        display: inline-block;
+        vertical-align: text-top;
+        width: 78.125%;
+    }
     
+    .mobile-other {
+        background: #f6f6f6;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        
+        h2 {
+            font-size: 16px;
+            @include wrapper;
+        }
+    }
     
+    .mobile-salon-registration-section {
+        background: #4c3c7f;
+        color: #FFF;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     
+    .mobile-salon-registration__title1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
     
+     .mobile-salon-registration__title2 {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
     
+    .mobile-salon-registration-button {
+        background: transparent;
+        width: 100%;
+        border: 1px solid #FFF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        font-size: 15px;
+        color: #FFF;
+        border-radius: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        
+        &::before {
+            content: '';
+            background: url('../../img/plus.png');
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
     
+    .crumbs-section {       
+        p {
+            font-size: 14px;
+       }    
+    }
     
+    .mobile-footer {
+        padding-bottom: 30px;
+        padding-top: 25px;
+    }    
 }

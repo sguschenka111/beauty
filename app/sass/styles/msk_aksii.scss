@@ -29,7 +29,14 @@
         }
     }
     
-    .crumbs-section  {
+    
+    .mobile-footer {
+        padding-bottom: 30px;
+        padding-top: 25px;
+    }
+}
+
+ .crumbs-section  {
         border-bottom: 1px solid #e5e5e5;
         padding-top: 19px;
         padding-bottom: 19px;
@@ -73,10 +80,4 @@
     .crumbs__link_active {
         color: #5e35b1;
     }
-    
-    .mobile-footer {
-        padding-bottom: 30px;
-        padding-top: 30px;
-    }
-}
 
