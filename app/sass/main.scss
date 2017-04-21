@@ -22,14 +22,14 @@
         .mobile-header {
             background: #42396f;
             border-bottom: 1px solid rgba(255,255,255,.1);
-            height: 39px; 
+            height: 39px;
+            text-align: center;
         }
         
         .mobile-menu {
             float: left;
-            padding-top: 11px;
-            
-            
+            padding: 13px 12px;
+           
            .mobile-menu__link {
                display: block;
            } 
@@ -39,10 +39,8 @@
         }
         
          .mobile-logo {
-            float: left;
+            display: inline-block;
             padding-top:6px;
-            margin-left: 23.1%;
-            
             
             .mobile-logo__link {
                display: block;
@@ -55,9 +53,8 @@
         }
     
         .mobile-login {
-        
-            padding-top: 12px;
             float: right;
+            padding: 13px 12px;
             
             .mobile-login__link {
                display: block;
@@ -69,11 +66,9 @@
         
         .mobile-face {
             background: #42396f;
-            background: url(../img/bg-girl.jpg) no-repeat;
+            background: url(../img/bg-main.jpg) no-repeat;
             background-size: cover;
             height: 300px;
-            background-position: 0 center;
-            margin: 0 auto;
         }
         
         .mobile-face-bg-opacity {
@@ -85,30 +80,33 @@
         
         .mobile-title {
             color: #fff;
-            padding-top: 27px;
+            padding-top: 25px;
             text-align: center;
-        }
-        
-        .mobile-title__h1 {
-            margin-bottom: 20px;
-        }
-        
-        .mobile-title__h1 h1{
-            font-size: 24px;
-            font-weight: 300;
-        }
-        
-        .mobile-title__h2{
             margin-bottom: 25px;
         }
         
-        .mobile-title__h2 h2{
+        .mobile-title h1{
+            font-size: 24px;
+            font-weight: 300;
+        }
+            
+        .mobile-title__part{
+            display: block;
             font-size: 16px;
             font-weight: 300;
+            margin-top: 20px;
         }
         
         .mobile-button-metro {
             margin-bottom: 5px;
+            border: 1px solid rgba(255,255,255,.4);
+            background: transparent;
+            color: #FFF;
+            font-size: 15px;
+            width: 100%;
+            border-radius: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
         
         .mobile-button-option-style {
@@ -135,6 +133,17 @@
                 vertical-align: middle;
                 margin-right: 10px;
             }
+        }
+        
+        .mobile-button-categories {
+            border: 1px solid rgba(255,255,255,.4);
+            background: transparent;
+            color: #FFF;
+            font-size: 15px;
+            width: 100%;
+            border-radius: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;  
         }
         
         .mobile-button-categories__text {
@@ -172,7 +181,7 @@
             }
         }
         
-        .mobile-section-title h1 {
+        .mobile-section-title {
             text-transform: uppercase;
             font-family: 'Roboto Condensed';
             font-size: 18px;
@@ -201,7 +210,7 @@
             }
         }
         
-        .mobile-button-salon-registration {
+        .mobile-button-salon-registration-1 {
             border: 1px solid rgba(255,255,255,.4);
             background: #ec407a;
             box-shadow: 1px 1.732px 8px 0px rgb( 75, 14, 43 );

@@ -15,41 +15,34 @@ html(lang="ru")
         .mobile-wrapper
             .mobile-white-band
             .mobile-main-menu-section
-                header.mobile-header
-                    .container
-                        .mobile-menu
-                            a(href="#").mobile-menu__link
-                                img(src="img/menu.png" alt="menu").mobile-menu__img
+                header.mobile-header 
+                    .mobile-menu
+                        a(href="#").mobile-menu__link
+                            img(src="img/menu.png" alt="menu").mobile-menu__img
 
-                        .mobile-logo
-                            a(href="#").mobile-logo__link
-                                img(src="img/logo.png" alt="logo").mobile-logo__img
-                        .mobile-login
-                            a(href="#").mobile-login__link
-                                img(src="img/icon-enter.png" alt="enter").mobile-login__img
+                    .mobile-logo
+                        a(href="#").mobile-logo__link
+                            img(src="img/logo.png" alt="logo").mobile-logo__img
+                    .mobile-login
+                        a(href="#").mobile-login__link
+                            img(src="img/icon-enter.png" alt="enter").mobile-login__img
             
-                .mobile-face-bg-opacity
-                    .mobile-face
-                        .mobile-face-bg-opacity
-                            .wrapper
-                                section.mobile-title
-                                    .mobile-title__h1 
-                                        h1 Все салоны Москвы <br> в одном каталоге
-                                    .mobile-title__h2  
-                                        h2 более 5 000 предприятий <br> индустрии красоты
-                                section.mobile-button-option
-                                    .mobile-button-metro
-                                        button(type="button").mobile-button-option-style
-                                            span.mobile-button-metro__text Станции метро
-                                    .mobile-button-categories
-                                        button(type="button").mobile-button-option-style
-                                            span.mobile-button-categories__text Категории                            
+                
+                .mobile-face
+                    .mobile-face-bg-opacity
+                        .wrapper
+                            .mobile-title 
+                                h1 Все салоны Москвы <br> в одном каталоге
+                                    span.mobile-title__part  более 5 000 предприятий <br> индустрии красоты
+                            .mobile-button-option
+                                button(type="button").mobile-button-metro
+                                    span.mobile-button-metro__text Станции метро
+                                button(type="button").mobile-button-categories
+                                    span.mobile-button-categories__text Категории                            
                 .mobile-main-menu
                     .mobile-salon-registration
-                        .mobile-section-title
-                            h1 Лучшие салоны 
-                        button(type="button").mobile-button-salon-registration
-                            span Зарегистрировать салон
+                        h2.mobile-section-title Лучшие салоны 
+                        button(type="button").mobile-button-salon-registration-1 Зарегистрировать салон
                     nav.mobile-main-nav
                         .wrapper
                             - var nav = ["Этисэль на Таганке","RaI","VERY / ВЕРИ","В деталях","Sky Light beauty","LIPSCLINIC","Beaute De Russie","LINLINE","Beauty People"]

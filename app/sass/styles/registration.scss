@@ -34,6 +34,12 @@
     }
 }
 
+.mobile-close_position-door {
+    position: absolute;
+    right: 20px;
+    top: 3px;
+}
+
 .mobile-door__item_active {
     color: #FFF;
     border-bottom: 2px solid #ec407a;

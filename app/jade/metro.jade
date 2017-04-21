@@ -1,84 +1,98 @@
 .mobile-metro-page
     .mobile-metro-selection
-        header.mobile-metro-header
+        .mobile-metro-header
             .wrapper
-                h1.mobile-metro-header__title Станции метро
-                .mobile-close.mobile-close_position4.mobile-close_metro-js
+                h2.mobile-metro-title Станции метро
+                .mobile-close.mobile-close_position.mobile-close_metro-js
+                    img(src="img/close.png" alt="Закрыть" width="15"
+    height="15").mobile-close__img
         .mobile-metro-search-section
             .wrapper
-                .mobile-metro-search
-                    form.mobile-metro-search__form
-                        input(name="search-metro" type="text" placeholder="Введите название станции").mobile-metro-input
-                        input(name="search-metro-submit" type="submit" value="" ).mobile-metro-submit
-                h2.mobile-metro-search__title Линии
+                form.mobile-metro-search
+                    input(name="search-metro" type="text" placeholder="Введите название станции").mobile-metro-search__input
+                    input(name="search-metro-submit" type="submit" value="" ).mobile-metro-search__submit
+                h2.mobile-metro-search-title Линии
         .mobile-metro-menu-section
+            
             ul.mobile-metro-menu
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-red Сокольническая
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-red Сокольническая
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-green Замоскворецкая 
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-green Замоскворецкая 
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-blue Арбатско-Покровская
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-blue Арбатско-Покровская
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-lightBlue Филёвская
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-lightBlue Филёвская
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-brown Кольцевая
-                        ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
-                            - var menu2 = ["Киевская","Краснопресненская","Белорусская","Новослободская","Проспект Мира","Комсомольская","Курская","Таганская","Павелецкая","Добрынинская","Октябрьская","Парк культуры"]
-                            each item in menu2
-                                - var isActive2 = (item === "Таганская");
-                                    li(class="mobile-metro-menu-2level__item " + (isActive2 ? "mobile-metro-item_active": ''))
-                                        span(class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle" + (isActive2 ? " mobile-metro-text_active": ''))= item
-                                        if isActive2
-                                            .mobile-close2.mobile-close2_position
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-brown Кольцевая
+                    ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
+                        - var menu2 = ["Киевская","Краснопресненская","Белорусская","Новослободская","Проспект Мира","Комсомольская","Курская","Таганская","Павелецкая","Добрынинская","Октябрьская","Парк культуры"]
+                        each item in menu2
+                            - var isActive2 = (item === "Таганская");
+                                li(class="mobile-metro-menu-2level__item " + (isActive2 ? "mobile-metro-item_active": ''))
+                                    span(class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle" + (isActive2 ? " mobile-metro-text_active": ''))= item
+                                    if isActive2
+                                        .mobile-close2.mobile-close2_position
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-orange Калужско-Рижская
-                        ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
-                            - var menu2 = ["Киевская","Краснопресненская"]
-                            each item in menu2
-                                li.mobile-metro-menu-2level__item
-                                    span.mobile-metro-menu-2level__name.mobile-metro_color-orange.mobile-metro_smallCircle= item
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-orange Калужско-Рижская
+                    ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
+                        - var menu2 = ["Киевская","Краснопресненская"]
+                        each item in menu2
+                            li.mobile-metro-menu-2level__item
+                                span.mobile-metro-menu-2level__name.mobile-metro_color-orange.mobile-metro_smallCircle= item
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-pink Таганско-Краснопресненская
-                        ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
-                            - var menu2 = ["Киевская","Краснопресненская"]
-                            each item in menu2
-                                li.mobile-metro-menu-2level__item
-                                    span.mobile-metro-menu-2level__name.mobile-metro_color-pink.mobile-metro_smallCircle= item
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-pink Таганско-Краснопресненская
+                    ul.mobile-metro-menu-2level.mobile-metro-menu-2level_js
+                        - var menu2 = ["Киевская","Краснопресненская"]
+                        each item in menu2
+                            li.mobile-metro-menu-2level__item
+                                span.mobile-metro-menu-2level__name.mobile-metro_color-pink.mobile-metro_smallCircle= item
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-yellow Калининско-Солнцевская
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-yellow Калининско-Солнцевская
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-grey Серпуховско-Тимирязевская
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-grey Серпуховско-Тимирязевская
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-lightGreen Люблинско-Дмитровская
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-lightGreen Люблинско-Дмитровская
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-blue2 Каховская
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-blue2 Каховская
                 li.mobile-metro-menu__item
-                    .mobile-metro-menu__item-content
-                        span.mobile-metro-menu__arrow
-                        span.mobile-metro-menu__name.mobile-metro_color-lightBlue2 Бутовская 
+                    .wrapper
+                        .mobile-metro-menu__item-content
+                            span.mobile-metro-menu__arrow
+                            span.mobile-metro-menu__name.mobile-metro_color-lightBlue2 Бутовская 
                     
                     
                      

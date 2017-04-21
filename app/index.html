@@ -16,43 +16,28 @@
     <div class="mobile-wrapper">
       <div class="mobile-white-band"></div>
       <div class="mobile-main-menu-section">
-        <header class="mobile-header">
-          <div class="container">
-            <div class="mobile-menu"><a href="#" class="mobile-menu__link"><img src="img/menu.png" alt="menu" class="mobile-menu__img"></a></div>
-            <div class="mobile-logo"><a href="#" class="mobile-logo__link"><img src="img/logo.png" alt="logo" class="mobile-logo__img"></a></div>
-            <div class="mobile-login"><a href="#" class="mobile-login__link"><img src="img/icon-enter.png" alt="enter" class="mobile-login__img"></a></div>
-          </div>
+        <header class="mobile-header"> 
+          <div class="mobile-menu"><a href="#" class="mobile-menu__link"><img src="img/menu.png" alt="menu" class="mobile-menu__img"></a></div>
+          <div class="mobile-logo"><a href="#" class="mobile-logo__link"><img src="img/logo.png" alt="logo" class="mobile-logo__img"></a></div>
+          <div class="mobile-login"><a href="#" class="mobile-login__link"><img src="img/icon-enter.png" alt="enter" class="mobile-login__img"></a></div>
         </header>
-        <div class="mobile-face-bg-opacity">
-          <div class="mobile-face">
-            <div class="mobile-face-bg-opacity">
-              <div class="wrapper">
-                <section class="mobile-title">
-                  <div class="mobile-title__h1"> 
-                    <h1>Все салоны Москвы <br> в одном каталоге</h1>
-                  </div>
-                  <div class="mobile-title__h2"> 
-                    <h2>более 5 000 предприятий <br> индустрии красоты</h2>
-                  </div>
-                </section>
-                <section class="mobile-button-option">
-                  <div class="mobile-button-metro">
-                    <button type="button" class="mobile-button-option-style"><span class="mobile-button-metro__text">Станции метро</span></button>
-                  </div>
-                  <div class="mobile-button-categories">
-                    <button type="button" class="mobile-button-option-style"><span class="mobile-button-categories__text">Категории                            </span></button>
-                  </div>
-                </section>
+        <div class="mobile-face">
+          <div class="mobile-face-bg-opacity">
+            <div class="wrapper">
+              <div class="mobile-title"> 
+                <h1>Все салоны Москвы <br> в одном каталоге<span class="mobile-title__part"> более 5 000 предприятий <br> индустрии красоты</span></h1>
+              </div>
+              <div class="mobile-button-option">
+                <button type="button" class="mobile-button-metro"><span class="mobile-button-metro__text">Станции метро</span></button>
+                <button type="button" class="mobile-button-categories"><span class="mobile-button-categories__text">Категории                            </span></button>
               </div>
             </div>
           </div>
         </div>
         <div class="mobile-main-menu">
           <div class="mobile-salon-registration">
-            <div class="mobile-section-title">
-              <h1>Лучшие салоны </h1>
-            </div>
-            <button type="button" class="mobile-button-salon-registration"><span>Зарегистрировать салон</span></button>
+            <h2 class="mobile-section-title">Лучшие салоны </h2>
+            <button type="button" class="mobile-button-salon-registration-1">Зарегистрировать салон</button>
           </div>
           <nav class="mobile-main-nav">
             <div class="wrapper">
@@ -81,98 +66,117 @@
       </footer>
       <div class="mobile-metro-page">
         <div class="mobile-metro-selection">
-          <header class="mobile-metro-header">
+          <div class="mobile-metro-header">
             <div class="wrapper">
-              <h1 class="mobile-metro-header__title">Станции метро</h1>
-              <div class="mobile-close mobile-close_position4 mobile-close_metro-js"></div>
+              <h2 class="mobile-metro-title">Станции метро</h2>
+              <div class="mobile-close mobile-close_position mobile-close_metro-js"><img src="img/close.png" alt="Закрыть" width="15" height="15" class="mobile-close__img"></div>
             </div>
-          </header>
+          </div>
           <div class="mobile-metro-search-section">
             <div class="wrapper">
-              <div class="mobile-metro-search">
-                <form class="mobile-metro-search__form">
-                  <input name="search-metro" type="text" placeholder="Введите название станции" class="mobile-metro-input">
-                  <input name="search-metro-submit" type="submit" value="" class="mobile-metro-submit">
-                </form>
-              </div>
-              <h2 class="mobile-metro-search__title">Линии</h2>
+              <form class="mobile-metro-search">
+                <input name="search-metro" type="text" placeholder="Введите название станции" class="mobile-metro-search__input">
+                <input name="search-metro-submit" type="submit" value="" class="mobile-metro-search__submit">
+              </form>
+              <h2 class="mobile-metro-search-title">Линии</h2>
             </div>
           </div>
           <div class="mobile-metro-menu-section">
             <ul class="mobile-metro-menu">
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-red">Сокольническая</span></div>
-              </li>
-              <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-green">Замоскворецкая </span></div>
-              </li>
-              <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-blue">Арбатско-Покровская</span></div>
-              </li>
-              <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-lightBlue">Филёвская</span></div>
-              </li>
-              <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-brown">Кольцевая</span>
-                  <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Киевская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Краснопресненская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Белорусская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Новослободская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Проспект Мира</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Комсомольская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Курская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item mobile-metro-item_active"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle mobile-metro-text_active">Таганская</span>
-                      <div class="mobile-close2 mobile-close2_position"></div>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Павелецкая</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Добрынинская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Октябрьская</span>
-                    </li>
-                    <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Парк культуры</span>
-                    </li>
-                  </ul>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-red">Сокольническая</span></div>
                 </div>
               </li>
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-orange">Калужско-Рижская</span>
-                  <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
-                    <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Киевская</span></li>
-                    <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Краснопресненская</span></li>
-                  </ul>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-green">Замоскворецкая </span></div>
                 </div>
               </li>
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-pink">Таганско-Краснопресненская</span>
-                  <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
-                    <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Киевская</span></li>
-                    <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Краснопресненская</span></li>
-                  </ul>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-blue">Арбатско-Покровская</span></div>
                 </div>
               </li>
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-yellow">Калининско-Солнцевская</span></div>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-lightBlue">Филёвская</span></div>
+                </div>
               </li>
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-grey">Серпуховско-Тимирязевская</span></div>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-brown">Кольцевая</span></div>
+                </div>
+                <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Киевская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Краснопресненская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Белорусская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Новослободская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Проспект Мира</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Комсомольская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Курская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item mobile-metro-item_active"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle mobile-metro-text_active">Таганская</span>
+                    <div class="mobile-close2 mobile-close2_position"></div>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Павелецкая</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Добрынинская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Октябрьская</span>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Парк культуры</span>
+                  </li>
+                </ul>
               </li>
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-lightGreen">Люблинско-Дмитровская</span></div>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-orange">Калужско-Рижская</span></div>
+                </div>
+                <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
+                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Киевская</span></li>
+                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Краснопресненская</span></li>
+                </ul>
               </li>
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-blue2">Каховская</span></div>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-pink">Таганско-Краснопресненская</span></div>
+                </div>
+                <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
+                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Киевская</span></li>
+                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Краснопресненская</span></li>
+                </ul>
               </li>
               <li class="mobile-metro-menu__item">
-                <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-lightBlue2">Бутовская </span></div>
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-yellow">Калининско-Солнцевская</span></div>
+                </div>
+              </li>
+              <li class="mobile-metro-menu__item">
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-grey">Серпуховско-Тимирязевская</span></div>
+                </div>
+              </li>
+              <li class="mobile-metro-menu__item">
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-lightGreen">Люблинско-Дмитровская</span></div>
+                </div>
+              </li>
+              <li class="mobile-metro-menu__item">
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-blue2">Каховская</span></div>
+                </div>
+              </li>
+              <li class="mobile-metro-menu__item">
+                <div class="wrapper">
+                  <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-lightBlue2">Бутовская </span></div>
+                </div>
               </li>
             </ul>
           </div>
@@ -185,7 +189,7 @@
               <li data-view="signIn" class="mobile-door__item mobile-door__item-signIn">Вход</li>
               <li data-view="signUp" class="mobile-door__item">Регистрация</li>
             </ul>
-            <div class="mobile-close mobile-close_position mobile-close_door-js"></div>
+            <div class="mobile-close mobile-close_position-door mobile-close_door-js"><img src="img/close.png" alt="Закрыть" width="15" height="15" class="mobile-close__img"></div>
           </div>
           <div class="mobile-form-section">   
             <div class="mobile-form-section-signIn">
@@ -296,50 +300,82 @@
       </div>
       <div class="mobile-categories-emergence">
         <div class="mobile-categories-selection">
-          <header class="mobile-title-section">
+          <div class="mobile-title-section">
             <div class="wrapper">
-              <div class="mobile-categories-title">
-                <h1>Категории</h1>
-              </div>
-              <div class="mobile-close mobile-close_position4 mobile-close_categories-js"></div>
+              <h1 class="mobile-categories-title">Категории</h1>
+              <div class="mobile-close mobile-close_position mobile-close_categories-js"><img src="img/close.png" alt="Закрыть" width="15" height="15" class="mobile-close__img"></div>
             </div>
-          </header>
+          </div>
           <div class="mobile-menu-categories">
             <ul class="mobile-categories-list">
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/woman.svg" alt="phone"></span><span class="mobile-categories__text">Волосы – женский зал</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/woman.svg" alt="phone"></span><span class="mobile-categories__text">Волосы – женский зал</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/man.svg" alt="phone"></span><span class="mobile-categories__text">Волосы – Мужской зал</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/man.svg" alt="phone"></span><span class="mobile-categories__text">Волосы – Мужской зал</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/child.svg" alt="phone"></span><span class="mobile-categories__text"> Услуги для детей</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/child.svg" alt="phone"></span><span class="mobile-categories__text"> Услуги для детей</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/finger.svg" alt="phone"></span><span class="mobile-categories__text">Маникюр</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/finger.svg" alt="phone"></span><span class="mobile-categories__text">Маникюр</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/foot.svg" alt="phone"></span><span class="mobile-categories__text">Педикюр</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/foot.svg" alt="phone"></span><span class="mobile-categories__text">Педикюр</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/sun.svg" alt="phone"></span><span class="mobile-categories__text">Солярий</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/sun.svg" alt="phone"></span><span class="mobile-categories__text">Солярий</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/back.svg" alt="phone"></span><span class="mobile-categories__text">Массаж</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/back.svg" alt="phone"></span><span class="mobile-categories__text">Массаж</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/air.svg" alt="phone"></span><span class="mobile-categories__text">Аппаратная косметология</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/air.svg" alt="phone"></span><span class="mobile-categories__text">Аппаратная косметология</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/mask.svg" alt="phone"></span><span class="mobile-categories__text">Косметологические услуги</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/mask.svg" alt="phone"></span><span class="mobile-categories__text">Косметологические услуги</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/flower.svg" alt="phone"></span><span class="mobile-categories__text">СПА / SPA</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/flower.svg" alt="phone"></span><span class="mobile-categories__text">СПА / SPA</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/x.svg" alt="phone"></span><span class="mobile-categories__text">Wellness </span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/x.svg" alt="phone"></span><span class="mobile-categories__text">Wellness </span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/doc.svg" alt="phone"></span><span class="mobile-categories__text">Снижение веса и коррекция фигуры</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/doc.svg" alt="phone"></span><span class="mobile-categories__text">Снижение веса и коррекция фигуры</span>
+                </div>
               </li>
-              <li class="mobile-categories__item mobile-categories-item_active"><span class="mobile-categories__icon"><img src="img/categories/injector.svg" alt="phone"></span><span class="mobile-categories__text mobile-categories-text_active">Контурная пластика (Инъекционная коррекция)</span>
-                <div class="mobile-close2 mobile-close2_position"></div>
+              <li class="mobile-categories__item mobile-categories-item_active">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/injector.svg" alt="phone"></span><span class="mobile-categories__text mobile-categories-text_active">Контурная пластика (Инъекционная коррекция)</span>
+                  <div class="mobile-close2 mobile-close2_position"></div>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/brush.svg" alt="phone"></span><span class="mobile-categories__text">Пластическая хирургия</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/brush.svg" alt="phone"></span><span class="mobile-categories__text">Пластическая хирургия</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/underpants.svg" alt="phone"></span><span class="mobile-categories__text">Интимная пластика</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/underpants.svg" alt="phone"></span><span class="mobile-categories__text">Интимная пластика</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/weight.svg" alt="phone"></span><span class="mobile-categories__text">Спортивные занятия</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/weight.svg" alt="phone"></span><span class="mobile-categories__text">Спортивные занятия</span>
+                </div>
               </li>
-              <li class="mobile-categories__item"><span class="mobile-categories__icon"><img src="img/categories/plus.svg" alt="phone"></span><span class="mobile-categories__text">Дополнительные услуги</span>
+              <li class="mobile-categories__item">
+                <div class="wrapper"><span class="mobile-categories__icon"><img src="img/categories/plus.svg" alt="phone"></span><span class="mobile-categories__text">Дополнительные услуги</span>
+                </div>
               </li>
             </ul>
           </div>
