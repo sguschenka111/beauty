@@ -14,7 +14,7 @@
                 h2.mobile-metro-search-title Линии
         .mobile-metro-menu-section
             
-            ul.mobile-metro-menu
+            ul.mobile-metro-menu.mobile-metro-menu_js
                 li.mobile-metro-menu__item
                     .wrapper
                         .mobile-metro-menu__item-content
@@ -45,9 +45,10 @@
                         each item in menu2
                             - var isActive2 = (item === "Таганская");
                                 li(class="mobile-metro-menu-2level__item " + (isActive2 ? "mobile-metro-item_active": ''))
-                                    span(class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle" + (isActive2 ? " mobile-metro-text_active": ''))= item
-                                    if isActive2
-                                        .mobile-close2.mobile-close2_position
+                                    .wrapper
+                                        span(class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle" + (isActive2 ? " mobile-metro-text_active": ''))= item
+                                        if isActive2
+                                            .mobile-close2.mobile-close2_position
                 li.mobile-metro-menu__item
                     .wrapper
                         .mobile-metro-menu__item-content
@@ -57,7 +58,8 @@
                         - var menu2 = ["Киевская","Краснопресненская"]
                         each item in menu2
                             li.mobile-metro-menu-2level__item
-                                span.mobile-metro-menu-2level__name.mobile-metro_color-orange.mobile-metro_smallCircle= item
+                                .wrapper
+                                    span.mobile-metro-menu-2level__name.mobile-metro_color-orange.mobile-metro_smallCircle= item
                 li.mobile-metro-menu__item
                     .wrapper
                         .mobile-metro-menu__item-content
@@ -67,7 +69,8 @@
                         - var menu2 = ["Киевская","Краснопресненская"]
                         each item in menu2
                             li.mobile-metro-menu-2level__item
-                                span.mobile-metro-menu-2level__name.mobile-metro_color-pink.mobile-metro_smallCircle= item
+                                .wrapper
+                                    span.mobile-metro-menu-2level__name.mobile-metro_color-pink.mobile-metro_smallCircle= item
                 li.mobile-metro-menu__item
                     .wrapper
                         .mobile-metro-menu__item-content

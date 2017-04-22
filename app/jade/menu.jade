@@ -1,11 +1,13 @@
 .mobile-menu-emergence
     .mobile-menu-section
-        header.mobile-salon-search
+        .mobile-salon-search-header
             .wrapper
                 form.mobile-salon-search-form
-                    input(name="search-salon" type="text" placeholder="Введите название салона").mobile-salon__input
-                    input(name="search-salon-submit" type="submit" value="" ).mobile-salon__submit
-                .mobile-close-white.mobile-close_position3.mobile-close_menu-js
+                    input(name="search-salon" type="text" placeholder="Введите название салона").mobile-salon-search-form__input
+                    input(name="search-salon-submit" type="submit" value="" ).mobile-salon-search-form__submit
+                .mobile-close.mobile-close_position-menu.mobile-close_menu-js
+                    img(src="img/close-white.png" alt="Закрыть" width="15"
+    height="15").mobile-close__img
         .mobile-salon-menu
             .wrapper
                 ul.mobile-salon-menu-list

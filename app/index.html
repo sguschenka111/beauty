@@ -17,9 +17,9 @@
       <div class="mobile-white-band"></div>
       <div class="mobile-main-menu-section">
         <header class="mobile-header"> 
-          <div class="mobile-menu"><a href="#" class="mobile-menu__link"><img src="img/menu.png" alt="menu" class="mobile-menu__img"></a></div>
+          <div class="mobile-menu mobile-menu_js"><a href="#" class="mobile-menu__link"><img src="img/menu.png" alt="menu" class="mobile-menu__img"></a></div>
           <div class="mobile-logo"><a href="#" class="mobile-logo__link"><img src="img/logo.png" alt="logo" class="mobile-logo__img"></a></div>
-          <div class="mobile-login"><a href="#" class="mobile-login__link"><img src="img/icon-enter.png" alt="enter" class="mobile-login__img"></a></div>
+          <div class="mobile-login mobile-login_js"><a href="#" class="mobile-login__link"><img src="img/icon-enter.png" alt="enter" class="mobile-login__img"></a></div>
         </header>
         <div class="mobile-face">
           <div class="mobile-face-bg-opacity">
@@ -28,15 +28,15 @@
                 <h1>Все салоны Москвы <br> в одном каталоге<span class="mobile-title__part"> более 5 000 предприятий <br> индустрии красоты</span></h1>
               </div>
               <div class="mobile-button-option">
-                <button type="button" class="mobile-button-metro"><span class="mobile-button-metro__text">Станции метро</span></button>
-                <button type="button" class="mobile-button-categories"><span class="mobile-button-categories__text">Категории                            </span></button>
+                <button type="button" class="mobile-button-metro mobile-button-metro_js"><span class="mobile-button-metro__text">Станции метро</span></button>
+                <button type="button" class="mobile-button-categories mobile-button-categories_js"><span class="mobile-button-categories__text">Категории                            </span></button>
               </div>
             </div>
           </div>
         </div>
         <div class="mobile-main-menu">
           <div class="mobile-salon-registration">
-            <h2 class="mobile-section-title">Лучшие салоны </h2>
+            <h2 class="mobile-best-salon">Лучшие салоны </h2>
             <button type="button" class="mobile-button-salon-registration-1">Зарегистрировать салон</button>
           </div>
           <nav class="mobile-main-nav">
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="mobile-metro-menu-section">
-            <ul class="mobile-metro-menu">
+            <ul class="mobile-metro-menu mobile-metro-menu_js">
               <li class="mobile-metro-menu__item">
                 <div class="wrapper">
                   <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-red">Сокольническая</span></div>
@@ -108,30 +108,54 @@
                   <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-brown">Кольцевая</span></div>
                 </div>
                 <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Киевская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Киевская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Краснопресненская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Краснопресненская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Белорусская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Белорусская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Новослободская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Новослободская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Проспект Мира</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Проспект Мира</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Комсомольская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Комсомольская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Курская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Курская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item mobile-metro-item_active"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle mobile-metro-text_active">Таганская</span>
-                    <div class="mobile-close2 mobile-close2_position"></div>
+                  <li class="mobile-metro-menu-2level__item mobile-metro-item_active">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle mobile-metro-text_active">Таганская</span>
+                      <div class="mobile-close2 mobile-close2_position"></div>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Павелецкая</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Павелецкая</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Добрынинская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Добрынинская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Октябрьская</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Октябрьская</span>
+                    </div>
                   </li>
-                  <li class="mobile-metro-menu-2level__item "><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Парк культуры</span>
+                  <li class="mobile-metro-menu-2level__item ">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle">Парк культуры</span>
+                    </div>
                   </li>
                 </ul>
               </li>
@@ -140,8 +164,12 @@
                   <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-orange">Калужско-Рижская</span></div>
                 </div>
                 <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
-                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Киевская</span></li>
-                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Краснопресненская</span></li>
+                  <li class="mobile-metro-menu-2level__item">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Киевская</span></div>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-orange mobile-metro_smallCircle">Краснопресненская</span></div>
+                  </li>
                 </ul>
               </li>
               <li class="mobile-metro-menu__item">
@@ -149,8 +177,12 @@
                   <div class="mobile-metro-menu__item-content"><span class="mobile-metro-menu__arrow"></span><span class="mobile-metro-menu__name mobile-metro_color-pink">Таганско-Краснопресненская</span></div>
                 </div>
                 <ul class="mobile-metro-menu-2level mobile-metro-menu-2level_js">
-                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Киевская</span></li>
-                  <li class="mobile-metro-menu-2level__item"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Краснопресненская</span></li>
+                  <li class="mobile-metro-menu-2level__item">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Киевская</span></div>
+                  </li>
+                  <li class="mobile-metro-menu-2level__item">
+                    <div class="wrapper"><span class="mobile-metro-menu-2level__name mobile-metro_color-pink mobile-metro_smallCircle">Краснопресненская</span></div>
+                  </li>
                 </ul>
               </li>
               <li class="mobile-metro-menu__item">
@@ -383,15 +415,15 @@
       </div>
       <div class="mobile-menu-emergence">
         <div class="mobile-menu-section">
-          <header class="mobile-salon-search">
+          <div class="mobile-salon-search-header">
             <div class="wrapper">
               <form class="mobile-salon-search-form">
-                <input name="search-salon" type="text" placeholder="Введите название салона" class="mobile-salon__input">
-                <input name="search-salon-submit" type="submit" value="" class="mobile-salon__submit">
+                <input name="search-salon" type="text" placeholder="Введите название салона" class="mobile-salon-search-form__input">
+                <input name="search-salon-submit" type="submit" value="" class="mobile-salon-search-form__submit">
               </form>
-              <div class="mobile-close-white mobile-close_position3 mobile-close_menu-js"></div>
+              <div class="mobile-close mobile-close_position-menu mobile-close_menu-js"><img src="img/close-white.png" alt="Закрыть" width="15" height="15" class="mobile-close__img"></div>
             </div>
-          </header>
+          </div>
           <div class="mobile-salon-menu">
             <div class="wrapper">
               <ul class="mobile-salon-menu-list">

@@ -1,9 +1,7 @@
 .mobile-header-index {
     background: #FFF;
     height: 40px;  
-    position: relative;
-    
-    
+    text-align: center;
 }
 
 .mobile-index {
@@ -13,7 +11,7 @@
 
 .mobile-menu-index {
     float: left;
-    padding-top: 11px;
+    padding: 14px 12px;
 
    .mobile-menu-index__link {
        display: block;
@@ -23,26 +21,25 @@
    }   
 }
     
- .mobile-logo-index-link {
-   position: absolute;
-   background: url('../img/page2/logo-color.png') no-repeat;
-   width: 123px;
-   height: 30px;
-   right: 50%;
-   margin-right: -62px;
-   top: 6px;
+ .mobile-logo-index {
+   display: inline-block;
+   padding-top: 6px;
 }
 
+.mobile-logo-index__link {
+    display: block;
+}
 
+.mobile-logo-index__img {
+    display: block;
+}
 
 .mobile-login-index {
-    padding-top: 12px;
+    padding: 13px 12px;
     float: right;
 
     .mobile-login-index__link {
        display: block;
-       width: 19px;
-       height: 14px;
    }
    .mobile-login-index__img {
        display: block;
@@ -54,23 +51,6 @@
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
-}
-
-.mobile-metro-title h1{
-    display: inline-block;
-    vertical-align: middle;
-    color: #FFF;
-    font-size: 15px;
-            
-    &::before {
-        content: '';
-        background: url('../img/metro-icon.png') no-repeat;
-        width: 13px;
-        height: 14px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
 }
 
 .mobile-categories-section {
@@ -89,7 +69,7 @@
     height: 100%;
 }
 
-.salon-menu-section .mobile-button-salon-registration {
+.mobile-index .mobile-button-salon-registration {
     top: 388px;
 }
 
@@ -108,8 +88,37 @@
    
 }
 
+.mobile-guide-title {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: relative;
+    color: #3c3c3b;
+
+    &::before,&::after {
+        content: '';
+        width: 3px;
+        height: 3px;
+        background: #6e6a6c;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;    
+    }
+
+    &::before {
+        margin-right: 13px;
+    }
+     &::after {
+        margin-left: 13px;
+    }
+}
+
 .mobile-guide-list {
-    margin-left: 30px;
+    margin-left: 10px;
     padding-bottom: 40px;
 }
 
@@ -131,6 +140,7 @@
     vertical-align: middle;
     font-size: 18px;
     color: #3c3c3b;
+    width: 130px;
 }
 
 .mobile-guide__sum {
@@ -166,7 +176,7 @@
     }
 }
 
-.mobile-shares__title h2{
+.mobile-shares__title{
     font-size: 16px;
     color: #3c3c3b;
     float: left;
@@ -197,16 +207,17 @@
 
 .mobile-card-shares-content {
     padding: 20px;
+    position: relative;
 }
 
-.mobile-card-shares-content__title h3{
+.mobile-card-shares-content__title{ 
     font-size: 16px;
     color: #3c3c3b;
     margin-bottom: 24px;
     width: 194px;    
 }
 
-.mobile-card-shares-content__name h3{
+.mobile-card-shares-content__name{
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
@@ -237,7 +248,7 @@
     }
 }
 
-.adress-salon {
+.mobile-adress-salon {
     font-size: 14px;
     color: #3c3c3b;
     font-weight: 300;
@@ -257,27 +268,19 @@
     }
 }
 
-.angle {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border: 43px solid transparent;
-    border-bottom: 43px solid #ec407a;
-    border-right: 43px solid #ec407a;
-}
 
-.time-shares {
+.mobile-time-shares {
     position: absolute;
     width: 46px;
     height: 46px;
     border-radius: 50%;
     background: #FFF;
     font-size: 14px;
-    bottom: -28px;
-    right: -30px;
+    bottom: 10px;
+    right: 5px;
 }
 
-.time-shares__day {
+.mobile-time-shares__day {
     margin-top: 13px;
     margin-left: 10px;
     display: inline-block;
@@ -351,7 +354,7 @@
     margin-bottom: 25px;
 }
 
-.mobile-reviews__title h2{
+.mobile-reviews__title{
     font-size: 16px;
     color: #3c3c3b;
     float: left;
@@ -363,7 +366,7 @@
     color: #5e35b1;
 }
 
-.mobile-salon-reviews__name h3 {
+.mobile-salon-reviews__name {
     font-size: 16px;
     color: #3c3c3b;
     margin-bottom: 10px;
@@ -408,7 +411,7 @@
     margin-top: 30px;
 }
 
-.mobile-reviews-name {
+.mobile-salon-reviews__author {
     margin-top: 25px;
     margin-left: 20px;
     font-size: 14px;
@@ -436,7 +439,7 @@
     margin-bottom: 25px;
 }
 
-.mobile-events__title h2{
+.mobile-events__title{
     font-size: 16px;
     color: #3c3c3b;
     float: left;
@@ -476,7 +479,7 @@
     padding: 20px 10px;
 }
 
-.mobile-card-events-content__title h3 {
+.mobile-card-events-content__title{
     color: #3c3c3b;
     font-size: 16px;
     margin-bottom: 20px;
@@ -544,7 +547,7 @@
     }
 }
 
-.mobile-news__title h2{
+.mobile-news__title{
     font-size: 16px;
     color: #3c3c3b;
     float: left;
@@ -591,7 +594,7 @@
     margin-bottom: 30px;
 }
 
- .mobile-card-news-content__name h3 {
+ .mobile-card-news-content__name{
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
@@ -627,7 +630,7 @@
     }
 }
 
-.mobile-articles__title h2{
+.mobile-articles__title{
     font-size: 16px;
     color: #3c3c3b;
     float: left;
@@ -673,7 +676,7 @@
     margin-bottom: 30px;
 }
 
- .mobile-card-articles-content__name h3 {
+ .mobile-card-articles-content__name {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;

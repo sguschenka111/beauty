@@ -1,8 +1,8 @@
 (function(){
-
+ /*--------------------index.html------------------------*/
 let metroPage = $('.mobile-metro-page');
 
-let buttonMetro = document.querySelector('.mobile-button-metro');
+let buttonMetro = document.querySelector('.mobile-button-metro_js');
 let buttonMetroInstance = new Hammer(buttonMetro);
 
 let closeMetro = document.querySelector('.mobile-close_metro-js');
@@ -17,16 +17,16 @@ let closeCategoriesInstance = new Hammer(closeCategories);
 let closeMenu = document.querySelector('.mobile-close_menu-js');
 let closeMenuInstance = new Hammer(closeMenu);
 
-let menuMetro = document.querySelector('.mobile-metro-menu');
+let menuMetro = document.querySelector('.mobile-metro-menu_js');
 let metroMenuInstance = new Hammer(menuMetro);
 
-let login = document.querySelector('.mobile-login');
+let login = document.querySelector('.mobile-login_js');
 let loginMenuInstance = new Hammer(login);
 
-let buttonCategories = document.querySelector('.mobile-button-categories');
+let buttonCategories = document.querySelector('.mobile-button-categories_js');
 let buttonCategoriesInstance = new Hammer(buttonCategories);
 
-let buttonMenu = document.querySelector('.mobile-menu');
+let buttonMenu = document.querySelector('.mobile-menu_js');
 let buttonMenuInstance = new Hammer(buttonMenu);
 
 
@@ -57,23 +57,6 @@ closeMenuInstance.on("tap", function(ev) {
     $('.mobile-main-menu-section').removeClass('filter-blur');
 });
 
-metroMenuInstance.on("tap", function(event) {
-
-    let item = event.target,
-        ul = $('.mobile-metro-menu-2level_js');
-              
-    if(item.tagName != 'DIV') {
-        return;
-    }
-    
-    let itemMenu = ul.closest(item);
-    
-    itemMenu.children('ul').toggle('normal');
-    itemMenu.children('.mobile-metro-menu__arrow').toggleClass('rotate180');
-    
-},true);
-
-
 loginMenuInstance.on("tap", function(ev) {
     $('.mobile-door-emergence').addClass('openDoorPage');
     $('.mobile-main-menu-section').addClass('filter-blur');
@@ -84,9 +67,29 @@ closeDoorInstance.on("tap", function(ev) {
     $('.mobile-main-menu-section').removeClass('filter-blur');
 });
 
+/*-------------- раскрывающийся список метро ------------*/
+
+metroMenuInstance.on("tap", function(event) {
+    let target = event.target,
+    ul = $('.mobile-metro-menu-2level_js');
+    
+    while (target != this) {
+        
+    if (target.tagName == 'LI') {
+      // нашли элемент, который нас интересует!
+    let itemMenu = ul.closest(target);
+    itemMenu.find('ul').toggle('normal');
+    itemMenu.find('.mobile-metro-menu__arrow').toggleClass('rotate180');
+    return;
+    }
+    target = target.parentNode;
+    }
+});
 
 }());
 
+
+/*--------------переключатель вход/регистрация------------*/
  let ViewStateChange = (function(){
       
       $('.mobile-door__item-signIn').addClass('mobile-door__item_active');
@@ -118,3 +121,6 @@ closeDoorInstance.on("tap", function(ev) {
   $(document).ready(function(){
         ViewStateChange.init();
   });
+  
+  
+  /*--------------------------------------------*/
