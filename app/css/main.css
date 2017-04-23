@@ -280,7 +280,7 @@ a {
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 10;
 }
 .mobile-wrapper .mobile-main-nav__list {
   position: relative;
@@ -1071,6 +1071,16 @@ a {
   padding-bottom: 40px;
   border-bottom: 1px solid #e5e5e5;
 }
+.mobile-wrapper .swiper-pagination-bullet {
+  background: transparent;
+  border: 2px solid #FFF;
+}
+.mobile-wrapper .swiper-pagination-bullet-active {
+  background: #FFF;
+}
+.mobile-wrapper .main-slider__img {
+  max-height: 250px;
+}
 .mobile-wrapper .mobile-menu-index {
   float: left;
   padding: 14px 12px;
@@ -1103,14 +1113,20 @@ a {
 }
 .mobile-wrapper .mobile-metro-section {
   background: #2f2562;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   text-align: center;
+}
+.mobile-wrapper .mobile-index .mobile-metro-title {
+  padding-left: 0;
+}
+.mobile-wrapper .mobile-index .mobile-categories-title {
+  margin-left: 0;
 }
 .mobile-wrapper .mobile-categories-section {
   background: #5e35b1;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   text-align: center;
 }
 .mobile-wrapper .mobile-slider-section {
@@ -1348,9 +1364,23 @@ a {
   margin: auto;
   position: absolute;
 }
+.mobile-wrapper .mobile-arrow-slider__next .swiper-pagination {
+  margin-top: 0;
+}
+.mobile-wrapper .swiper-button-next, .mobile-wrapper .swiper-button-prev {
+  margin: 0;
+  right: 0;
+  left: 0;
+}
+.mobile-wrapper .swiper-button-disabled {
+  opacity: 1;
+}
 .mobile-wrapper .mobile-slider-amount {
   text-align: center;
   margin-top: 0.65em;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
 }
 .mobile-wrapper .mobile-reviews-section {
   margin-bottom: 20px;

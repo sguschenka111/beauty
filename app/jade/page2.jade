@@ -6,11 +6,13 @@ html(lang="ru")
         title Beauty shop
         meta(name='viewport' content='width=device-width, initial-scale=1')
         link(rel='stylesheet'  href='css/normalize.css' )
+        link(rel="stylesheet"  href='js/swiper/css/swiper.min.css')
         link(rel='stylesheet'  href='css/main.css' )
         link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet")
         script(src="js/jquery-3.2.0.min.js" defer)
         script(src="js/hummer.js" defer)
-        script(src="js/main.js" defer)
+        script(src="js/swiper/js/swiper.min.js" defer)
+        script(src="js/slider.js" defer)
     body
         .mobile-wrapper
             .mobile-index
@@ -28,8 +30,13 @@ html(lang="ru")
                     span.mobile-metro-title Cтанции метро
                 .mobile-categories-section
                     span.mobile-categories-title  Категории
-                .mobile-slider-section
-                    img(src='img/page2/picture-slider.jpg').mobile-slider-section__img
+                .mobile-main-slider.swiper-container
+                    .swiper-wrapper
+                        img(src='img/page2/picture-slider.jpg').swiper-slide.main-slider__img
+                        img(src='img/page2/articles.jpg').swiper-slide.main-slider__img
+                        img(src='img/page2/picture-slider.jpg').swiper-slide.main-slider__img
+                        img(src='img/page2/articles.jpg').swiper-slide.main-slider__img
+                    .swiper-pagination
                 .mobile-main-menu
                     .mobile-salon-registration
                         h1.mobile-best-salon  Лучшие салоны 
@@ -68,118 +75,179 @@ html(lang="ru")
                                 h2.mobile-shares__title Акции
                                 a(href="#").mobile-shares__link Все акции      
                         .wrapper
-                            .mobile-card-shares
-                                .mobile-card-shares-img
-                                    img(src="img/page2/shares.jpg" alt="shares")
-                                .mobile-card-shares-content
-                                    h3.mobile-card-shares-content__title Подарок на февральские праздники
-                                    h3.mobile-card-shares-content__name Этисэль на Таганке
-                                    .mobile-salon-adress
-                                        span.mobile-adress-salon
-                                            span.adress м. Таганская
-                                            span 350 м
-                                    .mobile-time-shares
-                                        span.mobile-time-shares__day 26 д.        
-                            .mobile-slider-controll
-                                button.mobile-arrow-slider__back.mobile-slider-arrow
-                                button.mobile-arrow-slider__next.mobile-slider-arrow
-                                .mobile-slider-amount
-                                    span 1 
-                                    span из 
-                                    span 10
+                            .mobile-card-shares-container.swiper-container
+                                .mobile-card-shares-wrap.swiper-wrapper
+                                    .mobile-card-shares.swiper-slide
+                                        .mobile-card-shares-img
+                                            img(src="img/page2/shares.jpg" alt="shares")
+                                        .mobile-card-shares-content
+                                            h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                            h3.mobile-card-shares-content__name Этисэль на Таганке
+                                            .mobile-salon-adress
+                                                span.mobile-adress-salon
+                                                    span.adress м. Таганская
+                                                    span 350 м
+                                            .mobile-time-shares
+                                                span.mobile-time-shares__day 26 д.
+                                    .mobile-card-shares.swiper-slide
+                                        .mobile-card-shares-img
+                                            img(src="img/page2/shares.jpg" alt="shares")
+                                        .mobile-card-shares-content
+                                            h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                            h3.mobile-card-shares-content__name Этисэль на Таганке
+                                            .mobile-salon-adress
+                                                span.mobile-adress-salon
+                                                    span.adress м. Таганская
+                                                    span 350 м
+                                            .mobile-time-shares
+                                                span.mobile-time-shares__day 35 д       
+                                    .mobile-card-shares.swiper-slide
+                                        .mobile-card-shares-img
+                                            img(src="img/page2/shares.jpg" alt="shares")
+                                        .mobile-card-shares-content
+                                            h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                            h3.mobile-card-shares-content__name Этисэль на Таганке
+                                            .mobile-salon-adress
+                                                span.mobile-adress-salon
+                                                    span.adress м. Таганская
+                                                    span 350 м
+                                            .mobile-time-shares
+                                                span.mobile-time-shares__day 35 д 
+                                .mobile-slider-controll
+                                    button.mobile-arrow-slider__back.prev1.mobile-slider-arrow.swiper-button-prev
+                                    button.mobile-arrow-slider__next.next1.mobile-slider-arrow.swiper-button-next
+                                    .mobile-slider-amount.amount1.swiper-pagination
                     .mobile-reviews-section
                         .mobile-reviews-title-block
                             .wrapper
                                 h2.mobile-reviews__title  Отзывы
                                 a(href="#").mobile-reviews__link Все отзывы      
                         .wrapper
-                            .mobile-salon-reviews
-                                h3.mobile-salon-reviews__name Либерти
-                                .mobile-salon-adress
-                                    span.mobile-adress-salon
-                                        span.adress м. Таганская
-                                        span 350 м
-                                .mobile-reviews
-                                    p Хочу выразить свою благодарность диетологам этого центра за то что помогли мне не только остановить нарастающие килограммы, но и довольно значительно их уменьшить.Только благодаря их... 
-                                    a(href="#").mobile-reviews-further Читать полностью
-                                .mobile-salon-reviews__author Ксана Дегтярёва    
-                            .mobile-slider-controll
-                                button.mobile-arrow-slider__back.mobile-slider-arrow
-                                button.mobile-arrow-slider__next.mobile-slider-arrow
-                                .mobile-slider-amount
-                                    span 1 
-                                    span из 
-                                    span 10                
+                        
+                            .mobile-salon-reviews-container.swiper-container
+                                .mobile-salon-reviews-wrap.swiper-wrapper
+                                    .mobile-salon-reviews.swiper-slide
+                                        h3.mobile-salon-reviews__name Либерти
+                                        .mobile-salon-adress
+                                            span.mobile-adress-salon
+                                                span.adress м. Таганская
+                                                span 350 м
+                                        .mobile-reviews
+                                            p Хочу выразить свою благодарность диетологам этого центра за то что помогли мне не только остановить нарастающие килограммы, но и довольно значительно их уменьшить.Только благодаря их... 
+                                            a(href="#").mobile-reviews-further Читать полностью
+                                        .mobile-salon-reviews__author Ксана Дегтярёва
+                                    .mobile-salon-reviews.swiper-slide
+                                        h3.mobile-salon-reviews__name Либерти
+                                        .mobile-salon-adress
+                                            span.mobile-adress-salon
+                                                span.adress м. Таганская
+                                                span 350 м
+                                        .mobile-reviews
+                                            p Хочу выразить свою благодарность диетологам этого центра за то что помогли мне не только остановить нарастающие килограммы, но и довольно значительно их уменьшить.Только благодаря их... 
+                                            a(href="#").mobile-reviews-further Читать полностью
+                                        .mobile-salon-reviews__author Ксана Дегтярёва        
+                                .mobile-slider-controll
+                                    button.mobile-arrow-slider__back.prev2.mobile-slider-arrow.swiper-button-prev
+                                    button.mobile-arrow-slider__next.next2.mobile-slider-arrow.swiper-button-next
+                                    .mobile-slider-amount.amount2.swiper-pagination              
                     .mobile-events-section
                         .mobile-events-title-block
                             .wrapper
                                 h2.mobile-events__title  События
                                 a(href="#").mobile-events__link Все события    
                         .wrapper
-                            .mobile-salon-events-card
-                                .mobile-card-events-img
-                                    img(src="img/page2/events.jpg" alt="shares")
-                                .mobile-card-events-content
-                                    h3.mobile-card-events-content__title Beauty Show Krasnodar - 2017
-                                    .mobile-card-events-content__adress
-                                        span г. Краснодар, ул. Конгрессная, 1, 
-                                        span.events-adress ВКК "Экспоград Юг"
-                                    .mobile-card-events-content__time 01.06.2017 - 04.06.2017
-                            .mobile-slider-controll
-                                button.mobile-arrow-slider__back.mobile-slider-arrow
-                                button.mobile-arrow-slider__next.mobile-slider-arrow
-                                .mobile-slider-amount
-                                    span 1 
-                                    span из 
-                                    span 10       
+                            .mobile-salon-events-container.swiper-container
+                                .mobile-salon-events-wrap.swiper-wrapper    
+                                    .mobile-salon-events-card.swiper-slide
+                                        .mobile-card-events-img
+                                            img(src="img/page2/events.jpg" alt="shares")
+                                        .mobile-card-events-content
+                                            h3.mobile-card-events-content__title Beauty Show Krasnodar - 2017
+                                            .mobile-card-events-content__adress
+                                                span г. Краснодар, ул. Конгрессная, 1, 
+                                                span.events-adress ВКК "Экспоград Юг"
+                                            .mobile-card-events-content__time 01.06.2017 - 04.06.2017
+                                    .mobile-salon-events-card.swiper-slide
+                                        .mobile-card-events-img
+                                            img(src="img/page2/events.jpg" alt="shares")
+                                        .mobile-card-events-content
+                                            h3.mobile-card-events-content__title Beauty Show Krasnodar - 2017
+                                            .mobile-card-events-content__adress
+                                                span г. Краснодар, ул. Конгрессная, 1, 
+                                                span.events-adress ВКК "Экспоград Юг"
+                                            .mobile-card-events-content__time 01.06.2017 - 04.06.2017        
+                                .mobile-slider-controll
+                                    button.mobile-arrow-slider__back.prev3.mobile-slider-arrow.swiper-button-prev
+                                    button.mobile-arrow-slider__next.next3.mobile-slider-arrow.swiper-button-next
+                                    .mobile-slider-amount.amount3.swiper-pagination       
                     .mobile-news-section
                         .mobile-news-title-block
                             .wrapper
                                 h2.mobile-news__title Новости
                                 a(href="#").mobile-news__link Все новости    
                         .wrapper
-                            .mobile-salon-news-card
-                                .mobile-card-news-img
-                                    img(src="img/page2/news.jpg" alt="shares")
-                                .mobile-card-news-content
-                                    .mobile-card-news-content__time 01.02.2016
-                                    .mobile-card-news-content__description Записывайтесь на ботокс!
-                                    h3.mobile-card-news-content__name Этисэль на Таганке
-                                    .mobile-salon-adress
-                                        span.mobile-adress-salon
-                                            span.adress м. Таганская
-                                            span 350 м
-                            .mobile-slider-controll
-                                button.mobile-arrow-slider__back.mobile-slider-arrow
-                                button.mobile-arrow-slider__next.mobile-slider-arrow
-                                .mobile-slider-amount
-                                    span 1 
-                                    span из 
-                                    span 10
+                            .mobile-salon-news-container.swiper-container
+                                .mobile-salon-news-wrap.swiper-wrapper    
+                                    .mobile-salon-news-card.swiper-slide
+                                        .mobile-card-news-img
+                                            img(src="img/page2/news.jpg" alt="shares")
+                                        .mobile-card-news-content
+                                            .mobile-card-news-content__time 01.02.2016
+                                            .mobile-card-news-content__description Записывайтесь на ботокс!
+                                            h3.mobile-card-news-content__name Этисэль на Таганке
+                                            .mobile-salon-adress
+                                                span.mobile-adress-salon
+                                                    span.adress м. Таганская
+                                                    span 350 м
+                                    .mobile-salon-news-card.swiper-slide
+                                        .mobile-card-news-img
+                                            img(src="img/page2/news.jpg" alt="shares")
+                                        .mobile-card-news-content
+                                            .mobile-card-news-content__time 01.02.2016
+                                            .mobile-card-news-content__description Записывайтесь на ботокс!
+                                            h3.mobile-card-news-content__name Этисэль на Таганке
+                                            .mobile-salon-adress
+                                                span.mobile-adress-salon
+                                                    span.adress м. Таганская
+                                                    span 350 м            
+                                .mobile-slider-controll
+                                    button.mobile-arrow-slider__back.prev4.mobile-slider-arrow.swiper-button-prev
+                                    button.mobile-arrow-slider__next.next4.mobile-slider-arrow.swiper-button-next
+                                    .mobile-slider-amount.amount4.swiper-pagination       
                     .mobile-articles-section
                         .mobile-articles-title-block
                             .wrapper
                                 h2.mobile-articles__title Статьи
                                 a(href="#").mobile-articles__link Все статьи    
                         .wrapper
-                            .mobile-salon-articles-card
-                                .mobile-card-articles-img
-                                    img(src="img/page2/articles.jpg" alt="shares")
-                                .mobile-card-articles-content
-                                    .mobile-card-articles-content__time 01.02.2016
-                                    .mobile-card-articles-content__description Записывайтесь на ботокс!
-                                    h3.mobile-card-articles-content__name Этисэль на Таганке
-                                    .mobile-salon-adress
-                                        span.mobile-adress-salon
-                                            span.adress м. Таганская
-                                            span 350 м
-                            .mobile-slider-controll
-                                button.mobile-arrow-slider__back.mobile-slider-arrow
-                                button.mobile-arrow-slider__next.mobile-slider-arrow
-                                .mobile-slider-amount
-                                    span 1 
-                                    span из 
-                                    span 10            
+                            .mobile-salon-articles-container.swiper-container
+                                .mobile-salon-articles-wrap.swiper-wrapper
+                                    .mobile-salon-articles-card.swiper-slide
+                                        .mobile-card-articles-img
+                                            img(src="img/page2/articles.jpg" alt="shares")
+                                        .mobile-card-articles-content
+                                            .mobile-card-articles-content__time 01.02.2016
+                                            .mobile-card-articles-content__description Записывайтесь на ботокс!
+                                            h3.mobile-card-articles-content__name Этисэль на Таганке
+                                            .mobile-salon-adress
+                                                span.mobile-adress-salon
+                                                    span.adress м. Таганская
+                                                    span 350 м
+                                    .mobile-salon-articles-card.swiper-slide
+                                        .mobile-card-articles-img
+                                            img(src="img/page2/articles.jpg" alt="shares")
+                                        .mobile-card-articles-content
+                                            .mobile-card-articles-content__time 01.02.2016
+                                            .mobile-card-articles-content__description Записывайтесь на ботокс!
+                                            h3.mobile-card-articles-content__name Этисэль на Таганке
+                                            .mobile-salon-adress
+                                                span.mobile-adress-salon
+                                                    span.adress м. Таганская
+                                                    span 350 м                
+                                .mobile-slider-controll
+                                    button.mobile-arrow-slider__back.prev5.mobile-slider-arrow.swiper-button-prev
+                                    button.mobile-arrow-slider__next.next5.mobile-slider-arrow.swiper-button-next
+                                    .mobile-slider-amount.amount5.swiper-pagination                 
                     .content-section
                         .wrapper
                             h1 Все салоны красоты Москвы

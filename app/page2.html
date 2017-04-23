@@ -6,11 +6,13 @@
     <title>Beauty shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500&amp;amp;subset=cyrillic" rel="stylesheet">
     <script src="js/jquery-3.2.0.min.js" defer></script>
     <script src="js/hummer.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/swiper/js/swiper.min.js" defer></script>
+    <script src="js/slider.js" defer></script>
   </head>
   <body>
     <div class="mobile-wrapper">
@@ -22,7 +24,10 @@
         </header>
         <div class="mobile-metro-section"><span class="mobile-metro-title">Cтанции метро</span></div>
         <div class="mobile-categories-section"><span class="mobile-categories-title"> Категории</span></div>
-        <div class="mobile-slider-section"><img src="img/page2/picture-slider.jpg" class="mobile-slider-section__img"></div>
+        <div class="mobile-main-slider swiper-container">
+          <div class="swiper-wrapper"><img src="img/page2/picture-slider.jpg" class="swiper-slide main-slider__img"><img src="img/page2/articles.jpg" class="swiper-slide main-slider__img"><img src="img/page2/picture-slider.jpg" class="swiper-slide main-slider__img"><img src="img/page2/articles.jpg" class="swiper-slide main-slider__img"></div>
+          <div class="swiper-pagination"></div>
+        </div>
         <div class="mobile-main-menu">
           <div class="mobile-salon-registration">
             <h1 class="mobile-best-salon"> Лучшие салоны </h1>
@@ -64,19 +69,41 @@
               </div>
             </div>
             <div class="wrapper">
-              <div class="mobile-card-shares">
-                <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
-                <div class="mobile-card-shares-content">
-                  <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
-                  <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
-                  <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
-                  <div class="mobile-time-shares"><span class="mobile-time-shares__day">26 д.        </span></div>
+              <div class="mobile-card-shares-container swiper-container">
+                <div class="mobile-card-shares-wrap swiper-wrapper">
+                  <div class="mobile-card-shares swiper-slide">
+                    <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
+                    <div class="mobile-card-shares-content">
+                      <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                      <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                      <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                      <div class="mobile-time-shares"><span class="mobile-time-shares__day">26 д.</span></div>
+                    </div>
+                  </div>
+                  <div class="mobile-card-shares swiper-slide">
+                    <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
+                    <div class="mobile-card-shares-content">
+                      <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                      <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                      <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                      <div class="mobile-time-shares"><span class="mobile-time-shares__day">35 д       </span></div>
+                    </div>
+                  </div>
+                  <div class="mobile-card-shares swiper-slide">
+                    <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
+                    <div class="mobile-card-shares-content">
+                      <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                      <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                      <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                      <div class="mobile-time-shares"><span class="mobile-time-shares__day">35 д </span></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="mobile-slider-controll">
-                <button class="mobile-arrow-slider__back mobile-slider-arrow"></button>
-                <button class="mobile-arrow-slider__next mobile-slider-arrow"></button>
-                <div class="mobile-slider-amount"><span>1 </span><span>из </span><span>10</span></div>
+                <div class="mobile-slider-controll">
+                  <button class="mobile-arrow-slider__back prev1 mobile-slider-arrow swiper-button-prev"></button>
+                  <button class="mobile-arrow-slider__next next1 mobile-slider-arrow swiper-button-next"></button>
+                  <div class="mobile-slider-amount amount1 swiper-pagination"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -87,18 +114,30 @@
               </div>
             </div>
             <div class="wrapper">
-              <div class="mobile-salon-reviews">
-                <h3 class="mobile-salon-reviews__name">Либерти</h3>
-                <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
-                <div class="mobile-reviews">
-                  <p>Хочу выразить свою благодарность диетологам этого центра за то что помогли мне не только остановить нарастающие килограммы, но и довольно значительно их уменьшить.Только благодаря их... </p><a href="#" class="mobile-reviews-further">Читать полностью</a>
+              <div class="mobile-salon-reviews-container swiper-container">
+                <div class="mobile-salon-reviews-wrap swiper-wrapper">
+                  <div class="mobile-salon-reviews swiper-slide">
+                    <h3 class="mobile-salon-reviews__name">Либерти</h3>
+                    <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                    <div class="mobile-reviews">
+                      <p>Хочу выразить свою благодарность диетологам этого центра за то что помогли мне не только остановить нарастающие килограммы, но и довольно значительно их уменьшить.Только благодаря их... </p><a href="#" class="mobile-reviews-further">Читать полностью</a>
+                    </div>
+                    <div class="mobile-salon-reviews__author">Ксана Дегтярёва</div>
+                  </div>
+                  <div class="mobile-salon-reviews swiper-slide">
+                    <h3 class="mobile-salon-reviews__name">Либерти</h3>
+                    <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                    <div class="mobile-reviews">
+                      <p>Хочу выразить свою благодарность диетологам этого центра за то что помогли мне не только остановить нарастающие килограммы, но и довольно значительно их уменьшить.Только благодаря их... </p><a href="#" class="mobile-reviews-further">Читать полностью</a>
+                    </div>
+                    <div class="mobile-salon-reviews__author">Ксана Дегтярёва        </div>
+                  </div>
                 </div>
-                <div class="mobile-salon-reviews__author">Ксана Дегтярёва    </div>
-              </div>
-              <div class="mobile-slider-controll">
-                <button class="mobile-arrow-slider__back mobile-slider-arrow"></button>
-                <button class="mobile-arrow-slider__next mobile-slider-arrow"></button>
-                <div class="mobile-slider-amount"><span>1 </span><span>из </span><span>10                </span></div>
+                <div class="mobile-slider-controll">
+                  <button class="mobile-arrow-slider__back prev2 mobile-slider-arrow swiper-button-prev"></button>
+                  <button class="mobile-arrow-slider__next next2 mobile-slider-arrow swiper-button-next"></button>
+                  <div class="mobile-slider-amount amount2 swiper-pagination">             </div>
+                </div>
               </div>
             </div>
           </div>
@@ -109,18 +148,30 @@
               </div>
             </div>
             <div class="wrapper">
-              <div class="mobile-salon-events-card">
-                <div class="mobile-card-events-img"><img src="img/page2/events.jpg" alt="shares"></div>
-                <div class="mobile-card-events-content">
-                  <h3 class="mobile-card-events-content__title">Beauty Show Krasnodar - 2017</h3>
-                  <div class="mobile-card-events-content__adress"><span>г. Краснодар, ул. Конгрессная, 1, </span><span class="events-adress">ВКК "Экспоград Юг"</span></div>
-                  <div class="mobile-card-events-content__time">01.06.2017 - 04.06.2017</div>
+              <div class="mobile-salon-events-container swiper-container">
+                <div class="mobile-salon-events-wrap swiper-wrapper">   
+                  <div class="mobile-salon-events-card swiper-slide">
+                    <div class="mobile-card-events-img"><img src="img/page2/events.jpg" alt="shares"></div>
+                    <div class="mobile-card-events-content">
+                      <h3 class="mobile-card-events-content__title">Beauty Show Krasnodar - 2017</h3>
+                      <div class="mobile-card-events-content__adress"><span>г. Краснодар, ул. Конгрессная, 1, </span><span class="events-adress">ВКК "Экспоград Юг"</span></div>
+                      <div class="mobile-card-events-content__time">01.06.2017 - 04.06.2017</div>
+                    </div>
+                  </div>
+                  <div class="mobile-salon-events-card swiper-slide">
+                    <div class="mobile-card-events-img"><img src="img/page2/events.jpg" alt="shares"></div>
+                    <div class="mobile-card-events-content">
+                      <h3 class="mobile-card-events-content__title">Beauty Show Krasnodar - 2017</h3>
+                      <div class="mobile-card-events-content__adress"><span>г. Краснодар, ул. Конгрессная, 1, </span><span class="events-adress">ВКК "Экспоград Юг"</span></div>
+                      <div class="mobile-card-events-content__time">01.06.2017 - 04.06.2017        </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="mobile-slider-controll">
-                <button class="mobile-arrow-slider__back mobile-slider-arrow"></button>
-                <button class="mobile-arrow-slider__next mobile-slider-arrow"></button>
-                <div class="mobile-slider-amount"><span>1 </span><span>из </span><span>10       </span></div>
+                <div class="mobile-slider-controll">
+                  <button class="mobile-arrow-slider__back prev3 mobile-slider-arrow swiper-button-prev"></button>
+                  <button class="mobile-arrow-slider__next next3 mobile-slider-arrow swiper-button-next"></button>
+                  <div class="mobile-slider-amount amount3 swiper-pagination">      </div>
+                </div>
               </div>
             </div>
           </div>
@@ -131,19 +182,32 @@
               </div>
             </div>
             <div class="wrapper">
-              <div class="mobile-salon-news-card">
-                <div class="mobile-card-news-img"><img src="img/page2/news.jpg" alt="shares"></div>
-                <div class="mobile-card-news-content">
-                  <div class="mobile-card-news-content__time">01.02.2016</div>
-                  <div class="mobile-card-news-content__description">Записывайтесь на ботокс!</div>
-                  <h3 class="mobile-card-news-content__name">Этисэль на Таганке</h3>
-                  <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+              <div class="mobile-salon-news-container swiper-container">
+                <div class="mobile-salon-news-wrap swiper-wrapper">   
+                  <div class="mobile-salon-news-card swiper-slide">
+                    <div class="mobile-card-news-img"><img src="img/page2/news.jpg" alt="shares"></div>
+                    <div class="mobile-card-news-content">
+                      <div class="mobile-card-news-content__time">01.02.2016</div>
+                      <div class="mobile-card-news-content__description">Записывайтесь на ботокс!</div>
+                      <h3 class="mobile-card-news-content__name">Этисэль на Таганке</h3>
+                      <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                    </div>
+                  </div>
+                  <div class="mobile-salon-news-card swiper-slide">
+                    <div class="mobile-card-news-img"><img src="img/page2/news.jpg" alt="shares"></div>
+                    <div class="mobile-card-news-content">
+                      <div class="mobile-card-news-content__time">01.02.2016</div>
+                      <div class="mobile-card-news-content__description">Записывайтесь на ботокс!</div>
+                      <h3 class="mobile-card-news-content__name">Этисэль на Таганке</h3>
+                      <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м            </span></span></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="mobile-slider-controll">
-                <button class="mobile-arrow-slider__back mobile-slider-arrow"></button>
-                <button class="mobile-arrow-slider__next mobile-slider-arrow"></button>
-                <div class="mobile-slider-amount"><span>1 </span><span>из </span><span>10</span></div>
+                <div class="mobile-slider-controll">
+                  <button class="mobile-arrow-slider__back prev4 mobile-slider-arrow swiper-button-prev"></button>
+                  <button class="mobile-arrow-slider__next next4 mobile-slider-arrow swiper-button-next"></button>
+                  <div class="mobile-slider-amount amount4 swiper-pagination">      </div>
+                </div>
               </div>
             </div>
           </div>
@@ -154,19 +218,32 @@
               </div>
             </div>
             <div class="wrapper">
-              <div class="mobile-salon-articles-card">
-                <div class="mobile-card-articles-img"><img src="img/page2/articles.jpg" alt="shares"></div>
-                <div class="mobile-card-articles-content">
-                  <div class="mobile-card-articles-content__time">01.02.2016</div>
-                  <div class="mobile-card-articles-content__description">Записывайтесь на ботокс!</div>
-                  <h3 class="mobile-card-articles-content__name">Этисэль на Таганке</h3>
-                  <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+              <div class="mobile-salon-articles-container swiper-container">
+                <div class="mobile-salon-articles-wrap swiper-wrapper">
+                  <div class="mobile-salon-articles-card swiper-slide">
+                    <div class="mobile-card-articles-img"><img src="img/page2/articles.jpg" alt="shares"></div>
+                    <div class="mobile-card-articles-content">
+                      <div class="mobile-card-articles-content__time">01.02.2016</div>
+                      <div class="mobile-card-articles-content__description">Записывайтесь на ботокс!</div>
+                      <h3 class="mobile-card-articles-content__name">Этисэль на Таганке</h3>
+                      <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                    </div>
+                  </div>
+                  <div class="mobile-salon-articles-card swiper-slide">
+                    <div class="mobile-card-articles-img"><img src="img/page2/articles.jpg" alt="shares"></div>
+                    <div class="mobile-card-articles-content">
+                      <div class="mobile-card-articles-content__time">01.02.2016</div>
+                      <div class="mobile-card-articles-content__description">Записывайтесь на ботокс!</div>
+                      <h3 class="mobile-card-articles-content__name">Этисэль на Таганке</h3>
+                      <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м                </span></span></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="mobile-slider-controll">
-                <button class="mobile-arrow-slider__back mobile-slider-arrow"></button>
-                <button class="mobile-arrow-slider__next mobile-slider-arrow"></button>
-                <div class="mobile-slider-amount"><span>1 </span><span>из </span><span>10            </span></div>
+                <div class="mobile-slider-controll">
+                  <button class="mobile-arrow-slider__back prev5 mobile-slider-arrow swiper-button-prev"></button>
+                  <button class="mobile-arrow-slider__next next5 mobile-slider-arrow swiper-button-next"></button>
+                  <div class="mobile-slider-amount amount5 swiper-pagination">                </div>
+                </div>
               </div>
             </div>
           </div>

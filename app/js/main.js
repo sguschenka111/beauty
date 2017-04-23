@@ -1,5 +1,5 @@
 (function(){
- /*--------------------index.html------------------------*/
+ 
 let metroPage = $('.mobile-metro-page');
 
 let buttonMetro = document.querySelector('.mobile-button-metro_js');
@@ -67,7 +67,7 @@ closeDoorInstance.on("tap", function(ev) {
     $('.mobile-main-menu-section').removeClass('filter-blur');
 });
 
-/*-------------- раскрывающийся список метро ------------*/
+ 
 
 metroMenuInstance.on("tap", function(event) {
     let target = event.target,
@@ -88,9 +88,7 @@ metroMenuInstance.on("tap", function(event) {
 
 }());
 
-
-/*--------------переключатель вход/регистрация------------*/
- let ViewStateChange = (function(){
+let ViewStateChange = (function(){
       
       $('.mobile-door__item-signIn').addClass('mobile-door__item_active');
       
@@ -116,11 +114,17 @@ metroMenuInstance.on("tap", function(event) {
               });
           }
       }
-  }());
-  
-  $(document).ready(function(){
+      
+})(); 
+
+
+
+$(document).ready(function(){
         ViewStateChange.init();
-  });
+  }); 
+   
+
+  
   
   
   /*--------------------------------------------*/
