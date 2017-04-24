@@ -311,17 +311,17 @@
 
 .mobile-slider-controll {
     @include clearfix;
-    width: 130px;
+    width: 140px;
     margin: 0 auto;
+    padding: 1px;
 }
 
 .mobile-slider-arrow {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    border: 1px solid #e7e7e7;
+    border: 2px solid #e7e7e7;
     background: transparent;
-    cursor: pointer;
     position: relative;
 }
 

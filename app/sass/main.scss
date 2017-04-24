@@ -4,12 +4,18 @@
 
     .mobile-wrapper {
         min-width: 320px;
-        width: 320px;
         margin: 0 auto;
         position: relative;
         min-height: 100%;
-        max-width: 100%;  
-    
+        max-width: 100%;
+        
+        &::after {
+            content: '';
+            display: block;
+            height: 70px;
+        }
+     
+
                 
         .mobile-white-band {
             height: 2px;
@@ -264,50 +270,53 @@
             margin-top: 4px;
             }
         }
-        
+  }
     /*--------------------------------------------*/ 
 
-    .mobile-footer {
-        background: #FFF;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        text-align: center;
-    }
     
-    
-    .mail__link {
+.mobile-footer {
+    background: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    //width: 320px;
+    //margin: 0 auto;
+    height: 70px;
+    margin-top: -70px;
+}
+        
+.mail__link {
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 14px;
+    color: #5e35b1;
+
+    &::before {
+        content: '';
+        background: url('../img/mail.png') no-repeat;
+        width: 16px;
+        height: 12px;
         display: inline-block;
         vertical-align: baseline;
-        text-decoration: none;
-        font-size: 14px;
-        color: #5e35b1;
-        
-        &::before {
-            content: '';
-            background: url('../img/mail.png') no-repeat;
-            width: 16px;
-            height: 12px;
-            display: inline-block;
-            vertical-align: baseline;
-            margin-right: 10px;
-        }
+        margin-right: 10px;
     }
-    
-       .mobile-footer__text  p {
-            color: #3c3c3b;
-            font-weight: 300px;
-            font-size: 14px;
+}
 
-            a {
-                text-decoration: none;
-                color: #5e35b1;
-            }
-        }
-        
-        .filter-blur {
-            filter: blur(3px);
-        }
-    
+.mobile-footer__text  p {
+    color: #3c3c3b;
+    font-weight: 300px;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+        color: #5e35b1;
+    }
+}
+
+.filter-blur {
+    filter: blur(3px);
+}    
 
 /*----------------------metro----------------------*/
  @import "./styles/metro";
@@ -324,6 +333,6 @@
   /*--------------------------------------------*/
   @import "./styles/msk_aksia";
     
-}
+
 
 

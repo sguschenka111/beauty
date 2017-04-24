@@ -2,7 +2,7 @@
  
 let metroPage = $('.mobile-metro-page');
 
-let buttonMetro = document.querySelector('.mobile-button-metro_js');
+let buttonMetro = document.querySelector('.mobile-metro_js');
 let buttonMetroInstance = new Hammer(buttonMetro);
 
 let closeMetro = document.querySelector('.mobile-close_metro-js');
@@ -23,7 +23,7 @@ let metroMenuInstance = new Hammer(menuMetro);
 let login = document.querySelector('.mobile-login_js');
 let loginMenuInstance = new Hammer(login);
 
-let buttonCategories = document.querySelector('.mobile-button-categories_js');
+let buttonCategories = document.querySelector('.mobile-categories_js');
 let buttonCategoriesInstance = new Hammer(buttonCategories);
 
 let buttonMenu = document.querySelector('.mobile-menu_js');
@@ -41,7 +41,12 @@ buttonCategoriesInstance.on("tap", function(ev) {
 
 buttonMenuInstance.on("tap", function(ev) {
     $('.mobile-menu-emergence').addClass('openMenuPage');
-    $('.mobile-main-menu-section').addClass('filter-blur');
+    $('.section-filter-blur').addClass('filter-blur');
+});
+
+loginMenuInstance.on("tap", function(ev) {
+    $('.mobile-door-emergence').addClass('openDoorPage');
+    $('.section-filter-blur').addClass('filter-blur');
 });
 
 closeMetroInstance.on("tap", function(ev) {
@@ -54,17 +59,13 @@ closeCategoriesInstance.on("tap", function(ev) {
 
 closeMenuInstance.on("tap", function(ev) {
     $('.mobile-menu-emergence').removeClass('openMenuPage');
-    $('.mobile-main-menu-section').removeClass('filter-blur');
+    $('.section-filter-blur').removeClass('filter-blur');
 });
 
-loginMenuInstance.on("tap", function(ev) {
-    $('.mobile-door-emergence').addClass('openDoorPage');
-    $('.mobile-main-menu-section').addClass('filter-blur');
-});
 
 closeDoorInstance.on("tap", function(ev) {
     $('.mobile-door-emergence').removeClass('openDoorPage');
-    $('.mobile-main-menu-section').removeClass('filter-blur');
+    $('.section-filter-blur').removeClass('filter-blur');
 });
 
  
@@ -76,7 +77,6 @@ metroMenuInstance.on("tap", function(event) {
     while (target != this) {
         
     if (target.tagName == 'LI') {
-      // нашли элемент, который нас интересует!
     let itemMenu = ul.closest(target);
     itemMenu.find('ul').toggle('normal');
     itemMenu.find('.mobile-metro-menu__arrow').toggleClass('rotate180');

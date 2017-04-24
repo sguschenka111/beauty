@@ -14,14 +14,14 @@ html(lang="ru")
     body
         .mobile-wrapper
             .mobile-white-band
-            .mobile-main-menu-section
+            .mobile-main-menu-section.section-filter-blur
                 header.mobile-header 
                     .mobile-menu.mobile-menu_js
                         a(href="#").mobile-menu__link
                             img(src="img/menu.png" alt="menu").mobile-menu__img
 
                     .mobile-logo
-                        a(href="#").mobile-logo__link
+                        a(href="index.html").mobile-logo__link
                             img(src="img/logo.png" alt="logo").mobile-logo__img
                     .mobile-login.mobile-login_js
                         a(href="#").mobile-login__link
@@ -35,9 +35,9 @@ html(lang="ru")
                                 h1 Все салоны Москвы <br> в одном каталоге
                                     span.mobile-title__part  более 5 000 предприятий <br> индустрии красоты
                             .mobile-button-option
-                                button(type="button").mobile-button-metro.mobile-button-metro_js
+                                button(type="button").mobile-button-metro.mobile-metro_js
                                     span.mobile-button-metro__text Станции метро
-                                button(type="button").mobile-button-categories.mobile-button-categories_js
+                                button(type="button").mobile-button-categories.mobile-categories_js
                                     span.mobile-button-categories__text Категории                            
                 .mobile-main-menu
                     .mobile-salon-registration
@@ -51,17 +51,17 @@ html(lang="ru")
                                         li(class="mobile-main-nav__item")
                                             a(href="#" class="mobile-main-nav__link")  
                                                 span.mobile-main-nav__text= item
-            footer.mobile-footer
-                .wrapper
-                    .mobile-mail
-                        a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
-                    .mobile-footer__text    
-                        p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
-                            a(href="#") связаться с менеджером.    
-            include metro
-            include registration
-            include categories
-            include menu
+        footer.mobile-footer
+            .wrapper
+                .mobile-mail
+                    a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
+                .mobile-footer__text    
+                    p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
+                        a(href="#") связаться с менеджером.    
+        include metro
+        include registration
+        include categories
+        include menu
         
 
 

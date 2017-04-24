@@ -12,23 +12,25 @@ html(lang="ru")
         script(src="js/jquery-3.2.0.min.js" defer)
         script(src="js/hummer.js" defer)
         script(src="js/swiper/js/swiper.min.js" defer)
+        script(src="js/main.js" defer)
         script(src="js/slider.js" defer)
+        
     body
         .mobile-wrapper
             .mobile-index
-                header.mobile-header-index
-                    .mobile-menu-index
+                header.mobile-header-index.section-filter-blur
+                    .mobile-menu-index.mobile-menu_js
                         a(href="#").mobile-menu-index__link
                             img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img
                     .mobile-logo-index        
-                        a(href="#").mobile-logo-index__link
+                        a(href="index.html").mobile-logo-index__link
                             img(src="img/page2/logo-color.png" alt="logo" width="123" height="30").mobile-logo-index__img
-                    .mobile-login-index
+                    .mobile-login-index.mobile-login_js
                         a(href="#").mobile-login-index__link
                             img(src="img/page2/doorSvg.svg" alt="enter" width="19" height="14").mobile-login-index__img
-                .mobile-metro-section
+                .mobile-metro-section.mobile-metro_js.section-filter-blur
                     span.mobile-metro-title Cтанции метро
-                .mobile-categories-section
+                .mobile-categories-section.mobile-categories_js.section-filter-blur
                     span.mobile-categories-title  Категории
                 .mobile-main-slider.swiper-container
                     .swiper-wrapper
@@ -37,7 +39,7 @@ html(lang="ru")
                         img(src='img/page2/picture-slider.jpg').swiper-slide.main-slider__img
                         img(src='img/page2/articles.jpg').swiper-slide.main-slider__img
                     .swiper-pagination
-                .mobile-main-menu
+                .mobile-main-menu.section-filter-blur
                     .mobile-salon-registration
                         h1.mobile-best-salon  Лучшие салоны 
                         button(type="button").mobile-button-salon-registration
@@ -123,7 +125,7 @@ html(lang="ru")
                                 h2.mobile-reviews__title  Отзывы
                                 a(href="#").mobile-reviews__link Все отзывы      
                         .wrapper
-                        
+
                             .mobile-salon-reviews-container.swiper-container
                                 .mobile-salon-reviews-wrap.swiper-wrapper
                                     .mobile-salon-reviews.swiper-slide
@@ -302,13 +304,17 @@ html(lang="ru")
                                         span.content__description загар и SPA-процедуры в полном ассортименте.
                             p Вам остается лишь выбрать необходимый вид косметологических услуг — готовые решения по воплощению этих желаний уже есть на нашем сайте!            
 
-            footer.mobile-footer
-                .wrapper
-                    .mobile-mail
-                        a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
-                    .mobile-footer__text    
-                        p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
-                            a(href="#") связаться с менеджером.               
+        footer.mobile-footer
+            .wrapper
+                .mobile-mail
+                    a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
+                .mobile-footer__text    
+                    p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
+                        a(href="#") связаться с менеджером.     
+        include metro
+        include registration
+        include categories
+        include menu                
                             
                             
                             
