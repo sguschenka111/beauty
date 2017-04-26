@@ -2006,46 +2006,55 @@ a {
 .mobile-salon-wrap {
   color: #3c3c3b;
 }
-.mobile-salon-wrap .mobile-discount-section {
+
+.mobile-discount-section {
   border-bottom: 1px solid #e5e5e5;
 }
-.mobile-salon-wrap .mobile-discount {
+
+.mobile-discount {
   width: 87.5%;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.mobile-salon-wrap .mobile-picture-section {
+
+.mobile-picture-section {
   max-height: 250px;
 }
-.mobile-salon-wrap .mobile-picture-section img {
+.mobile-picture-section img {
   display: block;
   margin: 0 auto;
 }
-.mobile-salon-wrap .mobile-discount h1 {
+
+.mobile-discount h1 {
   font-size: 18px;
   margin-bottom: 17px;
   line-height: 20px;
 }
-.mobile-salon-wrap .mobile-discount-count {
+
+.mobile-discount-count {
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 15px;
 }
-.mobile-salon-wrap .mobile-discount-count__sum {
+
+.mobile-discount-count__sum {
   font-weight: 700;
 }
-.mobile-salon-wrap .mobile-discount p {
+
+.mobile-discount p {
   font-weight: 300;
   line-height: 20px;
   text-align: left;
 }
-.mobile-salon-wrap .mobile-salon-nav-list {
+
+.mobile-salon-nav-list {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   *zoom: 1;
 }
-.mobile-salon-wrap .mobile-salon-nav__item {
+
+.mobile-salon-nav__item {
   float: left;
   font-size: 12px;
   text-transform: uppercase;
@@ -2054,70 +2063,83 @@ a {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.mobile-salon-wrap .mobile-salon-nav__item_active {
+
+.mobile-salon-nav__item_active {
   color: #ec407a;
   border-bottom: 2px solid #ec407a;
 }
-.mobile-salon-wrap .mobile-salon-card {
+
+.mobile-salon-card {
   background: #FFF;
   padding-top: 20px;
   padding-bottom: 24px;
 }
-.mobile-salon-wrap .mobile-salon-card .wrapper {
+.mobile-salon-card .wrapper {
   overflow: hidden;
   *zoom: 1;
 }
-.mobile-salon-wrap .mobile-salon-info {
+
+.mobile-salon-info {
   float: right;
   width: 70%;
 }
-.mobile-salon-wrap .mobile-salon-info h2 {
+
+.mobile-salon-info h2 {
   font-size: 18px;
   margin-bottom: 7px;
 }
-.mobile-salon-wrap .mobile-salon-info__adress {
+
+.mobile-salon-info__adress {
   display: block;
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 9px;
 }
-.mobile-salon-wrap .mobile-salon-adress {
+
+.mobile-salon-adress {
   margin-bottom: 7px;
 }
-.mobile-salon-wrap .mobile-rating-section {
+
+.mobile-rating-section {
   margin-bottom: 10px;
 }
-.mobile-salon-wrap .mobile-rating-stars-list {
+
+.mobile-rating-stars-list {
   display: inline-block;
   margin-right: 8px;
 }
-.mobile-salon-wrap .mobile-rating-stars__item {
+
+.mobile-rating-stars__item {
   display: inline-block;
   vertical-align: middle;
   background: url("../../img/star.png");
   width: 13px;
   height: 13px;
 }
-.mobile-salon-wrap .mobile-rating-stars__item_filled {
+
+.mobile-rating-stars__item_filled {
   background: url("../../img/star-filled.png");
   width: 13px;
   height: 13px;
 }
-.mobile-salon-wrap .mobile-rating-count {
+
+.mobile-rating-count {
   color: #b5b3b3;
   font-size: 12px;
   font-weight: 300;
   display: inline-block;
   vertical-align: middle;
 }
-.mobile-salon-wrap .mobile-salon-way {
+
+.mobile-salon-way {
   display: block;
   margin-bottom: 15px;
   text-decoration: none;
   color: #5e35b1;
   font-size: 14px;
 }
-.mobile-salon-wrap .mobile-call {
+
+.mobile-call {
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -2130,7 +2152,7 @@ a {
   position: relative;
   width: 95%;
 }
-.mobile-salon-wrap .mobile-call::before {
+.mobile-call::before {
   content: '';
   position: absolute;
   background: url(../../img/call.png) no-repeat;
@@ -2140,31 +2162,36 @@ a {
   top: 50%;
   margin-top: -8px;
 }
-.mobile-salon-wrap .mobile-salon-picture {
+
+.mobile-salon-picture {
   float: left;
 }
-.mobile-salon-wrap .mobile-salon-picture img {
+.mobile-salon-picture img {
   width: 70px;
   height: 70px;
   border-radius: 50px;
 }
-.mobile-salon-wrap .mobile-yandex-card {
+
+.mobile-yandex-card {
   background: url("../../img/yandex.jpg");
   height: 115px;
 }
-.mobile-salon-wrap .mobile-slider-salon {
+
+.mobile-slider-salon {
   background: #FFF;
   padding: 30px 20px 20px;
   border-bottom: 1px solid #e5e5e5;
 }
-.mobile-salon-wrap .mobile-slider-salon__picture {
+
+.mobile-slider-salon__picture {
   margin-bottom: 10px;
 }
-.mobile-salon-wrap .mobile-slider-salon__picture img {
+.mobile-slider-salon__picture img {
   display: block;
   margin: 0 auto;
 }
-.mobile-salon-wrap .all-shares {
+
+.all-shares {
   color: #5e35b1;
   font-size: 16px;
   padding-top: 12px;
@@ -2175,7 +2202,7 @@ a {
   width: 87.5%;
   margin: 0 auto;
 }
-.mobile-salon-wrap .all-shares::after {
+.all-shares::after {
   content: '';
   background: url("../../img/arrow-blue.png");
   width: 7px;
@@ -2185,32 +2212,36 @@ a {
   top: 50%;
   margin-top: -9px;
 }
-.mobile-salon-wrap .mobile-other-shares {
+
+.mobile-other-shares {
   margin-bottom: 20px;
 }
-.mobile-salon-wrap .mobile-description-salon-title {
+
+.mobile-description-salon-title {
   background: #f6f6f6;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
-.mobile-salon-wrap .mobile-description-salon-title h2 {
+.mobile-description-salon-title h2 {
   font-size: 16px;
   width: 87.5%;
   margin: 0 auto;
 }
-.mobile-salon-wrap .mobile-description-salon-content {
+
+.mobile-description-salon-content {
   width: 87.5%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
-.mobile-salon-wrap .mobile-description-salon-content p {
+.mobile-description-salon-content p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
   margin-bottom: 20px;
 }
-.mobile-salon-wrap .mobile-further-salon {
+
+.mobile-further-salon {
   color: #5e35b1;
   font-size: 14px;
   position: relative;
@@ -2219,7 +2250,7 @@ a {
   display: inline-block;
   vertical-align: middle;
 }
-.mobile-salon-wrap .mobile-further-salon::after {
+.mobile-further-salon::after {
   content: '';
   background: url("../../img/arrow-blue.png");
   width: 7px;
@@ -2229,32 +2260,35 @@ a {
   vertical-align: middle;
   margin-left: 10px;
 }
-.mobile-salon-wrap .mobile-conditions-salon-title {
+
+.mobile-conditions-salon-title {
   background: #f6f6f6;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
-.mobile-salon-wrap .mobile-conditions-salon-title h2 {
+.mobile-conditions-salon-title h2 {
   font-size: 16px;
   width: 87.5%;
   margin: 0 auto;
 }
-.mobile-salon-wrap .mobile-conditions-salon-list {
+
+.mobile-conditions-salon-list {
   width: 87.5%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.mobile-salon-wrap .mobile-conditions-salon__item {
+
+.mobile-conditions-salon__item {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
   font-weight: 300;
 }
-.mobile-salon-wrap .mobile-conditions-salon__item:last-child {
+.mobile-conditions-salon__item:last-child {
   margin-bottom: 0;
 }
-.mobile-salon-wrap .mobile-conditions-salon__item::before {
+.mobile-conditions-salon__item::before {
   content: '';
   width: 5px;
   height: 5px;
@@ -2263,40 +2297,46 @@ a {
   background: #5e35b1;
   margin-right: 15px;
 }
-.mobile-salon-wrap .mobile-conditions-salon__item-text {
+
+.mobile-conditions-salon__item-text {
   display: inline-block;
   vertical-align: text-top;
   width: 78.125%;
 }
-.mobile-salon-wrap .mobile-other {
+
+.mobile-other {
   background: #f6f6f6;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
-.mobile-salon-wrap .mobile-other h2 {
+.mobile-other h2 {
   font-size: 16px;
   width: 87.5%;
   margin: 0 auto;
 }
-.mobile-salon-wrap .mobile-salon-registration-section {
+
+.mobile-salon-registration-section {
   background: #4c3c7f;
   color: #FFF;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.mobile-salon-wrap .mobile-salon-registration__title1 {
+
+.mobile-salon-registration__title1 {
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 300;
 }
-.mobile-salon-wrap .mobile-salon-registration__title2 {
+
+.mobile-salon-registration__title2 {
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 15px;
 }
-.mobile-salon-wrap .mobile-salon-registration-button {
+
+.mobile-salon-registration-button {
   background: transparent;
   width: 100%;
   border: 1px solid #FFF;
@@ -2309,7 +2349,7 @@ a {
   display: inline-block;
   vertical-align: middle;
 }
-.mobile-salon-wrap .mobile-salon-registration-button::before {
+.mobile-salon-registration-button::before {
   content: '';
   background: url("../../img/plus.png");
   width: 11px;
@@ -2318,6 +2358,156 @@ a {
   vertical-align: middle;
   margin-right: 10px;
 }
-.mobile-salon-wrap .crumbs-section p {
+
+.crumbs-section p {
   font-size: 14px;
+}
+
+/*--------------------------------------------*/
+.mobile-salon-index-wrap {
+  color: #3c3c3b;
+}
+
+.mobile-description-salon {
+  background: #FFF;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mobile-description-salon p {
+  line-height: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.mobile-regimen-work {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.mobile-regimen-time {
+  width: 140px;
+  font-weight: 700;
+  font-size: 14px;
+  float: left;
+  line-height: 18px;
+}
+
+.mobile-open-close {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  width: 93px;
+}
+.mobile-open-close::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3aaa35;
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mobile-other-salon {
+  background: #FFF;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mobile-other-salon__link {
+  font-size: 14px;
+  color: #5e35b1;
+}
+
+.mobile-prace-list-section {
+  margin-bottom: 30px;
+}
+
+.mobile-prace-list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #f6f6f6;
+}
+.mobile-prace-list h2 {
+  font-size: 16px;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.mobile-nav-prace__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+  padding-left: 10px;
+}
+.mobile-nav-prace__item::after {
+  content: '';
+  background: url(../img/arrow.png) no-repeat;
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(90deg);
+}
+
+.mobile-nav2-prace-list {
+  background: #f6f6f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mobile-nav2-prace__item {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.mobile-nav2-prace__service {
+  width: 70%;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+.mobile-nav2-prace__sum {
+  width: 30%;
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.mobile-comment {
+  text-align: center;
+}
+
+.mobile-brands-section {
+  background: #ededed;
+  padding-bottom: 20px;
+}
+
+.mobile-brands__title {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mobile-brands-slider {
+  height: 110px;
+  text-align: center;
+}
+.mobile-brands-slider img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.mobile-brands-slider::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }

@@ -1,0 +1,176 @@
+.mobile-salon-index-wrap {
+    color: #3c3c3b;
+}
+
+.mobile-description-salon {
+    background: #FFF;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    
+    p {
+        line-height: 20px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+}
+
+.mobile-regimen-work {
+    @include clearfix;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mobile-regimen-time {
+    width: 140px;
+    font-weight: 700;
+    font-size: 14px;
+    float: left;
+    line-height: 18px;
+}
+
+.mobile-open-close {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    width: 93px;
+    
+    &::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #3aaa35;
+        margin-right: 7px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.mobile-other-salon {
+    background: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mobile-other-salon__link {
+    font-size: 14px;
+    color: #5e35b1;
+}
+
+.mobile-prace-list-section{
+    margin-bottom: 30px;
+}
+
+.mobile-prace-list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #f6f6f6;
+    
+    h2 {
+        font-size: 16px;
+        width: 87.5%;
+        margin: 0 auto;
+    }
+}
+
+.mobile-nav-prace__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 10px;
+    
+    &::after {
+        content: '';
+        background: url(../img/arrow.png) no-repeat;
+        width: 7px;
+        height: 14px;
+        position: absolute;
+        right: 10px;
+        transform: rotate(90deg);
+    }
+}
+
+.mobile-nav2-prace-list {
+    background: #f6f6f6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mobile-nav2-prace__item {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.mobile-nav2-prace__service {
+    width: 70%;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.mobile-nav2-prace__sum {
+    width: 30%;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.mobile-comment {
+    text-align: center;
+}
+
+.mobile-brands-section  {
+    background: #ededed;
+    padding-bottom: 20px;
+}
+
+.mobile-brands__title {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mobile-brands-slider {
+    height: 110px;
+    text-align: center;
+    
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
