@@ -1937,12 +1937,6 @@ a {
 }
 
 /*--------------------------------------------*/
-.mobile-promo-wrap {
-  /*.mobile-footer {
-      padding-bottom: 30px;
-      padding-top: 25px;
-  }*/
-}
 .mobile-promo-wrap .promo-section {
   background: #FFF;
   padding-bottom: 26px;
@@ -2011,10 +2005,6 @@ a {
 /*--------------------------------------------*/
 .mobile-salon-wrap {
   color: #3c3c3b;
-  /*.mobile-footer {
-      padding-bottom: 30px;
-      padding-top: 25px;
-  }  */
 }
 .mobile-salon-wrap .mobile-discount-section {
   border-bottom: 1px solid #e5e5e5;
@@ -2194,6 +2184,9 @@ a {
   right: 0;
   top: 50%;
   margin-top: -9px;
+}
+.mobile-salon-wrap .mobile-other-shares {
+  margin-bottom: 20px;
 }
 .mobile-salon-wrap .mobile-description-salon-title {
   background: #f6f6f6;

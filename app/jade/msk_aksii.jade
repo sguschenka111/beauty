@@ -14,86 +14,72 @@ html(lang="ru")
     body
         .mobile-wrapper
             .mobile-promo-wrap
-                header.mobile-header-index
-                    .container
-                        .mobile-menu-index
-                            a(href="#").mobile-menu-index__link
-                                img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img 
-                        a(href="#").mobile-logo-index-link
-                        .mobile-login-index
-                            a(href="#").mobile-login-index__link
-                                img(src="img/page2/doorSvg.svg" alt="enter").mobile-login-index__img
-                .mobile-metro-section
-                    .mobile-metro-title
-                        h1 Cтанции метро
-                .mobile-categories-section
-                    .mobile-categories-title 
-                        h1 Категории услуг
+                header.mobile-header-index.section-filter-blur
+                    .mobile-menu-index.mobile-menu_js
+                        a(href="#").mobile-menu-index__link
+                            img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img
+                    .mobile-logo-index        
+                        a(href="index.html").mobile-logo-index__link
+                            img(src="img/page2/logo-color.png" alt="logo" width="123" height="30").mobile-logo-index__img
+                    .mobile-login-index.mobile-login_js
+                        a(href="#").mobile-login-index__link
+                            img(src="img/page2/doorSvg.svg" alt="enter" width="19" height="14").mobile-login-index__img
+                .mobile-metro-section.mobile-metro_js.section-filter-blur
+                    span.mobile-metro-title Cтанции метро
+                .mobile-categories-section.mobile-categories_js.section-filter-blur
+                    span.mobile-categories-title  Категории
                 .promo-section
                     .wrapper
                         .mobile-card-shares
-                            .angle
-                                .time-shares
-                                    span.time-shares__day 26 д.
                             .mobile-card-shares-img
                                 img(src="img/page2/shares.jpg" alt="shares")
                             .mobile-card-shares-content
-                                .mobile-card-shares-content__title
-                                    h3 Подарок на февральские праздники
-                                .mobile-card-shares-content__name
-                                    h3 Этисэль на Таганке
+                                h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                h3.mobile-card-shares-content__name Этисэль на Таганке
                                 .mobile-salon-adress
-                                    span.adress-salon
+                                    span.mobile-adress-salon
                                         span.adress м. Таганская
-                                        span 350 м        
+                                        span 350 м
+                                .mobile-time-shares
+                                    span.mobile-time-shares__day 26 д.
                         .mobile-card-shares
-                            .angle
-                                .time-shares
-                                    span.time-shares__day 26 д.
                             .mobile-card-shares-img
                                 img(src="img/page2/shares.jpg" alt="shares")
                             .mobile-card-shares-content
-                                .mobile-card-shares-content__title
-                                    h3 Подарок на февральские праздники
-                                .mobile-card-shares-content__name
-                                    h3 Этисэль на Таганке
+                                h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                h3.mobile-card-shares-content__name Этисэль на Таганке
                                 .mobile-salon-adress
-                                    span.adress-salon
+                                    span.mobile-adress-salon
                                         span.adress м. Таганская
-                                        span 350 м 
+                                        span 350 м
+                                .mobile-time-shares
+                                    span.mobile-time-shares__day 26 д.
                         .mobile-card-shares
-                            .angle
-                                .time-shares
-                                    span.time-shares__day 26 д.
                             .mobile-card-shares-img
                                 img(src="img/page2/shares.jpg" alt="shares")
                             .mobile-card-shares-content
-                                .mobile-card-shares-content__title
-                                    h3 Подарок на февральские праздники
-                                .mobile-card-shares-content__name
-                                    h3 Этисэль на Таганке
+                                h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                h3.mobile-card-shares-content__name Этисэль на Таганке
                                 .mobile-salon-adress
-                                    span.adress-salon
+                                    span.mobile-adress-salon
                                         span.adress м. Таганская
-                                        span 350 м               
+                                        span 350 м
+                                .mobile-time-shares
+                                    span.mobile-time-shares__day 26 д.            
                         .mobile-card-shares
-                            .angle
-                                .time-shares
-                                    span.time-shares__day 26 д.
                             .mobile-card-shares-img
                                 img(src="img/page2/shares.jpg" alt="shares")
                             .mobile-card-shares-content
-                                .mobile-card-shares-content__title
-                                    h3 Подарок на февральские праздники
-                                .mobile-card-shares-content__name
-                                    h3 Этисэль на Таганке
+                                h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                h3.mobile-card-shares-content__name Этисэль на Таганке
                                 .mobile-salon-adress
-                                    span.adress-salon
+                                    span.mobile-adress-salon
                                         span.adress м. Таганская
-                                        span 350 м    
-                                          
+                                        span 350 м
+                                .mobile-time-shares
+                                    span.mobile-time-shares__day 26 д.
                         .mobile-button-download
-                            button Загрузить еще
+                            button(type="button") Загрузить еще
                 .crumbs-section
                     .wrapper
                         ul.crumbs-list
@@ -101,10 +87,10 @@ html(lang="ru")
                                 a(href="#").crumbs__link.crumbs__link_active Главная
                             li.crumbs__item
                                 a(href="#").crumbs__link Акции и скидки   
-                footer.mobile-footer
-                    .wrapper
-                        .mobile-mail
-                            a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
-                        .mobile-footer__text    
-                            p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
-                                a(href="#") связаться с менеджером.                   
+        footer.mobile-footer
+            .wrapper
+                .mobile-mail
+                    a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
+                .mobile-footer__text    
+                    p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
+                        a(href="#") связаться с менеджером.                   

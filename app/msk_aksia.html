@@ -15,11 +15,10 @@
   <body>
     <div class="mobile-wrapper">
       <div class="mobile-salon-wrap">
-        <header class="mobile-header-index">
-          <div class="container">
-            <div class="mobile-menu-index"><a href="#" class="mobile-menu-index__link"><img src="img/page2/menu2.png" alt="menu" class="mobile-menu-index__img"></a></div><a href="#" class="mobile-logo-index-link"></a>
-            <div class="mobile-login-index"><a href="#" class="mobile-login-index__link"><img src="img/page2/doorSvg.svg" alt="enter" class="mobile-login-index__img"></a></div>
-          </div>
+        <header class="mobile-header-index section-filter-blur">
+          <div class="mobile-menu-index mobile-menu_js"><a href="#" class="mobile-menu-index__link"><img src="img/page2/menu2.png" alt="menu" class="mobile-menu-index__img"></a></div>
+          <div class="mobile-logo-index">       <a href="index.html" class="mobile-logo-index__link"><img src="img/page2/logo-color.png" alt="logo" width="123" height="30" class="mobile-logo-index__img"></a></div>
+          <div class="mobile-login-index mobile-login_js"><a href="#" class="mobile-login-index__link"><img src="img/page2/doorSvg.svg" alt="enter" width="19" height="14" class="mobile-login-index__img"></a></div>
         </header>
         <div class="mobile-discount-section">
           <div class="mobile-picture-section"><img src="img/girl-face.jpg" alt="girl"></div>
@@ -60,9 +59,9 @@
         <div class="mobile-slider-salon">
           <div class="mobile-slider-salon__picture"><img src="img/slider/salon.jpg" alt="salon"></div>
           <div class="mobile-slider-controll">
-            <button class="mobile-arrow-slider__back mobile-slider-arrow"></button>
-            <button class="mobile-arrow-slider__next mobile-slider-arrow"></button>
-            <div class="mobile-slider-amount"><span>1 </span><span>из </span><span>10            </span></div>
+            <button class="mobile-arrow-slider__back prev1 mobile-slider-arrow swiper-button-prev"></button>
+            <button class="mobile-arrow-slider__next next1 mobile-slider-arrow swiper-button-next"></button>
+            <div class="mobile-slider-amount amount1 swiper-pagination">         </div>
           </div>
         </div>
         <div class="mobile-salon-description-section"><a href="#" class="all-shares"> Смотреть все акции салона</a>
@@ -97,26 +96,22 @@
         <div class="mobile-other">
           <h2>Вас также могут заинтересовать</h2>
         </div>
-        <div class="mobile-other-shares">   
-          <div class="mobile-card-shares">
-            <div class="angle">
-              <div class="time-shares"><span class="time-shares__day">26 д.</span></div>
-            </div>
-            <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
-            <div class="mobile-card-shares-content">
-              <div class="mobile-card-shares-content__title">
-                <h3>Подарок на февральские праздники</h3>
+        <div class="mobile-other-shares">
+          <div class="wrapper">
+            <div class="mobile-card-shares">
+              <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
+              <div class="mobile-card-shares-content">
+                <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                <div class="mobile-time-shares"><span class="mobile-time-shares__day">26 д.</span></div>
               </div>
-              <div class="mobile-card-shares-content__name">
-                <h3>Этисэль на Таганке</h3>
-              </div>
-              <div class="mobile-salon-adress"><span class="adress-salon"><span class="adress">м. Таганская</span><span>350 м    </span></span></div>
             </div>
-          </div>
-          <div class="mobile-slider-controll">
-            <button class="mobile-arrow-slider__back mobile-slider-arrow"></button>
-            <button class="mobile-arrow-slider__next mobile-slider-arrow"></button>
-            <div class="mobile-slider-amount"><span>1 </span><span>из </span><span>10</span></div>
+            <div class="mobile-slider-controll">
+              <button class="mobile-arrow-slider__back prev2 mobile-slider-arrow swiper-button-prev"></button>
+              <button class="mobile-arrow-slider__next next2 mobile-slider-arrow swiper-button-next"></button>
+              <div class="mobile-slider-amount amount2 swiper-pagination"> </div>
+            </div>
           </div>
         </div>
         <div class="mobile-salon-registration-section">
@@ -135,15 +130,15 @@
             <p>Скидка 5% на лифтинг мезонитями</p>
           </div>
         </div>
-        <footer class="mobile-footer">
-          <div class="wrapper">
-            <div class="mobile-mail"><a href="mailto:info@msk-beauty.ru" class="mail__link">info@msk-beauty.ru</a></div>
-            <div class="mobile-footer__text">   
-              <p>Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете <a href="#">связаться с менеджером.         </a></p>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
+    <footer class="mobile-footer">
+      <div class="wrapper">
+        <div class="mobile-mail"><a href="mailto:info@msk-beauty.ru" class="mail__link">info@msk-beauty.ru</a></div>
+        <div class="mobile-footer__text">   
+          <p>Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете <a href="#">связаться с менеджером.         </a></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
