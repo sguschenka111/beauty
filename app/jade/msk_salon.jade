@@ -6,10 +6,17 @@ html(lang="ru")
         title Beauty shop
         meta(name='viewport' content='width=device-width, initial-scale=1')
         link(rel='stylesheet'  href='css/normalize.css' )
+        link(rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css")
+        link(rel="stylesheet"  href='js/swiper/css/swiper.min.css')
         link(rel='stylesheet'  href='css/main.css' )
         link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet")
         script(src="js/jquery-3.2.0.min.js" defer)
         script(src="js/hummer.js" defer)
+        script(src="js/sliderMain.js" defer)
+        script(src="js/swiper/js/swiper.min.js" defer)
+        script(src="js/salon.js" defer)
+        script(src="js/msk_aksia.js" defer)
+        script(src="js/header.js" defer)
     body
         .mobile-wrapper
             .mobile-salon-index-wrap
@@ -23,7 +30,7 @@ html(lang="ru")
                     .mobile-login-index.mobile-login_js
                         a(href="#").mobile-login-index__link
                             img(src="img/page2/doorSvg.svg" alt="enter" width="19" height="14").mobile-login-index__img
-                .mobile-salon-card
+                .mobile-salon-card.section-filter-blur
                     .wrapper
                         .mobile-salon-picture
                             img(src="img/salon-card.jpg" alt="salon")
@@ -46,15 +53,17 @@ html(lang="ru")
                                     span голосов
                             a(href="#").mobile-salon-way Как добраться?
                             button(type="button").mobile-call +7 (499) 628-22-34
-                .mobile-yandex-card
-                nav.mobile-salon-nav
-                    ul.mobile-salon-nav-list
-                        li.mobile-salon-nav__item.mobile-salon-nav__item_active Описание
-                        li.mobile-salon-nav__item Прайс-лист
-                        li.mobile-salon-nav__item Акции
+                button(type="button").mobile-button-show-contact
+                    span Показать контакты
+                .mobile-yandex-card.section-filter-blur
+                nav.mobile-salon-nav.swiper-container.section-filter-blur
+                    ul.mobile-salon-nav-list.swiper-wrapper
+                        li.mobile-salon-nav__item.mobile-salon-nav__item_active.swiper-slide Описание
+                        li.mobile-salon-nav__item.swiper-slide Прайс-лист
+                        li.mobile-salon-nav__item.swiper-slide Акции
                             span  4
-                        li.mobile-salon-nav__item Отзывы
-                .mobile-description-salon
+                        li.mobile-salon-nav__item.swiper-slide Отзывы
+                .mobile-description-salon.section-filter-blur
                     .wrapper
                         .mobile-regimen-work 
                             .mobile-regimen-time Пн-Пт: 09:00 – 21:00 Сб-Вс: 09:00-19:00
@@ -67,59 +76,110 @@ html(lang="ru")
                 .mobile-prace-list-section
                     .mobile-prace-list
                         h2 Прайс-лист
-                    ul.mobile-nav-prace-list
+                    ul.mobile-nav-prace-list.mobile-nav-prace-list_js
                         .wrapper
                             li.mobile-nav-prace__item Парикмахерские услуги
+                                span.mobile-nav-prace__arrow
                             li.mobile-nav-prace__item Косметология
+                                span.mobile-nav-prace__arrow
                             li.mobile-nav-prace__item Ногтевой сервис
+                                span.mobile-nav-prace__arrow
                             li.mobile-nav-prace__item Массаж
+                                span.mobile-nav-prace__arrow
+                                ul.mobile-nav2-prace-list
+                                    .wrapper
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Коррекция бровей и ресниц
+                                                span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 300 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Чистка лица
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Ульразвуковая
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Ноги полностью
+                                                span.point ........................................................................................................................................................................................................................................................
+
+                                            span.mobile-nav2-prace__sum 2000 pуб.
                             li.mobile-nav-prace__item Спа
-                        ul.mobile-nav2-prace-list
-                            .wrapper
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Коррекция бровей и ресниц
-                                        span.point ........................................................................................................................................................................................................................................................
-                                    span.mobile-nav2-prace__sum 300 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Массаж
-                                        span.point ........................................................................................................................................................................................................................................................
+                                span.mobile-nav-prace__arrow
+                                ul.mobile-nav2-prace-list
+                                    .wrapper
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Коррекция бровей и ресниц
+                                                span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 300 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Массаж
-                                        span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Массаж
-                                        span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Массаж
-                                        span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Массаж
-                                        span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Массаж
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Чистка лица
-                                        span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Чистка лица
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Ульразвуковая
-                                        span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Ульразвуковая
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
-                                li.mobile-nav2-prace__item
-                                    span.mobile-nav2-prace__service Ноги полностью
-                                        span.point ........................................................................................................................................................................................................................................................
+                                            span.mobile-nav2-prace__sum 2000 pуб.
+                                        li.mobile-nav2-prace__item
+                                            span.mobile-nav2-prace__service Ноги полностью
+                                                span.point ........................................................................................................................................................................................................................................................
 
-                                    span.mobile-nav2-prace__sum 2000 pуб.
+                                            span.mobile-nav2-prace__sum 2000 pуб.
                 .mobile-salon-registration-section
                     .wrapper
                         .mobile-salon-registration__title1 Вы владелец салона?
@@ -130,48 +190,56 @@ html(lang="ru")
                             .wrapper
                                 h2.mobile-shares__title Акции
                         .wrapper
-                            .mobile-card-shares-container.swiper-container
-                                .mobile-card-shares-wrap.swiper-wrapper
-                                    .mobile-card-shares.swiper-slide
-                                        .mobile-card-shares-img
-                                            img(src="img/page2/shares.jpg" alt="shares")
-                                        .mobile-card-shares-content
-                                            h3.mobile-card-shares-content__title Подарок на февральские праздники
-                                            h3.mobile-card-shares-content__name Этисэль на Таганке
-                                            .mobile-salon-adress
-                                                span.mobile-adress-salon
-                                                    span.adress м. Таганская
-                                                    span 350 м
-                                            .mobile-time-shares
-                                                span.mobile-time-shares__day 26 д.
-                                    .mobile-card-shares.swiper-slide
-                                        .mobile-card-shares-img
-                                            img(src="img/page2/shares.jpg" alt="shares")
-                                        .mobile-card-shares-content
-                                            h3.mobile-card-shares-content__title Подарок на февральские праздники
-                                            h3.mobile-card-shares-content__name Этисэль на Таганке
-                                            .mobile-salon-adress
-                                                span.mobile-adress-salon
-                                                    span.adress м. Таганская
-                                                    span 350 м
-                                            .mobile-time-shares
-                                                span.mobile-time-shares__day 35 д       
-                                    .mobile-card-shares.swiper-slide
-                                        .mobile-card-shares-img
-                                            img(src="img/page2/shares.jpg" alt="shares")
-                                        .mobile-card-shares-content
-                                            h3.mobile-card-shares-content__title Подарок на февральские праздники
-                                            h3.mobile-card-shares-content__name Этисэль на Таганке
-                                            .mobile-salon-adress
-                                                span.mobile-adress-salon
-                                                    span.adress м. Таганская
-                                                    span 350 м
-                                            .mobile-time-shares
-                                                span.mobile-time-shares__day 35 д 
-                                .mobile-slider-controll
-                                    button.mobile-arrow-slider__back.prev1.mobile-slider-arrow.swiper-button-prev
-                                    button.mobile-arrow-slider__next.next1.mobile-slider-arrow.swiper-button-next
-                                    .mobile-slider-amount.amount1.swiper-pagination   
+                           .carousel
+                                .mobile-card-shares.carousel-cell
+                                    .mobile-card-shares-img
+                                        img(src="img/page2/articles.jpg" alt="shares")
+                                    .mobile-card-shares-content
+                                        h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                        h3.mobile-card-shares-content__name Этисэль на Таганке
+                                        .mobile-salon-adress
+                                            span.mobile-adress-salon
+                                                span.adress м. Таганская
+                                                span 350 м
+                                        .mobile-time-shares
+                                            span.mobile-time-shares__day 26 д.
+                                .mobile-card-shares.carousel-cell
+                                    .mobile-card-shares-img
+                                        img(src="img/page2/articles.jpg" alt="shares")
+                                    .mobile-card-shares-content
+                                        h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                        h3.mobile-card-shares-content__name Этисэль на Таганке
+                                        .mobile-salon-adress
+                                            span.mobile-adress-salon
+                                                span.adress м. Таганская
+                                                span 350 м
+                                        .mobile-time-shares
+                                            span.mobile-time-shares__day 35 д 
+                                .mobile-card-shares.carousel-cell
+                                    .mobile-card-shares-img
+                                        img(src="img/page2/articles.jpg" alt="shares")
+                                    .mobile-card-shares-content
+                                        h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                        h3.mobile-card-shares-content__name Этисэль на Таганке
+                                        .mobile-salon-adress
+                                            span.mobile-adress-salon
+                                                span.adress м. Таганская
+                                                span 350 м
+                                        .mobile-time-shares
+                                            span.mobile-time-shares__day 35 д
+                                .mobile-card-shares.carousel-cell
+                                    .mobile-card-shares-img
+                                        img(src="img/page2/articles.jpg" alt="shares")
+                                    .mobile-card-shares-content
+                                        h3.mobile-card-shares-content__title Подарок на февральские праздники
+                                        h3.mobile-card-shares-content__name Этисэль на Таганке
+                                        .mobile-salon-adress
+                                            span.mobile-adress-salon
+                                                span.adress м. Таганская
+                                                span 350 м
+                                        .mobile-time-shares
+                                            span.mobile-time-shares__day 35 д
+                        
                 .mobile-reviews-section
                     .mobile-reviews-title-block
                         .wrapper
@@ -187,9 +255,48 @@ html(lang="ru")
                             button.mobile-arrow-slider__back.prev1.mobile-slider-arrow.swiper-button-prev
                             button.mobile-arrow-slider__next.next1.mobile-slider-arrow.swiper-button-next
                             .mobile-slider-amount.amount1.swiper-pagination    
-                    
-                    
-                    
+                .mobile-news-section
+                    .mobile-news-title-block
+                        .wrapper
+                            h2.mobile-reviews__title  Новости    
+                .mobile-articles-section
+                    .mobile-articles-title-block
+                        .wrapper
+                            h2.mobile-articles__title Статьи
+                .mobile-galerry-section
+                    .mobile-galerry-title-block
+                        .wrapper
+                            h2.mobile-galerry__title Галерея
+                    .mobile-section-slider        
+                        .wrapper700        
+                            .mobile-slider-salon.swiper-container
+                                .mobile-slider-salon__picture.swiper-wrapper
+                                    img(src="img/slider/salon.jpg" alt="salon").swiper-slide
+                                    img(src="img/slider/salon.jpg" alt="salon").swiper-slide
+                                .mobile-slider-controll
+                                    button.mobile-arrow-slider__back.prev.mobile-slider-arrow.swiper-button-prev
+                                    button.mobile-arrow-slider__next.next.mobile-slider-arrow.swiper-button-next
+                                    .mobile-slider-amount.amount.swiper-pagination   
+                .mobile-site-adress
+                    a(href="#").mobile-site-adress__link skylightbeauty.ru
+                .crumbs-section
+                    .wrapper
+                        ul.crumbs-list
+                            li.crumbs__item.crumbs__item-active
+                                a(href="#").crumbs__link.crumbs__link_active Главная
+                            li.crumbs__item.crumbs__item-active
+                                a(href="#").crumbs__link.crumbs__link_active Каталог   
+                            li.crumbs__item
+                                a(href="#").crumbs__link Этисель на Таганке 
+        footer.mobile-footer
+            .wrapper
+                .mobile-mail
+                    a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
+                .mobile-footer__text    
+                    p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
+                        a(href="#") связаться с менеджером.         
+        include registration
+        include menu                           
                     
                     
                     

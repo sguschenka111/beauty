@@ -69,7 +69,10 @@ ol {
 }
 
 .rotate180 {
-    transform: rotate(180deg);
+    transform: rotate(180deg) !important;
+}
+.rotate270 {
+    transform: rotate(270deg) !important;
 }
 
 a {

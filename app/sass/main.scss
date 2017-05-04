@@ -23,7 +23,6 @@
         .mobile-header {
             background: #42396f;
             border-bottom: 1px solid rgba(255,255,255,.1);
-            height: 39px;
             text-align: center;
         }
         
@@ -221,7 +220,7 @@
             padding-top: 15px;
             padding-bottom: 15px;
             position: fixed;
-            top: 389px;
+            bottom: 100px;
             width: 275px;
             left:0;
             right: 0;

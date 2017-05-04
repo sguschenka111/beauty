@@ -1,7 +1,7 @@
 .mobile-header-index {
     background: #FFF;
-    height: 40px;  
     text-align: center;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .mobile-index {
@@ -16,10 +16,6 @@
 
 .swiper-pagination-bullet-active {
     background: #FFF;
-}
-
-.main-slider__img {
-    max-height: 250px;
 }
 
 .mobile-menu-index {
@@ -81,18 +77,10 @@
     text-align: center;
 }
 
-.mobile-slider-section {
-    height: 249px;
+.mobile-main-slider {
+    max-width: 700px;
 }
 
-.mobile-slider-section__img {
-    width: 100%;
-    height: 100%;
-}
-
-.mobile-index .mobile-button-salon-registration {
-    top: 388px;
-}
 
 .mobile-guide-section {
     background: #FFF;
@@ -213,16 +201,20 @@
     background: #ededed;
     position: relative;
     margin-bottom: 10px;
+    width: 100%;    
+}
+
+.wrapper700 {
+    max-width: 700px;
+    width: 87.5%;
+    margin: 0 auto;
 }
 
 .mobile-card-shares-img {
-    max-height: 250px;
-    min-height: 160px;
     text-align: center;
     
     img {
         display: inline-block;
-        max-height: 250px;
     }
 }
 
@@ -360,11 +352,6 @@
     left: 0;
 }
 
-.swiper-button-disabled {
-    opacity: 1;
-}
-
-
 .mobile-slider-amount {
     text-align: center;
     margin-top: 0.65em;
@@ -497,7 +484,7 @@
 
 .mobile-card-events-img {
     text-align: center;
-    height: 160px;
+    //height: 160px;
     background: #FFF;
     
     &::before {
@@ -528,14 +515,16 @@
     color: #3c3c3b;
     font-size: 14px;
     font-weight: 300;
-    display: inline-block;
-    vertical-align: middle;
     width: 230px;
     line-height: 20px;
     margin-bottom: 10px;
     
+    .events-adress1 {
+        display: inline-block;
+        vertical-align: middle;
+    }
     
-    &::before {
+    .events-adress1::before {
       content: "";
       background: url('../../img/page2/pin.png');
       width: 13px;
@@ -610,13 +599,10 @@
 
 
 .mobile-card-news-img {
-    max-height: 250px;
-    min-height: 160px;
     text-align: center;
     
     img {
         display: inline-block;
-        max-height: 250px;
     }
 }
 
@@ -692,13 +678,10 @@
 }
 
 .mobile-card-articles-img {
-    max-height: 250px;
-    min-height: 160px;
     text-align: center;
     
     img {
         display: inline-block;
-        max-height: 250px;
     }
 }
 

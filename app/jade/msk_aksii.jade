@@ -12,9 +12,9 @@ html(lang="ru")
         script(src="js/hummer.js" defer)
         script(src="js/main.js" defer)
     body
-        .mobile-wrapper
+        .mobile-wrapper.section-filter-blur
             .mobile-promo-wrap
-                header.mobile-header-index.section-filter-blur
+                header.mobile-header-index
                     .mobile-menu-index.mobile-menu_js
                         a(href="#").mobile-menu-index__link
                             img(src="img/page2/menu2.png" alt="menu").mobile-menu-index__img
@@ -29,10 +29,10 @@ html(lang="ru")
                 .mobile-categories-section.mobile-categories_js.section-filter-blur
                     span.mobile-categories-title  Категории
                 .promo-section
-                    .wrapper
+                    .wrapper700
                         .mobile-card-shares
                             .mobile-card-shares-img
-                                img(src="img/page2/shares.jpg" alt="shares")
+                                img(src="img/page2/articles.jpg" alt="shares")
                             .mobile-card-shares-content
                                 h3.mobile-card-shares-content__title Подарок на февральские праздники
                                 h3.mobile-card-shares-content__name Этисэль на Таганке
@@ -44,7 +44,7 @@ html(lang="ru")
                                     span.mobile-time-shares__day 26 д.
                         .mobile-card-shares
                             .mobile-card-shares-img
-                                img(src="img/page2/shares.jpg" alt="shares")
+                                img(src="img/page2/articles.jpg" alt="shares")
                             .mobile-card-shares-content
                                 h3.mobile-card-shares-content__title Подарок на февральские праздники
                                 h3.mobile-card-shares-content__name Этисэль на Таганке
@@ -56,7 +56,7 @@ html(lang="ru")
                                     span.mobile-time-shares__day 26 д.
                         .mobile-card-shares
                             .mobile-card-shares-img
-                                img(src="img/page2/shares.jpg" alt="shares")
+                                img(src="img/page2/articles.jpg" alt="shares")
                             .mobile-card-shares-content
                                 h3.mobile-card-shares-content__title Подарок на февральские праздники
                                 h3.mobile-card-shares-content__name Этисэль на Таганке
@@ -68,7 +68,7 @@ html(lang="ru")
                                     span.mobile-time-shares__day 26 д.            
                         .mobile-card-shares
                             .mobile-card-shares-img
-                                img(src="img/page2/shares.jpg" alt="shares")
+                                img(src="img/page2/articles.jpg" alt="shares")
                             .mobile-card-shares-content
                                 h3.mobile-card-shares-content__title Подарок на февральские праздники
                                 h3.mobile-card-shares-content__name Этисэль на Таганке
@@ -93,4 +93,8 @@ html(lang="ru")
                     a(href="mailto:info@msk-beauty.ru").mail__link info@msk-beauty.ru
                 .mobile-footer__text    
                     p Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете 
-                        a(href="#") связаться с менеджером.                   
+                        a(href="#") связаться с менеджером.           
+        include metro
+        include registration
+        include categories
+        include menu                    

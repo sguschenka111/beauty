@@ -6,10 +6,17 @@
     <title>Beauty shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500&amp;amp;subset=cyrillic" rel="stylesheet">
     <script src="js/jquery-3.2.0.min.js" defer></script>
     <script src="js/hummer.js" defer></script>
+    <script src="js/sliderMain.js" defer></script>
+    <script src="js/swiper/js/swiper.min.js" defer></script>
+    <script src="js/salon.js" defer></script>
+    <script src="js/msk_aksia.js" defer></script>
+    <script src="js/header.js" defer></script>
   </head>
   <body>
     <div class="mobile-wrapper">
@@ -19,7 +26,7 @@
           <div class="mobile-logo-index">       <a href="index.html" class="mobile-logo-index__link"><img src="img/page2/logo-color.png" alt="logo" width="123" height="30" class="mobile-logo-index__img"></a></div>
           <div class="mobile-login-index mobile-login_js"><a href="#" class="mobile-login-index__link"><img src="img/page2/doorSvg.svg" alt="enter" width="19" height="14" class="mobile-login-index__img"></a></div>
         </header>
-        <div class="mobile-salon-card">
+        <div class="mobile-salon-card section-filter-blur">
           <div class="wrapper">
             <div class="mobile-salon-picture"><img src="img/salon-card.jpg" alt="salon"></div>
             <div class="mobile-salon-info">
@@ -38,16 +45,17 @@
             </div>
           </div>
         </div>
-        <div class="mobile-yandex-card"></div>
-        <nav class="mobile-salon-nav">
-          <ul class="mobile-salon-nav-list">
-            <li class="mobile-salon-nav__item mobile-salon-nav__item_active">Описание</li>
-            <li class="mobile-salon-nav__item">Прайс-лист</li>
-            <li class="mobile-salon-nav__item">Акции<span> 4</span></li>
-            <li class="mobile-salon-nav__item">Отзывы</li>
+        <button type="button" class="mobile-button-show-contact"><span>Показать контакты</span></button>
+        <div class="mobile-yandex-card section-filter-blur"></div>
+        <nav class="mobile-salon-nav swiper-container section-filter-blur">
+          <ul class="mobile-salon-nav-list swiper-wrapper">
+            <li class="mobile-salon-nav__item mobile-salon-nav__item_active swiper-slide">Описание</li>
+            <li class="mobile-salon-nav__item swiper-slide">Прайс-лист</li>
+            <li class="mobile-salon-nav__item swiper-slide">Акции<span> 4</span></li>
+            <li class="mobile-salon-nav__item swiper-slide">Отзывы</li>
           </ul>
         </nav>
-        <div class="mobile-description-salon">
+        <div class="mobile-description-salon section-filter-blur">
           <div class="wrapper">
             <div class="mobile-regimen-work"> 
               <div class="mobile-regimen-time">Пн-Пт: 09:00 – 21:00 Сб-Вс: 09:00-19:00</div>
@@ -63,27 +71,42 @@
           <div class="mobile-prace-list">
             <h2>Прайс-лист</h2>
           </div>
-          <ul class="mobile-nav-prace-list">
+          <ul class="mobile-nav-prace-list mobile-nav-prace-list_js">
             <div class="wrapper">
-              <li class="mobile-nav-prace__item">Парикмахерские услуги</li>
-              <li class="mobile-nav-prace__item">Косметология</li>
-              <li class="mobile-nav-prace__item">Ногтевой сервис</li>
-              <li class="mobile-nav-prace__item">Массаж</li>
-              <li class="mobile-nav-prace__item">Спа</li>
+              <li class="mobile-nav-prace__item">Парикмахерские услуги<span class="mobile-nav-prace__arrow"></span></li>
+              <li class="mobile-nav-prace__item">Косметология<span class="mobile-nav-prace__arrow"></span></li>
+              <li class="mobile-nav-prace__item">Ногтевой сервис<span class="mobile-nav-prace__arrow"></span></li>
+              <li class="mobile-nav-prace__item">Массаж<span class="mobile-nav-prace__arrow"></span>
+                <ul class="mobile-nav2-prace-list">
+                  <div class="wrapper">
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Коррекция бровей и ресниц<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">300 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Чистка лица<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Ульразвуковая<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Ноги полностью<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="mobile-nav-prace__item">Спа<span class="mobile-nav-prace__arrow"></span>
+                <ul class="mobile-nav2-prace-list">
+                  <div class="wrapper">
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Коррекция бровей и ресниц<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">300 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Чистка лица<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Ульразвуковая<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                    <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Ноги полностью<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
+                  </div>
+                </ul>
+              </li>
             </div>
-            <ul class="mobile-nav2-prace-list">
-              <div class="wrapper">
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Коррекция бровей и ресниц<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">300 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Массаж<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Чистка лица<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Ульразвуковая<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-                <li class="mobile-nav2-prace__item"><span class="mobile-nav2-prace__service">Ноги полностью<span class="point">........................................................................................................................................................................................................................................................</span></span><span class="mobile-nav2-prace__sum">2000 pуб.</span></li>
-              </div>
-            </ul>
           </ul>
         </div>
         <div class="mobile-salon-registration-section">
@@ -100,40 +123,42 @@
             </div>
           </div>
           <div class="wrapper">
-            <div class="mobile-card-shares-container swiper-container">
-              <div class="mobile-card-shares-wrap swiper-wrapper">
-                <div class="mobile-card-shares swiper-slide">
-                  <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
-                  <div class="mobile-card-shares-content">
-                    <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
-                    <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
-                    <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
-                    <div class="mobile-time-shares"><span class="mobile-time-shares__day">26 д.</span></div>
-                  </div>
-                </div>
-                <div class="mobile-card-shares swiper-slide">
-                  <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
-                  <div class="mobile-card-shares-content">
-                    <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
-                    <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
-                    <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
-                    <div class="mobile-time-shares"><span class="mobile-time-shares__day">35 д       </span></div>
-                  </div>
-                </div>
-                <div class="mobile-card-shares swiper-slide">
-                  <div class="mobile-card-shares-img"><img src="img/page2/shares.jpg" alt="shares"></div>
-                  <div class="mobile-card-shares-content">
-                    <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
-                    <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
-                    <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
-                    <div class="mobile-time-shares"><span class="mobile-time-shares__day">35 д </span></div>
-                  </div>
+            <div class="carousel">
+              <div class="mobile-card-shares carousel-cell">
+                <div class="mobile-card-shares-img"><img src="img/page2/articles.jpg" alt="shares"></div>
+                <div class="mobile-card-shares-content">
+                  <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                  <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                  <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                  <div class="mobile-time-shares"><span class="mobile-time-shares__day">26 д.</span></div>
                 </div>
               </div>
-              <div class="mobile-slider-controll">
-                <button class="mobile-arrow-slider__back prev1 mobile-slider-arrow swiper-button-prev"></button>
-                <button class="mobile-arrow-slider__next next1 mobile-slider-arrow swiper-button-next"></button>
-                <div class="mobile-slider-amount amount1 swiper-pagination">  </div>
+              <div class="mobile-card-shares carousel-cell">
+                <div class="mobile-card-shares-img"><img src="img/page2/articles.jpg" alt="shares"></div>
+                <div class="mobile-card-shares-content">
+                  <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                  <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                  <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                  <div class="mobile-time-shares"><span class="mobile-time-shares__day">35 д </span></div>
+                </div>
+              </div>
+              <div class="mobile-card-shares carousel-cell">
+                <div class="mobile-card-shares-img"><img src="img/page2/articles.jpg" alt="shares"></div>
+                <div class="mobile-card-shares-content">
+                  <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                  <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                  <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                  <div class="mobile-time-shares"><span class="mobile-time-shares__day">35 д</span></div>
+                </div>
+              </div>
+              <div class="mobile-card-shares carousel-cell">
+                <div class="mobile-card-shares-img"><img src="img/page2/articles.jpg" alt="shares"></div>
+                <div class="mobile-card-shares-content">
+                  <h3 class="mobile-card-shares-content__title">Подарок на февральские праздники</h3>
+                  <h3 class="mobile-card-shares-content__name">Этисэль на Таганке</h3>
+                  <div class="mobile-salon-adress"><span class="mobile-adress-salon"><span class="adress">м. Таганская</span><span>350 м</span></span></div>
+                  <div class="mobile-time-shares"><span class="mobile-time-shares__day">35 д</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -155,6 +180,201 @@
               <button class="mobile-arrow-slider__next next1 mobile-slider-arrow swiper-button-next"></button>
               <div class="mobile-slider-amount amount1 swiper-pagination">   </div>
             </div>
+          </div>
+        </div>
+        <div class="mobile-news-section">
+          <div class="mobile-news-title-block">
+            <div class="wrapper">
+              <h2 class="mobile-reviews__title"> Новости    </h2>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-articles-section">
+          <div class="mobile-articles-title-block">
+            <div class="wrapper">
+              <h2 class="mobile-articles__title">Статьи</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-galerry-section">
+          <div class="mobile-galerry-title-block">
+            <div class="wrapper">
+              <h2 class="mobile-galerry__title">Галерея</h2>
+            </div>
+          </div>
+          <div class="mobile-section-slider">       
+            <div class="wrapper700">       
+              <div class="mobile-slider-salon swiper-container">
+                <div class="mobile-slider-salon__picture swiper-wrapper"><img src="img/slider/salon.jpg" alt="salon" class="swiper-slide"><img src="img/slider/salon.jpg" alt="salon" class="swiper-slide"></div>
+                <div class="mobile-slider-controll">
+                  <button class="mobile-arrow-slider__back prev mobile-slider-arrow swiper-button-prev"></button>
+                  <button class="mobile-arrow-slider__next next mobile-slider-arrow swiper-button-next"></button>
+                  <div class="mobile-slider-amount amount swiper-pagination">  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-site-adress"><a href="#" class="mobile-site-adress__link">skylightbeauty.ru</a></div>
+        <div class="crumbs-section">
+          <div class="wrapper">
+            <ul class="crumbs-list">
+              <li class="crumbs__item crumbs__item-active"><a href="#" class="crumbs__link crumbs__link_active">Главная</a></li>
+              <li class="crumbs__item crumbs__item-active"><a href="#" class="crumbs__link crumbs__link_active">Каталог   </a></li>
+              <li class="crumbs__item"><a href="#" class="crumbs__link">Этисель на Таганке </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mobile-footer">
+      <div class="wrapper">
+        <div class="mobile-mail"><a href="mailto:info@msk-beauty.ru" class="mail__link">info@msk-beauty.ru</a></div>
+        <div class="mobile-footer__text">   
+          <p>Рейтинг составлен на коммерческой основе, чтобы узнать подробности вы можете <a href="#">связаться с менеджером.         </a></p>
+        </div>
+      </div>
+    </footer>
+    <div class="mobile-door-emergence">
+      <div class="mobile-door-section">
+        <div class="mobile-door-header">                   
+          <ul class="mobile-door-list">
+            <li data-view="signIn" class="mobile-door__item mobile-door__item-signIn">Вход</li>
+            <li data-view="signUp" class="mobile-door__item">Регистрация</li>
+          </ul>
+          <div class="mobile-close mobile-close_position-door mobile-close_door-js"><img src="img/close.png" alt="Закрыть" width="15" height="15" class="mobile-close__img"></div>
+        </div>
+        <div class="mobile-form-section">   
+          <div class="mobile-form-section-signIn">
+            <div class="wrapper">
+              <form action="" class="mobile-login-form">
+                <input type="email" name="enter-email" placeholder="E-mail" class="mobile-door-form__email mobile-door-form_style">
+                <input type="password" name="enter-password" placeholder="Пароль" class="mobile-door-form_style">
+                <div class="mobile-account-management">
+                  <div class="remember-me"> 
+                    <label class="remember-me__label">
+                      <input name="location" type="checkbox" class="remember-me__input"><span class="remember-me__elem"></span><span class="remember-me__text">Запомнить меня</span>
+                    </label>
+                  </div>
+                  <div class="forgot-password"><a href="#" class="forgot-password__link">Забыли пароль?</a></div>
+                </div>
+              </form>
+            </div>
+            <section class="mobile-button-signIn">
+              <div class="wrapper">
+                <div class="signIn-button"><a href="#" class="signIn">Войти</a></div>
+              </div>
+            </section>
+            <section class="mobile-social-button">
+              <div class="wrap">
+                <div class="socials-button-wrap">
+                  <p>Быстрый вход через соц.сети</p>
+                  <ul class="socials">
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_fb">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_vk">
+                        <div class="socials__icon"></div></a></li>
+                  </ul>
+                  <ul class="socials">
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_ok">
+                        <div class="socials__icon">                   </div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_twitter">
+                        <div class="socials__icon">                   </div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_gmail">
+                        <div class="socials__icon">                   </div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_yandex">
+                        <div class="socials__icon">                   </div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_mail">
+                        <div class="socials__icon">                   </div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_mail">
+                        <div class="socials__icon">                   </div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_mail">
+                        <div class="socials__icon">                   </div></a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="mobile-form-section-signUp">
+            <div class="mobile-registration-form-section">
+              <div class="wrapper">
+                <div class="mobile-registration-form">
+                  <p>Все поля обязательны для заполнения</p>
+                  <form action="">
+                    <input type="email" name="enter-email" placeholder="E-mail" class="mobile-door-form_style">
+                    <input type="password" name="enter-password" placeholder="Пароль - мин. 6 символов" class="mobile-door-form_style">
+                    <input type="password" name="enter-password" placeholder="Повтор пароля" class="mobile-door-form_style">
+                    <input type="text" name="name" placeholder="Имя" class="mobile-door-form_style">
+                    <div class="mobile-choice-gender"><span class="gender">Пол:</span>
+                      <label class="choice-gender__label choice-gender__woman">
+                        <input name="gender" type="radio" value="woman" class="choice-gender__input"><span class="choice-gender__elem"></span><span class="choice-gender__text">Женский</span>
+                      </label>
+                      <label class="choice-gender__label">
+                        <input name="gender" type="radio" value="man" class="choice-gender__input"><span class="choice-gender__elem"></span><span class="choice-gender__text">Мужской</span>
+                      </label>
+                    </div>
+                    <div class="signIn-button">       <a href="#" class="signIn">Войти        </a></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <section class="mobile-social-button">
+              <div class="wrap">
+                <div class="socials-button-wrap">
+                  <p>Быстрый вход через соц.сети</p>
+                  <ul class="socials">
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_fb">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_vk">
+                        <div class="socials__icon"></div></a></li>
+                  </ul>
+                  <ul class="socials">
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_ok">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_twitter">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_gmail">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_yandex">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_mail">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_mail">
+                        <div class="socials__icon"></div></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link socials__link_mail">
+                        <div class="socials__icon"></div></a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-emergence">
+      <div class="mobile-menu-section">
+        <div class="mobile-salon-search-header">
+          <div class="wrapper">
+            <form class="mobile-salon-search-form">
+              <input name="search-salon" type="text" placeholder="Введите название салона" class="mobile-salon-search-form__input">
+              <input name="search-salon-submit" type="submit" value="" class="mobile-salon-search-form__submit">
+            </form>
+            <div class="mobile-close mobile-close_position-menu mobile-close_menu-js"><img src="img/close-white.png" alt="Закрыть" width="15" height="15" class="mobile-close__img"></div>
+          </div>
+        </div>
+        <div class="mobile-salon-menu">
+          <div class="wrapper">
+            <ul class="mobile-salon-menu-list">
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Каталог</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Скидки</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Новости</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Статьи</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Бренды</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Работа</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Объявления</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">О проекте</a></li>
+              <li class="mobile-salon-menu__item"><a href="#" class="mobile-salon-menu__link">Контакты</a></li>
+            </ul>
           </div>
         </div>
       </div>

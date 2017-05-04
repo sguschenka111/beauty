@@ -45,19 +45,19 @@
         text-align: left;
     }
     
-    .mobile-salon-nav-list {
+    .mobile-salon-nav {
         border-bottom: 1px solid #e5e5e5;
-        @include clearfix;
     }
     
     .mobile-salon-nav__item {
-        float: left;
         font-size: 12px;
         text-transform: uppercase;
         font-weight: 700;
-        padding-left: 23px;
         padding-top: 15px;
         padding-bottom: 15px;
+        max-width:100px;
+        text-align: center;
+        display: inline-block;
     }
     
     .mobile-salon-nav__item_active {
@@ -69,15 +69,11 @@
         background: #FFF;
         padding-top: 20px;
         padding-bottom: 24px;
-        
-        .wrapper {
-            @include clearfix;
-        }
     }
     
     .mobile-salon-info {
-        float: right;
-        width: 70%;
+        display: inline-block;
+        vertical-align: top;
     }
     
     .mobile-salon-info h2 {
@@ -146,7 +142,7 @@
         text-align: center;
         border-radius: 50px;
         position: relative;
-        width: 95%;
+        width: 190px;
     
     &::before {
         content:'';
@@ -161,7 +157,9 @@
     }
     
     .mobile-salon-picture {
-       float: left;
+       display: inline-block;
+       vertical-align: top;
+       margin-right: 10px;
         
         img {
             width: 70px;
@@ -176,20 +174,27 @@
         height: 115px;
     }
     
-    .mobile-slider-salon {
+    .mobile-section-slider {
         background: #FFF;
-        padding: 30px 20px 20px;
-        border-bottom: 1px solid #e5e5e5;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .mobile-slider-salon {
+        text-align: center;
+        margin: 0 auto;
     }
     
     .mobile-slider-salon__picture {
         margin-bottom: 10px;
-        
-        
+
         img {
-            display: block;
-            margin: 0 auto;
+            display: inline-block;
         }
+    }
+    
+    .all-shares-block {
+      border-top: 1px solid #e5e5e5;
     }
     
     .all-shares {
@@ -200,7 +205,6 @@
         position: relative;
         display: block;
         text-decoration: none;
-        @include wrapper;
         
         &::after {
             content: '';
