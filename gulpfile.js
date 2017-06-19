@@ -7,7 +7,9 @@ var
     browserSync = require('browser-sync'),
     plumber = require('gulp-plumber'),
     del = require('del'), //  для удаления файлов и папок перед сборкой dist
-    cache = require('gulp-cache');
+    cache = require('gulp-cache'),
+    imageop = require('gulp-image-optimization'),
+    svgmin = require('gulp-svgmin');
     
 	
   
@@ -40,6 +42,20 @@ gulp.task('browser-sync', function () {
         server:'app'
     });
 browserSync.watch('app/*.html').on('change',browserSync.reload);
+});
+/*---------------img------------------*/
+gulp.task('images', function(cb) {
+    gulp.src(['app/img/**/*.png','app/img/**/*.jpg','app/img/**/*.gif','app/img/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('app/img')).on('end', cb).on('error', cb);
+});
+
+gulp.task('svgmin', function () {
+    return gulp.src('app/img/**/*.svg')
+        .pipe(svgmin())
+        .pipe(gulp.dest('app/img'));
 });
 /*----------------watch------------------*/
 gulp.task('watch',['compass','jade','browser-sync'],function(){

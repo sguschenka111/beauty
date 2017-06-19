@@ -87,7 +87,7 @@ a {
 .mobile-wrapper::after {
   content: '';
   display: block;
-  height: 70px;
+  height: 80px;
 }
 .mobile-wrapper .mobile-white-band {
   height: 2px;
@@ -312,11 +312,11 @@ a {
 /*--------------------------------------------*/
 .mobile-footer {
   background: #FFF;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
-  height: 70px;
-  margin-top: -70px;
+  height: 80px;
+  margin-top: -80px;
 }
 
 .mail__link {
@@ -730,6 +730,7 @@ a {
 .mobile-categories__icon {
   display: inline-block;
   vertical-align: middle;
+  background-position: center center;
   margin-right: 10px;
   width: 20px;
   height: 20px;
@@ -955,44 +956,49 @@ a {
   display: block;
 }
 
+.social-sprite, .socials__link_fb .socials__icon, .socials__link_vk .socials__icon, .socials__link_ok .socials__icon, .socials__link_twitter .socials__icon, .socials__link_gmail .socials__icon, .socials__link_yandex .socials__icon, .socials__link_mail .socials__icon {
+  background-image: url('../img/social-sac4618abe1.png');
+  background-repeat: no-repeat;
+}
+
 .socials__link_fb .socials__icon {
-  background: url("../../img/social/fb.png") no-repeat;
+  background-position: 0 0;
   width: 135px;
   height: 32px;
 }
 
 .socials__link_vk .socials__icon {
-  background: url("../../img/social/vk.png") no-repeat;
+  background-position: 0 -310px;
   width: 135px;
   height: 32px;
 }
 
 .socials__link_ok .socials__icon {
-  background: url("../../img/social/ok.png") no-repeat;
+  background-position: 0 -186px;
   width: 32px;
   height: 32px;
 }
 
 .socials__link_twitter .socials__icon {
-  background: url("../../img/social/twitter.png") no-repeat;
+  background-position: 0 -248px;
   width: 32px;
   height: 32px;
 }
 
 .socials__link_gmail .socials__icon {
-  background: url("../../img/social/gmail.png") no-repeat;
+  background-position: 0 -62px;
   width: 32px;
   height: 32px;
 }
 
 .socials__link_yandex .socials__icon {
-  background: url("../../img/social/yandex.png") no-repeat;
+  background-position: 0 -372px;
   width: 32px;
   height: 32px;
 }
 
 .socials__link_mail .socials__icon {
-  background: url("../../img/social/mail.png") no-repeat;
+  background-position: 0 -124px;
   width: 32px;
   height: 32px;
 }
@@ -1307,8 +1313,10 @@ a {
   display: inline-block;
   vertical-align: middle;
   width: 30px;
+  height: 25px;
   text-align: center;
   margin-right: 20px;
+  background-position: center center;
 }
 
 .mobile-guide__title {
@@ -2501,6 +2509,10 @@ a {
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.count-shares {
+  color: #9d9c9c;
 }
 
 .mobile-brands-slider {

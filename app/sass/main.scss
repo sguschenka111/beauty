@@ -12,7 +12,7 @@
         &::after {
             content: '';
             display: block;
-            height: 70px;
+            height: 80px;
         }
      
         .mobile-white-band {
@@ -273,13 +273,11 @@
     
 .mobile-footer {
     background: #FFF;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    //width: 320px;
-    //margin: 0 auto;
-    height: 70px;
-    margin-top: -70px;
+    height: 80px;
+    margin-top: -80px;
 }
         
 .mail__link {

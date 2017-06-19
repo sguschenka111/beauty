@@ -9,14 +9,13 @@
         .mobile-menu-categories
             ul.mobile-categories-list
                 - var title = ['Волосы – женский зал','Волосы – Мужской зал',' Услуги для детей','Маникюр','Педикюр','Солярий','Массаж','Аппаратная косметология','Косметологические услуги','СПА / SPA','Wellness ','Снижение веса и коррекция фигуры','Контурная пластика (Инъекционная коррекция)','Пластическая хирургия','Интимная пластика','Спортивные занятия','Дополнительные услуги']
-                - var icons = ['img/categories/woman.svg','img/categories/man.svg','img/categories/child.svg','img/categories/finger.svg','img/categories/foot.svg','img/categories/sun.svg','img/categories/back.svg','img/categories/air.svg','img/categories/mask.svg','img/categories/flower.svg','img/categories/x.svg','img/categories/doc.svg','img/categories/injector.svg','img/categories/brush.svg','img/categories/underpants.svg','img/categories/weight.svg','img/categories/plus.svg']
+                - var icons = ['icon-woman','icon-man','icon-child','icon-finger','icon-foot','icon-sun','icon-back','icon-air','icon-mask','icon-flower','icon-x','icon-doc','icon-injector','icon-brush','icon-underpants','icon-weight','icon-plus']
                 - var alt = ['phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone']
                     each item, index in title
                         - var isActive = ( item === "Контурная пластика (Инъекционная коррекция)" );
                             li(class="mobile-categories__item" + (isActive ? " mobile-categories-item_active": ''))
                                 .wrapper
-                                    span.mobile-categories__icon
-                                        img(src=icons[index] alt = alt[index])
+                                    span.mobile-categories__icon(class=icons[index])
                                     span(class='mobile-categories__text'+ (isActive ? " mobile-categories-text_active": ''))= item
                                     if isActive
                                         .mobile-close2.mobile-close2_position

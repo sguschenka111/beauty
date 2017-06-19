@@ -195,44 +195,48 @@
     display: block;
 }
 
+$social-spacing: 30px;
+@import 'social/*.png';
+
+
 .socials__link_fb .socials__icon{
-    background: url('../../img/social/fb.png') no-repeat;
+    @include social-sprite(fb);
     width: 135px;
     height: 32px;
 }
 
 .socials__link_vk .socials__icon{
-    background: url('../../img/social/vk.png') no-repeat;
+    @include social-sprite(vk);
     width: 135px;
     height: 32px;
 }
 
 .socials__link_ok .socials__icon{
-    background: url('../../img/social/ok.png') no-repeat;
+    @include social-sprite(ok);
     width: 32px;
     height: 32px;
 }
 
 .socials__link_twitter .socials__icon{
-    background: url('../../img/social/twitter.png') no-repeat;
+    @include social-sprite(twitter);
     width: 32px;
     height: 32px;
 }
 
 .socials__link_gmail .socials__icon{
-    background: url('../../img/social/gmail.png') no-repeat;
+    @include social-sprite(gmail);
     width: 32px;
     height: 32px;
 }
 
 .socials__link_yandex .socials__icon{
-    background: url('../../img/social/yandex.png') no-repeat;
+    @include social-sprite(yandex);
     width: 32px;
     height: 32px;
 }
 
 .socials__link_mail .socials__icon{
-    background: url('../../img/social/mail.png') no-repeat;
+    @include social-sprite(mail);
     width: 32px;
     height: 32px;
 }

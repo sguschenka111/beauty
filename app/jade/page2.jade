@@ -7,6 +7,7 @@ html(lang="ru")
         meta(name='viewport' content='width=device-width, initial-scale=1')
         link(rel='stylesheet'  href='css/normalize.css' )
         link(rel="stylesheet"  href='js/swiper/css/swiper.min.css')
+        link(rel='stylesheet'  href='css/icons-svg.css' )
         link(rel='stylesheet'  href='css/main.css' )
         link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet")
         script(src="js/jquery-3.2.0.min.js" defer)
@@ -57,13 +58,16 @@ html(lang="ru")
                             - var title = ['Волосы','Ногти',' Эпиляция','Косметология','Косметология аппаратная','Омоложение','Разное']
                             - var title2 = ['5','4',' 3','1','3','4','10']
                             - var title3 = [' статей',' статьи',' статьи',' статья',' статьи',' статьи',' статей']
-                            - var icons = ['img/page2/hair.png','img/page2/finger2.svg','img/page2/epil.svg','img/page2/mask2.svg','img/page2/air2.svg','img/page2/rose.png','img/page2/plus2.svg']
+                            - var icons = ['img/page2/hair.png','icon-finger2','icon-epil','icon-mask2','icon-air2','img/page2/rose.png','icon-plus2']
                             - var alt = ['phone','phone','phone','phone','phone','phone','phone']
                                 each item, index in title                          
                                     li(class="mobile-guide__item")
                                         a(href="#").mobile-guide__link
-                                            span.mobile-guide__icon
-                                                img(src=icons[index] alt = alt[index]).mobile-guide__img
+                                            if(icons[index]==='img/page2/hair.png'||icons[index]==='img/page2/rose.png')
+                                                span.mobile-guide__icon
+                                                    img(src=icons[index] alt = alt[index]).mobile-guide__img
+                                            else        
+                                                span.mobile-guide__icon(class=icons[index])    
                                             span.mobile-guide__title
                                                 span.mobile-guide__name= item
                                                 span.mobile-guide__sum
