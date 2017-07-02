@@ -37,33 +37,43 @@ html(lang="ru")
                         p Подпишитесь на емейл-рассылку на сайте и получите на электронную почту купон со скидкой 5% лифтинг мезонитями и другие скидки и подарки.
                 nav.mobile-salon-nav.swiper-container.section-filter-blur
                     ul.mobile-salon-nav-list.swiper-wrapper
-                        li.mobile-salon-nav__item.swiper-slide.mobile-salon-nav__item_active О салоне
-                        li.mobile-salon-nav__item.swiper-slide Описание
-                        li.mobile-salon-nav__item.swiper-slide Условия
-                        li.mobile-salon-nav__item.swiper-slide Особенности
-                .mobile-salon-card.section-filter-blur
-                    .wrapper
-                        .mobile-salon-picture
-                            img(src="img/salon-card.jpg" alt="salon")
-                        .mobile-salon-info
-                            h2 Этисэль на Таганке
-                            span.mobile-salon-info__adress ул. Верхняя Радищевская  4с1
-                            .mobile-salon-adress
-                                span.adress-salon
-                                    span.adress м. Таганская
-                                    span 350 м
-                            .mobile-rating-section        
-                                ul.mobile-rating-stars-list
-                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
-                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
-                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
-                                    li.mobile-rating-stars__item.mobile-rating-stars__item_filled
-                                    li.mobile-rating-stars__item
-                                span.mobile-rating-count
-                                    span 136 
-                                    span голосов
-                            a(href="#").mobile-salon-way Как добраться?
-                            button(type="button").mobile-call +7 (499) 628-22-34
+                        li.mobile-salon-nav__item.swiper-slide.mobile-salon-nav__item_active(data-class="card") О салоне
+                        li.mobile-salon-nav__item.swiper-slide(data-class="description") Описание
+                        li.mobile-salon-nav__item.swiper-slide(data-class="circs") Условия
+                        li.mobile-salon-nav__item.swiper-slide(data-class="features") Особенности
+                .mobile-salon-tabs        
+                    .mobile-salon-content.mobile-salon_card.section-filter-blur.mobile-salon-nav__item_active
+                        .wrapper
+                            .mobile-salon-picture
+                                img(src="img/salon-card.jpg" alt="salon")
+                            .mobile-salon-info
+                                h2 Этисэль на Таганке
+                                span.mobile-salon-info__adress ул. Верхняя Радищевская  4с1
+                                .mobile-salon-adress
+                                    span.adress-salon
+                                        span.adress м. Таганская
+                                        span 350 м
+                                .mobile-rating-section        
+                                    ul.mobile-rating-stars-list
+                                        li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                        li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                        li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                        li.mobile-rating-stars__item.mobile-rating-stars__item_filled
+                                        li.mobile-rating-stars__item
+                                    span.mobile-rating-count
+                                        span 136 
+                                        span голосов
+                                a(href="#").mobile-salon-way Как добраться?
+                                button(type="button").mobile-call +7 (499) 628-22-34
+                    .mobile-salon-content.mobile-salon_description
+                        .wrapper 
+                            p Описание
+                    .mobile-salon-content.mobile-salon_circs
+                        .wrapper
+                            p Условия
+                    .mobile-salon-content.mobile-salon_features
+                        .wrapper
+                            p Особенности
                 .mobile-yandex-card
                 .mobile-section-slider
                     .wrapper700
@@ -82,7 +92,8 @@ html(lang="ru")
                     .mobile-description-salon-title
                         h2 Описание
                     .mobile-description-salon-content    
-                        p Армирование мезонитями – это эффективная механическая подтяжка кожи. Видимый эффект на полгода за счет подкожного введения 3D-мезонитей без операции. Дополнительный эффект от подтяжки в течение 2 лет – благодаря образованию естественного каркаса из коллагена вокруг мезонитей. 
+                        p Армирование мезонитями – это эффективная механическая подтяжка кожи. Видимый эффект на полгода за счет подкожного введения 3D-мезонитей без операции. Дополнительный эффект от подтяжки в течение 2 лет – благодаря образованию естественного каркаса из коллагена вокруг мезонитей.
+                        p.mobile-description-salon-content_p Армирование мезонитями – это эффективная механическая подтяжка кожи. Видимый эффект на полгода за счет подкожного введения 3D-мезонитей без операции. Дополнительный эффект от подтяжки в течение 2 лет – благодаря образованию естественного каркаса из коллагена вокруг мезонитей.
                         a(href="#").mobile-further-salon  Читать полностью
                     .mobile-conditions-salon-title
                         h2 Условия

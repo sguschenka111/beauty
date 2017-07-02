@@ -58,18 +58,29 @@ html(lang="ru")
                 .mobile-yandex-card.section-filter-blur
                 nav.mobile-salon-nav.swiper-container.section-filter-blur
                     ul.mobile-salon-nav-list.swiper-wrapper
-                        li.mobile-salon-nav__item.mobile-salon-nav__item_active.swiper-slide Описание
-                        li.mobile-salon-nav__item.swiper-slide Прайс-лист
-                        li.mobile-salon-nav__item.swiper-slide Акции
+                        li.mobile-salon-nav__item.mobile-salon-nav__item_active.swiper-slide(data-class="description") Описание
+                        li.mobile-salon-nav__item.swiper-slide(data-class="price") Прайс-лист
+                        li.mobile-salon-nav__item.swiper-slide(data-class="shares") Акции
                             span.count-shares  4
-                        li.mobile-salon-nav__item.swiper-slide Отзывы
-                .mobile-description-salon.section-filter-blur
-                    .wrapper
-                        .mobile-regimen-work 
-                            .mobile-regimen-time Пн-Пт: 09:00 – 21:00 Сб-Вс: 09:00-19:00
-                            .mobile-open-close Открыто
-                        p Политика студии такова: приходи в «Рай» - уйдешь окрыленным! Вот уже несколько лет мастера-профессионалы студии дарят своим клиентам ощущение свободы и неповторимости..
-                        a(href="#").mobile-further-salon  Читать полностью
+                        li.mobile-salon-nav__item.swiper-slide(data-class="reviews") Отзывы
+                .mobile-salon-tabs        
+                    .mobile-salon-content.mobile-salon_description.mobile-description-salon.section-filter-blur.mobile-salon-nav__item_active
+                        .wrapper
+                            .mobile-regimen-work 
+                                .mobile-regimen-time Пн-Пт: 09:00 – 21:00 Сб-Вс: 09:00-19:00
+                                .mobile-open-close Открыто
+                            p Политика студии такова: приходи в «Рай» - уйдешь окрыленным! Вот уже несколько лет мастера-профессионалы студии дарят своим клиентам ощущение свободы и неповторимости..
+                            p.mobile-description-salon-content_p Политика студии такова: приходи в «Рай» - уйдешь окрыленным! Вот уже несколько лет мастера-профессионалы студии дарят своим клиентам ощущение свободы и неповторимости..
+                            a(href="#").mobile-further-salon  Читать полностью
+                    .mobile-salon-content.mobile-salon_price
+                        .wrapper 
+                            p Прайс-лист
+                    .mobile-salon-content.mobile-salon_shares
+                        .wrapper
+                            p Акции
+                    .mobile-salon-content.mobile-salon_reviews
+                        .wrapper
+                            p Отзывы        
                 .mobile-other-salon
                     .wrapper
                         a(href="#").mobile-other-salon__link Еще 21 заведение сети

@@ -2272,7 +2272,6 @@ a {
   color: #5e35b1;
   font-size: 14px;
   position: relative;
-  display: block;
   text-decoration: none;
   display: inline-block;
   vertical-align: middle;
@@ -2388,6 +2387,25 @@ a {
 
 .crumbs-section p {
   font-size: 14px;
+}
+
+.mobile-salon-content {
+  display: none;
+}
+
+.mobile-salon-tabs .mobile-salon-nav__item_active {
+  display: block;
+  color: #3c3c3b;
+  border-bottom: none;
+}
+
+.mobile-salon-tabs {
+  margin-bottom: 25px;
+  margin-top: 17px;
+}
+
+.mobile-description-salon-content_p {
+  display: none;
 }
 
 /*--------------------------------------------*/
@@ -2525,6 +2543,7 @@ a {
   display: inline-block;
   vertical-align: bottom;
   text-align: center;
+  font-weight: bold;
 }
 
 .mobile-comment {
