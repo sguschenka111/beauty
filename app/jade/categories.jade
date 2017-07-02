@@ -13,12 +13,11 @@
                 - var alt = ['phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone','phone']
                     each item, index in title
                         - var isActive = ( item === "Контурная пластика (Инъекционная коррекция)" );
-                            li(class="mobile-categories__item" + (isActive ? " mobile-categories-item_active": ''))
+                            li(class="mobile-categories__item")
                                 .wrapper
                                     span.mobile-categories__icon(class=icons[index])
-                                    span(class='mobile-categories__text'+ (isActive ? " mobile-categories-text_active": ''))= item
-                                    if isActive
-                                        .mobile-close2.mobile-close2_position
+                                    span(class='mobile-categories__text')= item
+                                    
 
 
 

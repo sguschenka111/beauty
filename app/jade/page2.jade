@@ -60,19 +60,35 @@ html(lang="ru")
                             - var title3 = [' статей',' статьи',' статьи',' статья',' статьи',' статьи',' статей']
                             - var icons = ['img/page2/hair.png','icon-finger2','icon-epil','icon-mask2','icon-air2','img/page2/rose.png','icon-plus2']
                             - var alt = ['phone','phone','phone','phone','phone','phone','phone']
-                                each item, index in title                          
-                                    li(class="mobile-guide__item")
-                                        a(href="#").mobile-guide__link
-                                            if(icons[index]==='img/page2/hair.png'||icons[index]==='img/page2/rose.png')
-                                                span.mobile-guide__icon
-                                                    img(src=icons[index] alt = alt[index]).mobile-guide__img
-                                            else        
-                                                span.mobile-guide__icon(class=icons[index])    
-                                            span.mobile-guide__title
-                                                span.mobile-guide__name= item
-                                                span.mobile-guide__sum
-                                                    span.mobile-guide__sum-name= title2[index]
-                                                    span.mobile-guide__sum-name= title3[index]
+                            - var float = ['f-l','f-r']
+                                each item, index in title
+                                    if(index < 4)
+                                        li(class="mobile-guide__item " + float[0])
+                                            a(href="#").mobile-guide__link
+                                                if(icons[index]==='img/page2/hair.png'||icons[index]==='img/page2/rose.png')
+                                                    span.mobile-guide__icon
+                                                        img(src=icons[index] alt = alt[index]).mobile-guide__img
+                                                else        
+                                                    span.mobile-guide__icon(class=icons[index])    
+                                                span.mobile-guide__title
+                                                    span.mobile-guide__name= item
+                                                    span.mobile-guide__sum
+                                                        span.mobile-guide__sum-name= title2[index]
+                                                        span.mobile-guide__sum-name= title3[index]
+                                            
+                                    else
+                                        li(class="mobile-guide__item " + float[1])
+                                            a(href="#").mobile-guide__link
+                                                if(icons[index]==='img/page2/hair.png'||icons[index]==='img/page2/rose.png')
+                                                    span.mobile-guide__icon
+                                                        img(src=icons[index] alt = alt[index]).mobile-guide__img
+                                                else        
+                                                    span.mobile-guide__icon(class=icons[index])    
+                                                span.mobile-guide__title
+                                                    span.mobile-guide__name= item
+                                                    span.mobile-guide__sum
+                                                        span.mobile-guide__sum-name= title2[index]
+                                                        span.mobile-guide__sum-name= title3[index]
                     .mobile-shares-section
                         .mobile-shares
                             .wrapper

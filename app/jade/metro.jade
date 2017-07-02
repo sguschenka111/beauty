@@ -13,7 +13,7 @@
                     input(name="search-metro-submit" type="submit" value="" ).mobile-metro-search__submit
                 h2.mobile-metro-search-title Линии
         .mobile-metro-menu-section
-            
+
             ul.mobile-metro-menu.mobile-metro-menu_js
                 li.mobile-metro-menu__item
                     .wrapper
@@ -44,11 +44,9 @@
                         - var menu2 = ["Киевская","Краснопресненская","Белорусская","Новослободская","Проспект Мира","Комсомольская","Курская","Таганская","Павелецкая","Добрынинская","Октябрьская","Парк культуры"]
                         each item in menu2
                             - var isActive2 = (item === "Таганская");
-                                li(class="mobile-metro-menu-2level__item " + (isActive2 ? "mobile-metro-item_active": ''))
+                                li(class="mobile-metro-menu-2level__item ")
                                     .wrapper
                                         span(class="mobile-metro-menu-2level__name mobile-metro_color-brown mobile-metro_smallCircle" + (isActive2 ? " mobile-metro-text_active": ''))= item
-                                        if isActive2
-                                            .mobile-close2.mobile-close2_position
                 li.mobile-metro-menu__item
                     .wrapper
                         .mobile-metro-menu__item-content
@@ -96,6 +94,5 @@
                         .mobile-metro-menu__item-content
                             span.mobile-metro-menu__arrow
                             span.mobile-metro-menu__name.mobile-metro_color-lightBlue2 Бутовская 
-                    
-                    
-                     
+
+

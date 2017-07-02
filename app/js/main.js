@@ -1,4 +1,4 @@
-(function(){
+$(function(){
  
 let metroPage = $('.mobile-metro-page');
 
@@ -68,8 +68,6 @@ closeDoorInstance.on("tap", function(ev) {
     $('.section-filter-blur').removeClass('filter-blur');
 });
 
- 
-
 metroMenuInstance.on("tap", function(event) {
     let target = event.target,
     ul = $('.mobile-metro-menu-2level_js');
@@ -82,9 +80,52 @@ metroMenuInstance.on("tap", function(event) {
     itemMenu.find('.mobile-metro-menu__arrow').toggleClass('rotate180');
     return;
     }
+    
     target = target.parentNode;
     }
 });
+
+$('.mobile-metro-menu-2level_js').on('click',function(e){
+
+    let target = e.target;
+
+    while (target != this) {
+        if (target.tagName == 'LI') {
+
+            target.classList.toggle('mobile-metro-item_active');
+            let otherItem = $('LI.mobile-metro-menu-2level__item');
+            otherItem.not(target).removeClass('mobile-metro-item_active');
+            return;
+        }
+        target = target.parentNode;
+    }
+});
+
+$('.mobile-categories-list').on('click',function(e){
+
+    let target = e.target;
+
+    while (target != this) {
+        if (target.tagName == 'LI') {
+
+            target.classList.toggle('mobile-categories-item_active');
+            target.querySelector('.mobile-categories__text').classList.toggle('mobile-categories-text_active');
+            let otherItem = $('LI.mobile-categories__item');
+                        
+            otherItem.not(target).each(function() {
+            this.querySelector('.mobile-categories__text').classList.remove('mobile-categories-text_active');
+            });           
+            
+            otherItem.not(target).removeClass('mobile-categories-item_active');
+            return;
+        }
+        
+        target = target.parentNode;
+    }
+});
+
+
+
 
 }());
 
@@ -120,8 +161,8 @@ let ViewStateChange = (function(){
 
 
 $(document).ready(function(){
-        ViewStateChange.init();
-  }); 
+        ViewStateChange.init();       
+}); 
    
 
   

@@ -41,7 +41,7 @@ gulp.task('browser-sync', function () {
     browserSync.init({
         server:'app'
     });
-browserSync.watch('app/*.html').on('change',browserSync.reload);
+browserSync.watch('app/index.html').on('change',browserSync.reload);
 });
 /*---------------img------------------*/
 gulp.task('images', function(cb) {

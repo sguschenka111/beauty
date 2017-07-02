@@ -126,9 +126,25 @@
     }
 }
 
+@media (max-width:768px) and (min-width:481px) {
+    .f-l {
+        float: left;
+        width: 50%;
+    }
+    
+    .f-r {
+        float: right;
+        width: 50%;
+    }
+
+}
 .mobile-guide-list {
     margin-left: 10px;
     padding-bottom: 40px;
+    
+    .wrapper {
+        @include clearfix;
+    }
 }
 
 .mobile-guide__item {
@@ -747,7 +763,7 @@
 
 
 .content-list {
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -755,7 +771,7 @@
     color: #3c3c3b;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     
     &:last-child {
         margin-bottom: 0;

@@ -88,6 +88,17 @@
     .mobile-categories-item_active {
         background: #5f4db5;
         position: relative;
+        
+        .wrapper::after {
+            content: '';
+            background: url('../../img/close2.png') no-repeat;
+            width: 11px;
+            height: 11px;
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            margin-top: -6px;
+        }
     }
     
     .mobile-categories-text_active {
